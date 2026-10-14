@@ -49952,6 +49952,24 @@ Filename: https://xiangfeidexiaohuo.github.io/roothide/FloatingDockXVI 简体中
 X-Upstream-Source: https://xiangfeidexiaohuo.github.io/
 X-Upstream-Filename: ./roothide/FloatingDockXVI 简体中文包(RootHide).deb
 
+Package: com.dao.gesturesxv
+Architecture: iphoneos-arm64e
+Version: 1.0
+Section: 嗨-工具
+Maintainer: Hades
+Depends: mobilesubstrate
+Size: 5136
+MD5sum: 79295b6b01d548e365efbdc52ca41893
+SHA1: b2dee08d6f69cc3c6bd5a6f6dd813632bf3f837f
+SHA256: 1ddae794ff3625ddc97a2eaff64ad05fab262d2d15c2013fabfcef919351835d
+SHA512: 69d439ac0098720a264ca4991ae47957a6fdfabc7aee0e47aede333ee6403e58469bd441727d56f43284d0ec678672f2944d44e92b04de9332d0841da52777c2
+Description: 修复GesturesXV手势iOS16锁屏手电筒问题
+Name: GesturesXVFix(RootHide)
+Author: Hades
+Filename: https://xiangfeidexiaohuo.github.io/roothide/GesturesXVFix(RootHide).deb
+X-Upstream-Source: https://xiangfeidexiaohuo.github.io/
+X-Upstream-Filename: ./roothide/GesturesXVFix(RootHide).deb
+
 Package: com.hk.glow.cn.rl
 Architecture: iphoneos-arm64e
 Version: 0.6
@@ -50596,6 +50614,25 @@ Author: 妖刀
 Filename: https://xiangfeidexiaohuo.github.io/roothide/PrimalFolder2 简体中文包(RootHide).deb
 X-Upstream-Source: https://xiangfeidexiaohuo.github.io/
 X-Upstream-Filename: ./roothide/PrimalFolder2 简体中文包(RootHide).deb
+
+Package: com.hades.pullclearnc
+Architecture: iphoneos-arm64e
+Version: 2.0
+Section: 嗨-工具
+Maintainer: hades
+Installed-Size: 168
+Depends: mobilesubstrate
+Size: 5722
+MD5sum: 21e430c0ea35aeff41927797735f246b
+SHA1: 00ab7dd0f2c6af8bb1b318ff4429e5782eed7601
+SHA256: f3c3fcfd8a2b69263c42b68cff85265461197dc48939ad2cb4575ae7ca6314c8
+SHA512: 859e219875e3eda73471691850a52185136da6c5a3f8e9270afe398f04c1fcb8de79f6090f86df33b96ca81028f63c6c372c955c956d2c51fd481fa89df5471c
+Description: 锁屏/通知中心下拉即可清空全部通知，原作者Netskao，更新支持iOS16+
+Name: PullClearNC(roothide)
+Author: hades
+Filename: https://xiangfeidexiaohuo.github.io/roothide/PullClearNC(roothide)_2.0.deb
+X-Upstream-Source: https://xiangfeidexiaohuo.github.io/
+X-Upstream-Filename: ./roothide/PullClearNC(roothide)_2.0.deb
 
 Package: com.dao.pulloverx
 Architecture: iphoneos-arm64e
@@ -77793,45 +77830,45 @@ X-Upstream-Filename: debs/com.zegeyoudaoli.home27_2.1.62_iphoneos-arm64e.deb
 
 Package: com.zegeyoudaoli.liquidass27
 Name: Liquid (Gl)ass 27（rootless 测试）
-Version: 1.0.0-73+rootless
+Version: 1.0.0-74+rootless
 Architecture: iphoneos-arm64
 Description: 基于原作者 dylv 的 Liquid (Gl)ass 项目维护自用。
 Maintainer: dylv&泽哥
 Author: dylv&泽哥
-Depiction: https://MrSuuu.github.io/Sileo/depictions/liquidass27.html?v=19
-Sileodepiction: https://MrSuuu.github.io/Sileo/depictions/liquidass27.json?v=19
+Depiction: https://MrSuuu.github.io/Sileo/depictions/liquidass27.html?v=20
+Sileodepiction: https://MrSuuu.github.io/Sileo/depictions/liquidass27.json?v=20
 Section: Tweaks
 Depends: ellekit, firmware (>= 14.0), firmware (<< 26.0), preferenceloader, com.opa334.altlist
 Conflicts: dylv.liquidass, dylv.zege.liquidass, dylv.blurless
 Replaces: dylv.liquidass, dylv.zege.liquidass, dylv.blurless
 Icon: https://MrSuuu.github.io/Sileo/depictions/icon27.png
-Size: 3602672
-MD5sum: 3687bac34ca45b7fdeeb478f2b11b6a3
-SHA256: 30da0d638d74c2266c1d6954f10e5eed217e46b1e8bfae75c31c15c834565332
-Filename: https://MrSuuu.github.io/Sileo/debs/com.zegeyoudaoli.liquidass27_1.0.0-73+rootless_iphoneos-arm64.deb
+Size: 3649684
+MD5sum: 353c22037825c12db731636089afb694
+SHA256: 5e00433d4ee2a6f0bde887106d44a36cd2c4f15ccb853528492e76979ef76361
+Filename: https://MrSuuu.github.io/Sileo/debs/com.zegeyoudaoli.liquidass27_1.0.0-74+rootless_iphoneos-arm64.deb
 X-Upstream-Source: https://MrSuuu.github.io/Sileo/
-X-Upstream-Filename: debs/com.zegeyoudaoli.liquidass27_1.0.0-73+rootless_iphoneos-arm64.deb
+X-Upstream-Filename: debs/com.zegeyoudaoli.liquidass27_1.0.0-74+rootless_iphoneos-arm64.deb
 
 Package: com.zegeyoudaoli.liquidass27
 Name: Liquid (Gl)ass 27
-Version: 1.0.0-73
+Version: 1.0.0-74
 Architecture: iphoneos-arm64e
 Description: 基于原作者 dylv 的 Liquid (Gl)ass 项目维护自用。
 Maintainer: dylv&泽哥
 Author: dylv&泽哥
-Depiction: https://MrSuuu.github.io/Sileo/depictions/liquidass27.html?v=19
-Sileodepiction: https://MrSuuu.github.io/Sileo/depictions/liquidass27.json?v=19
+Depiction: https://MrSuuu.github.io/Sileo/depictions/liquidass27.html?v=20
+Sileodepiction: https://MrSuuu.github.io/Sileo/depictions/liquidass27.json?v=20
 Section: Tweaks
 Depends: ellekit, firmware (>= 14.0), firmware (<< 26.0), preferenceloader, com.opa334.altlist
 Conflicts: dylv.liquidass, dylv.zege.liquidass, dylv.blurless
 Replaces: dylv.liquidass, dylv.zege.liquidass, dylv.blurless
 Icon: https://MrSuuu.github.io/Sileo/depictions/icon27.png
-Size: 3617466
-MD5sum: 1ae0d4513856b3f9881489097ab97896
-SHA256: b8aa96677af199174519df2af2260942c17c8abbac576150c97707c36662061d
-Filename: https://MrSuuu.github.io/Sileo/debs/com.zegeyoudaoli.liquidass27_1.0.0-73_iphoneos-arm64e.deb
+Size: 3645904
+MD5sum: 1251b58c5d03b4c53c6c1d2638ee96ac
+SHA256: 91f49a6ae4a6ad10f5e2a28306c1a9fe1d553b97fdda381b7191975c131994ff
+Filename: https://MrSuuu.github.io/Sileo/debs/com.zegeyoudaoli.liquidass27_1.0.0-74_iphoneos-arm64e.deb
 X-Upstream-Source: https://MrSuuu.github.io/Sileo/
-X-Upstream-Filename: debs/com.zegeyoudaoli.liquidass27_1.0.0-73_iphoneos-arm64e.deb
+X-Upstream-Filename: debs/com.zegeyoudaoli.liquidass27_1.0.0-74_iphoneos-arm64e.deb
 
 Package: dylv.liquidass
 Name: Liquid (Gl)ass · 泽哥维护兼容版（rootless 测试）
@@ -230175,67 +230212,67 @@ X-Upstream-Source: https://repo.cydiabc.top/
 X-Upstream-Filename: ./debs/11696.deb
 
 Package: com.cydiabc.wcpulse
-Version: 1.7-5
+Version: 1.7-6
 Section: 微信
 Maintainer: huami
 Depends: mobilesubstrate (>= 0.9.5000)
 Architecture: iphoneos-arm
-Size: 4948746
+Size: 4952856
 Description: 微信实用小插件* 启用视频倍速手势* 启用头像时间标签* 自定义防撤回功能* 插件管理排序功能* 默认绕过多开人脸、无后台限制
 Name: 微信 WCPulse
 Author: huami
 Sponsor: Ai-小苹果™
-SileoDepiction: https://apt.cydiabc.top/sileo.php?pid=13566
-Depiction: https://apt.cydiabc.top/index.php?pid=13566
+SileoDepiction: https://apt.cydiabc.top/sileo.php?pid=13616
+Depiction: https://apt.cydiabc.top/index.php?pid=13616
 Icon: file:///Applications/Cydia.app/Sections/Messaging.png
-MD5sum: 080e278ed7346591ad42d98e514f0851
-SHA1: 4fab213466110d49e84b962b5778604de60802bc
-SHA256: aecbe217c565bf44a0cace385f25a881206478d16c7c87bdc83d5d5d627ebec0
-Filename: https://repo.cydiabc.top/debs/13566.deb
+MD5sum: e894c9c49bcffafef86885fa97bfac8a
+SHA1: d0ee048cbb5b83108e8f6862fa2bf6985a360272
+SHA256: 682d16713f7d2621dcce2bf2a187627f78574f6f6797030cc8c5479ab7612d2d
+Filename: https://repo.cydiabc.top/debs/13616.deb
 X-Upstream-Source: https://repo.cydiabc.top/
-X-Upstream-Filename: ./debs/13566.deb
+X-Upstream-Filename: ./debs/13616.deb
 
 Package: com.cydiabc.WCPulse-roothide
-Version: 1.7-5
+Version: 1.7-6
 Section: 微信
 Maintainer: huami
 Depends: mobilesubstrate (>= 0.9.5000)
 Architecture: iphoneos-arm64e
-Size: 4948762
+Size: 4952864
 Description: 微信实用小插件* 启用视频倍速手势* 启用头像时间标签* 自定义防撤回功能* 插件管理排序功能* 默认绕过多开人脸、无后台限制
 Name: 微信 WCPulse-Roothide
 Author: huami
 Sponsor: Ai-小苹果™
-SileoDepiction: https://apt.cydiabc.top/sileo.php?pid=13568
-Depiction: https://apt.cydiabc.top/index.php?pid=13568
+SileoDepiction: https://apt.cydiabc.top/sileo.php?pid=13618
+Depiction: https://apt.cydiabc.top/index.php?pid=13618
 Icon: file:///Applications/Cydia.app/Sections/Messaging.png
-MD5sum: e552d40c1d53a6d866246a3445491a33
-SHA1: 41a571cc29a38ce2516ee0879f8540972721bb80
-SHA256: c792f9e2b28e1ec0a423a6d086901b2e5173a7e5a3983e29badd41aa70327f9b
-Filename: https://repo.cydiabc.top/debs/13568.deb
+MD5sum: 6b9edb620d9970fe45e798d3ac09c0f9
+SHA1: 6cddb2e07fd7ba51b41277a7b476bb2df84fc7bd
+SHA256: 7473eac621b7c9cd9fcbe2ef86c59f8171791d1aee0e0d2bf8a512e1f0291f63
+Filename: https://repo.cydiabc.top/debs/13618.deb
 X-Upstream-Source: https://repo.cydiabc.top/
-X-Upstream-Filename: ./debs/13568.deb
+X-Upstream-Filename: ./debs/13618.deb
 
 Package: com.cydiabc.wcpulse-rootless
-Version: 1.7-5
+Version: 1.7-6
 Section: 微信
 Maintainer: huami
 Depends: mobilesubstrate (>= 0.9.5000)
 Architecture: iphoneos-arm64
-Size: 4948848
+Size: 4952914
 Description: 微信实用小插件* 启用视频倍速手势* 启用头像时间标签* 自定义防撤回功能* 插件管理排序功能* 默认绕过多开人脸、无后台限制
 Name: 微信 WCPulse-Rootless
 Author: huami
 Sponsor: Ai-小苹果™
-SileoDepiction: https://apt.cydiabc.top/sileo.php?pid=13567
-Depiction: https://apt.cydiabc.top/index.php?pid=13567
+SileoDepiction: https://apt.cydiabc.top/sileo.php?pid=13617
+Depiction: https://apt.cydiabc.top/index.php?pid=13617
 Icon: file:///Applications/Cydia.app/Sections/Messaging.png
-MD5sum: 9e1f3effae402147914285500ffe24f8
-SHA1: f25ee5b69ac02ed28abd378b524455ee7a832250
-SHA256: 516714a795fba6c8426751b3f621e41b7024a2658c4989ae20fec6218950f4f4
-Filename: https://repo.cydiabc.top/debs/13567.deb
+MD5sum: 2a298813d436ff98bb8d31379e15e82b
+SHA1: 2ed8539930e269e2e9f27f2d197c6e80f43e53ea
+SHA256: aeca617557d50c39bb6ab82544fd593e1483f0bd4a3d41eaab184ae447c7d0b0
+Filename: https://repo.cydiabc.top/debs/13617.deb
 X-Upstream-Source: https://repo.cydiabc.top/
-X-Upstream-Filename: ./debs/13567.deb
+X-Upstream-Filename: ./debs/13617.deb
 
 Package: com.cydiabc.wcpush2chat
 Version: 1.0-2
