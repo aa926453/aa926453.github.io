@@ -7,12 +7,13 @@ on:
       - 'debs/**'
       - 'build_repo.py'
       - 'sync_wkk.py'
+      - 'sources.json'
       - 'index.html'
       - 'CydiaIcon.png'
       - '.github/workflows/repo.yml'
   workflow_dispatch:
   schedule:
-    - cron: '17 * * * *'
+    - cron: '17 */6 * * *'
 
 permissions:
   contents: write
@@ -26,13 +27,41 @@ concurrency:
 jobs:
   index:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Restore last successful metadata cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .sync-cache
+          key: source-metadata-${{ github.ref_name }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            source-metadata-${{ github.ref_name }}-
 
       - name: Build package index
         run: python3 sync_wkk.py
 
-      - name: Commit updated index
+      - name: Save private metadata cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .sync-cache
+          key: source-metadata-${{ github.ref_name }}-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Save audit report (not Pages)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-audit-${{ github.run_id }}
+          path: sync-report.json
+          retention-days: 14
+
+      - name: Commit updated index only
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -44,11 +73,11 @@ jobs:
 
       - uses: actions/configure-pages@v5
 
-      - name: Prepare public files
+      - name: Prepare public files (explicit allowlist)
         run: |
           mkdir -p _site/debs
           cp index.html CydiaIcon.png Release Packages Packages.gz Packages.bz2 _site/
-          cp -r debs/. _site/debs/
+          if [ -d debs ]; then cp -r debs/. _site/debs/; fi
           touch _site/.nojekyll
 
       - uses: actions/upload-pages-artifact@v3
