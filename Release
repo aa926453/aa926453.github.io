@@ -3,19 +3,19 @@ Label: 不知道起什么名
 Suite: stable
 Codename: stable
 Version: 1.0
-Architectures: all appletvos-arm64 darwin-amd64 darwin-arm64 iphoneos-arm iphoneos-arm64 iphoneos-arm64e
+Architectures: all iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: aa926453 的 Sileo 软件源
-Date: Wed, 14 Oct 2026 07:04:57 +0000
+Date: Wed, 14 Oct 2026 07:10:38 +0000
 MD5Sum:
- f479c7bf9325e1819cbdcba627c13483 30278263 Packages
- 4145e5a7d025a542800f74eee1d56ba8 5887404 Packages.gz
- 9ead1d0e8a6a85269b6f3ec98d6d3029 4584763 Packages.bz2
+ 0e804c847bb6356fa55ac6c216ba88cd 24306886 Packages
+ da0c93f28df2814f4258983cc33c9a89 4824868 Packages.gz
+ c5a38cf677d55f9ed249c060178d5cb1 3698153 Packages.bz2
 SHA1:
- 3666950b0faea2b01be3997990fecefdbb7c1bd8 30278263 Packages
- 1609a515dc90070931cce55b2d5855986e1efa6a 5887404 Packages.gz
- 0d4dc60904a1142434e6e543cbcb7abb4091fd8c 4584763 Packages.bz2
+ 399150486184ab8fe2e1d74df24dfdc85730cbbf 24306886 Packages
+ 573b18bad64a717a2c1f5a89f6671d01ab159c07 4824868 Packages.gz
+ b27d7dc58f26000cd69e1388eb1af431cee7a5cb 3698153 Packages.bz2
 SHA256:
- 3e830b2f23de1f40109644ebabf6382be96bd5ca9487cd91926f28df376b0b3d 30278263 Packages
- ec686e9f9b5538ad5d98cc020fdba754f35c21a572d4914b69a2245a3afc614d 5887404 Packages.gz
- 8da01f001ca5df9bb67b534536651c1b0a824cc8053f3cadccba93943f284873 4584763 Packages.bz2
+ e41575d771e3abd9daaa69e9d1a924ca828e37d3b125cf5228482a9b455cc573 24306886 Packages
+ 884f29e69531fd719eadd0887962c936c7d43d2385f218b311bb52291ced18a5 4824868 Packages.gz
+ b98193ce70f31c50a3244ff0f8f3ecb34d5d60ff502cf615c550e01bc6d5a55d 3698153 Packages.bz2
