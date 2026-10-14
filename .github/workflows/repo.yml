@@ -1,0 +1,54 @@
+name: Update Sileo repository
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'debs/**'
+      - 'build_repo.py'
+      - 'index.html'
+      - '.github/workflows/repo.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: sileo-pages
+  cancel-in-progress: false
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build package index
+        run: python3 build_repo.py
+
+      - name: Commit updated index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Packages Packages.gz Packages.bz2 Release
+          if ! git diff --cached --quiet; then
+            git commit -m "Update package index"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - name: Prepare public files
+        run: |
+          mkdir -p _site/debs
+          cp index.html Release Packages Packages.gz Packages.bz2 _site/
+          cp -r debs/. _site/debs/
+          touch _site/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - uses: actions/deploy-pages@v4
