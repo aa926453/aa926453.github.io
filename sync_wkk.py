@@ -205,6 +205,15 @@ def main():
                 if mismatched: report['conflicts'].append({'key':list(k),'kept_source':origins[k],'rejected_source':r['effective_url'],'differences':mismatched})
                 continue
             seen[k]=f; origins[k]=r['effective_url']; merged.append((block,f))
+    # Compact index: newest Debian version per package and iPhone architecture.
+    latest={}
+    for block,f in merged:
+        if f['Architecture'] not in ('all','iphoneos-arm','iphoneos-arm64','iphoneos-arm64e'): continue
+        k=(f['Package'],f['Architecture'])
+        if k not in latest or subprocess.run(['dpkg','--compare-versions',f['Version'],'gt',latest[k][1]['Version']],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode==0:
+            latest[k]=(block,f)
+    report['summary']['before_compaction']=len(merged)
+    merged=list(latest.values())
     data=''.join(b+'\n\n' for b,f in merged).encode()
     files={'Packages':data,'Packages.gz':gzip.compress(data,mtime=0),'Packages.bz2':bz2.compress(data)}
     release=(ROOT/'Release').read_text().split('MD5Sum:',1)[0].split('SHA1:',1)[0].split('SHA256:',1)[0]
