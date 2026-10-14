@@ -6,16 +6,16 @@ Version: 1.0
 Architectures: all appletvos-arm64 darwin-amd64 darwin-arm64 iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: aa926453 的 Sileo 软件源
-Date: Wed, 14 Oct 2026 06:48:23 +0000
+Date: Wed, 14 Oct 2026 07:04:57 +0000
 MD5Sum:
- 0f38f9c9c63e9ef59adba83f378e48ff 32508069 Packages
- 7122ff2c3079dec7b0b5819f32e2ca4c 6357264 Packages.gz
- c78a300ff2a052ddc0eafd881e054a56 4952168 Packages.bz2
+ f479c7bf9325e1819cbdcba627c13483 30278263 Packages
+ 4145e5a7d025a542800f74eee1d56ba8 5887404 Packages.gz
+ 9ead1d0e8a6a85269b6f3ec98d6d3029 4584763 Packages.bz2
 SHA1:
- fe8fbd047ff5dce645e789f2873be68e3fa0f9cf 32508069 Packages
- 6b90e700e8cc4b1cdfd6fcaaf70cb29c9db66048 6357264 Packages.gz
- e60253b5dfa39379617c91ab8851ddead52c97a6 4952168 Packages.bz2
+ 3666950b0faea2b01be3997990fecefdbb7c1bd8 30278263 Packages
+ 1609a515dc90070931cce55b2d5855986e1efa6a 5887404 Packages.gz
+ 0d4dc60904a1142434e6e543cbcb7abb4091fd8c 4584763 Packages.bz2
 SHA256:
- dca5e5533901d11206faa3ae6447adea7f8b213261dcdb1f6cda2d7ca0e7a34b 32508069 Packages
- e0a45d4cea018bdf8a4455c50399cfcc0b7524d43d35df0633759f54cd9e59e9 6357264 Packages.gz
- 42cf3cb347eb82ae8f3f6c8d02d2ccb0c843fffc083291aa347f27a459a3f0bd 4952168 Packages.bz2
+ 3e830b2f23de1f40109644ebabf6382be96bd5ca9487cd91926f28df376b0b3d 30278263 Packages
+ ec686e9f9b5538ad5d98cc020fdba754f35c21a572d4914b69a2245a3afc614d 5887404 Packages.gz
+ 8da01f001ca5df9bb67b534536651c1b0a824cc8053f3cadccba93943f284873 4584763 Packages.bz2
