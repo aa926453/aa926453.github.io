@@ -6,7 +6,7 @@ Version: 1.0
 Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: aa926453 的 Sileo 软件源
-Date: Wed, 14 Oct 2026 04:50:43 +0000
+Date: Wed, 14 Oct 2026 04:53:05 +0000
 MD5Sum:
  d41d8cd98f00b204e9800998ecf8427e 0 Packages
  4a4dd3598707603b3f76a2378a4504aa 20 Packages.gz
