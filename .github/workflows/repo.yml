@@ -7,6 +7,7 @@ on:
       - 'debs/**'
       - 'build_repo.py'
       - 'index.html'
+      - 'CydiaIcon.png'
       - '.github/workflows/repo.yml'
   workflow_dispatch:
 
@@ -43,7 +44,7 @@ jobs:
       - name: Prepare public files
         run: |
           mkdir -p _site/debs
-          cp index.html Release Packages Packages.gz Packages.bz2 _site/
+          cp index.html CydiaIcon.png Release Packages Packages.gz Packages.bz2 _site/
           cp -r debs/. _site/debs/
           touch _site/.nojekyll
 
