@@ -5,15 +5,7 @@
       "enabled": true
     },
     {
-      "url": "https://wkkyy00.github.io/",
-      "enabled": true
-    },
-    {
-      "url": "https://repo.cypwn.xyz/",
-      "enabled": true
-    },
-    {
-      "url": "https://rootless.zq666.eu.org/",
+      "url": "https://apt.002599.xyz/",
       "enabled": true
     },
     {
@@ -25,7 +17,7 @@
       "enabled": true
     },
     {
-      "url": "https://lans233.github.io/",
+      "url": "https://axs.yourepo.com/",
       "enabled": true
     },
     {
@@ -33,15 +25,7 @@
       "enabled": true
     },
     {
-      "url": "https://0xkuj.yourepo.com/",
-      "enabled": true
-    },
-    {
-      "url": "https://apt.82flex.com/",
-      "enabled": true
-    },
-    {
-      "url": "https://cydia.dumpapp.com/",
+      "url": "https://zhuti.iosios.net/",
       "enabled": true
     },
     {
@@ -53,6 +37,18 @@
       "enabled": true
     },
     {
+      "url": "https://apt.wxhbts.com/",
+      "enabled": true
+    },
+    {
+      "url": "https://qi-ting-zhang.github.io/sileo/",
+      "enabled": true
+    },
+    {
+      "url": "https://jimkanuo.github.io/apt-repo/",
+      "enabled": true
+    },
+    {
       "url": "https://laileld.github.io/repo/",
       "enabled": true
     },
@@ -61,11 +57,11 @@
       "enabled": true
     },
     {
-      "url": "https://qi-ting-zhang.github.io/sileo/",
+      "url": "https://lclrc.github.io/repo/",
       "enabled": true
     },
     {
-      "url": "https://lclrc.github.io/repo/",
+      "url": "https://MrSuuu.github.io/Sileo/",
       "enabled": true
     },
     {
@@ -77,31 +73,11 @@
       "enabled": true
     },
     {
-      "url": "https://lenglengyu.com/",
-      "enabled": true
-    },
-    {
-      "url": "https://acreson.github.io/mirror-rootless/",
-      "enabled": true
-    },
-    {
       "url": "https://repo.cydiabc.top/",
       "enabled": true
     },
     {
-      "url": "https://alias20.gitlab.io/apt/",
-      "enabled": true
-    },
-    {
-      "url": "https://repo.anamy.gay/",
-      "enabled": true
-    },
-    {
-      "url": "https://repo.anthopak.dev/",
-      "enabled": true
-    },
-    {
-      "url": "https://flex2areo.github.io/",
+      "url": "https://apt.cydia.pro/",
       "enabled": true
     },
     {
@@ -109,23 +85,23 @@
       "enabled": true
     },
     {
-      "url": "https://apt.bitilly.cn/",
-      "enabled": true
-    },
-    {
-      "url": "https://brendonjkding.github.io/",
-      "enabled": true
+      "url": "http://apt.thebigboss.org/repofiles/cydia/",
+      "enabled": true,
+      "suite": "stable",
+      "components": [
+        "main"
+      ]
     },
     {
       "url": "https://repo.chariz.com/",
       "enabled": true
     },
     {
-      "url": "https://dhinakg.github.io/repo/",
+      "url": "https://apt.cydiakk.com/",
       "enabled": true
     },
     {
-      "url": "https://mlgm66.github.io/",
+      "url": "https://repo.cypwn.xyz/",
       "enabled": true
     },
     {
@@ -133,180 +109,53 @@
       "enabled": true
     },
     {
-      "url": "https://ichitaso.com/apt/",
+      "url": "https://huayuarc.github.io/",
       "enabled": true
     },
     {
-      "url": "https://repo.icrazeios.com/",
+      "url": "https://lans233.github.io/",
       "enabled": true
     },
     {
-      "url": "http://aquawu.github.io/igg/",
-      "enabled": true
-    },
-    {
-      "url": "https://liam.page/apt/",
-      "enabled": true
-    },
-    {
-      "url": "https://34306.github.io/",
-      "enabled": true
-    },
-    {
-      "url": "https://lizynz.github.io/",
-      "enabled": true
-    },
-    {
-      "url": "https://lzsxcl.github.io/repo/",
-      "enabled": true
-    },
-    {
-      "url": "http://repo.rpgfarm.com/",
-      "enabled": true
-    },
-    {
-      "url": "https://michaelmelita1.github.io/",
-      "enabled": true
-    },
-    {
-      "url": "https://repo.misty.moe/apt/",
-      "enabled": true
-    },
-    {
-      "url": "https://miticollo.github.io/repos/my/",
-      "enabled": true
-    },
-    {
-      "url": "https://mtac.app/repo/",
-      "enabled": true
-    },
-    {
-      "url": "https://nathan4s.lol/repo/",
-      "enabled": true
-    },
-    {
-      "url": "https://nathan4s.lol/nathanlr/",
-      "enabled": true
-    },
-    {
-      "url": "https://itznebbs.github.io/",
-      "enabled": true
-    },
-    {
-      "url": "https://jailrepo.initnil.com/",
-      "enabled": true
-    },
-    {
-      "url": "https://nicho1asdev.github.io/repo/",
-      "enabled": true
+      "url": "https://ellekit.space/",
+      "enabled": false,
+      "reason": "Bootstrap/system source: add independently; aggregation disabled by default"
     },
     {
       "url": "https://opa334.github.io/",
       "enabled": true
     },
     {
-      "url": "https://repo.p0358.net/",
-      "enabled": true
-    },
-    {
-      "url": "https://paisseon.github.io/",
-      "enabled": true
-    },
-    {
-      "url": "https://repo.pixelomer.com/",
-      "enabled": true
-    },
-    {
-      "url": "https://poomsmart.github.io/repo/",
-      "enabled": true
-    },
-    {
-      "url": "https://randy-420.github.io/",
-      "enabled": true
-    },
-    {
-      "url": "https://skitty.xyz/repo/",
-      "enabled": true
-    },
-    {
-      "url": "https://skypain.github.io/repo/",
-      "enabled": true
-    },
-    {
-      "url": "https://0xilis.github.io/rootless/",
-      "enabled": true
-    },
-    {
-      "url": "https://soda-ldz.yourepo.com/",
-      "enabled": true
-    },
-    {
-      "url": "https://spartacusdev.github.io/",
-      "enabled": true
-    },
-    {
-      "url": "https://sparkdev.me/",
-      "enabled": true
-    },
-    {
-      "url": "https://stemgrade.github.io/",
-      "enabled": true
-    },
-    {
-      "url": "https://sudo9000.github.io/",
-      "enabled": true
-    },
-    {
-      "url": "https://apt.sutuplus.com/",
-      "enabled": true
-    },
-    {
-      "url": "https://ter4m.yourepo.com/",
-      "enabled": true
-    },
-    {
-      "url": "https://the-samminater.github.io/repo/",
-      "enabled": true
-    },
-    {
-      "url": "https://themepro.yourepo.com/",
-      "enabled": true
-    },
-    {
-      "url": "http://tigisoftware.com/repo/",
-      "enabled": true
-    },
-    {
-      "url": "https://troppp.github.io/litten-repo-mirror/",
-      "enabled": true
-    },
-    {
-      "url": "https://invalidunit.github.io/repo/",
-      "enabled": true
-    },
-    {
-      "url": "https://apt.002599.xyz/",
-      "enabled": true
-    },
-    {
-      "url": "https://axs.yourepo.com/",
-      "enabled": true
-    },
-    {
-      "url": "https://jimkanuo.github.io/apt-repo/",
-      "enabled": true
-    },
-    {
-      "url": "https://MrSuuu.github.io/Sileo/",
-      "enabled": true
-    },
-    {
-      "url": "https://huayuarc.github.io/",
-      "enabled": true
-    },
-    {
       "url": "https://apt.owngoal.dev/",
       "enabled": true
+    },
+    {
+      "url": "https://apt.procurs.us/",
+      "enabled": false,
+      "reason": "Bootstrap/system source: add independently; aggregation disabled by default",
+      "suite": "1900",
+      "components": [
+        "main"
+      ]
+    },
+    {
+      "url": "https://roothide.github.io/procursus/",
+      "enabled": false,
+      "reason": "Bootstrap/system source: add independently; aggregation disabled by default",
+      "suite": "iphoneos-arm64e/1900",
+      "components": [
+        "main"
+      ]
+    },
+    {
+      "url": "https://roothide.github.io/",
+      "enabled": false,
+      "reason": "Bootstrap/system source: add independently; aggregation disabled by default"
+    },
+    {
+      "url": "https://repo.getsileo.app/",
+      "enabled": false,
+      "reason": "Bootstrap/system source: add independently; aggregation disabled by default"
     }
   ]
 }
