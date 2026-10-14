@@ -21,20 +21,27 @@ def records(data):
         out.append((block,fields))
     return out
 
-# Fetch and validate before modifying local index. Failure stops deployment.
-with urlopen(Request(BASE+'Packages.bz2',headers={'User-Agent':'SileoIndexSync/1.0'}),timeout=60) as response:
-    raw=response.read(8*1024*1024+1)
-if len(raw)>8*1024*1024:raise ValueError('Index too large')
-remote=records(bz2.decompress(raw))
-if not remote:raise ValueError('Empty upstream index')
+# Fetch both indexes before touching local output. No deb downloads.
 converted=[]
-for block,f in remote:
-    url=urljoin(BASE,f['Filename'])
-    if urlparse(url).scheme!='https' or urlparse(url).hostname!='wkkyy00.github.io':
-        raise ValueError('Unexpected upstream download host')
-    lines=[line for line in block.splitlines() if not line.startswith(('Filename:','X-Upstream-Source:'))]
-    lines+=['Filename: '+url,'X-Upstream-Source: '+BASE]
-    converted.append(('\n'.join(lines),f))
+remote=[]
+for base, index, decompress in [
+    (BASE, 'Packages.bz2', bz2.decompress),
+    ('https://byg.iosios.net/', 'Packages.gz', gzip.decompress),
+]:
+    with urlopen(Request(base+index,headers={'User-Agent':'SileoIndexSync/1.0'}),timeout=60) as response:
+        raw=response.read(8*1024*1024+1)
+    if len(raw)>8*1024*1024:raise ValueError('Index too large')
+    upstream=records(decompress(raw))
+    if not upstream:raise ValueError('Empty upstream index: '+base)
+    remote.extend(upstream)
+    print(base, 'records:',len(upstream))
+    for block,f in upstream:
+        url=urljoin(base,f['Filename'])
+        if urlparse(url).scheme!='https' or urlparse(url).hostname!=urlparse(base).hostname:
+            raise ValueError('Unexpected upstream download host: '+url)
+        lines=[line for line in block.splitlines() if not line.startswith(('Filename:','X-Upstream-Source:'))]
+        lines+=['Filename: '+url,'X-Upstream-Source: '+base]
+        converted.append(('\n'.join(lines),f))
 subprocess.run([sys.executable,str(ROOT/'build_repo.py')],check=True)
 local=records((ROOT/'Packages').read_bytes())
 # Local package wins for the same identifier/version/architecture.
