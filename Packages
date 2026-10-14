@@ -47777,23 +47777,24 @@ X-Upstream-Source: https://wwg135.github.io/
 X-Upstream-Filename: ./debs/onesettings_2.2_iphoneos-arm64.deb
 
 Package: org.coolstar.sileo
-Version: 2.5
 Architecture: iphoneos-arm64
-Maintainer: Amy While <me@anamy.gay>
-Depends: firmware (>= 11.0), firmware (>= 12.2) | org.swift.libswift (>= 5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
-Size: 2805004
-MD5sum: 4ec21d885fc43f1c5c55fa468d16aa6a
-SHA1: d0d9a01d6ec290c7e5476166a4b8310d70882cd6
-SHA256: fdb1a05b27fcf2f7b9cd9cdc902a5be8394aaea4f90596303c4731e9ec4c5a31
+Version: 2.5.1
 Section: Packaging
+Maintainer: Amy While <me@anamy.gay>
+Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
+Size: 2909972
+MD5sum: 1a63e7c8df30e616f11977a1fcb13797
+SHA1: c2ea7d3cd4f11a9a0f74c115d19df07c3e62f13f
+SHA256: 8e3c90e5a7d32f4ca207a0ac30d3cfa8a13dca86a2b4e11cb3f9e5c68d7bc97a
+SHA512: f59e34d85addcdf208f6f737bc3700fb36d9ae4a020fd132aa1a53d08ae347b8d8001b53d4f97104a1edad707d21324b693142cae41d7a1dcc9539a7b0709be6
 Description: A modern APT package manager frontend
+Name: Sileo
 Author: Amy While <me@anamy.gay>
 Icon: https://getsileo.app/img/icon.png
-Name: Sileo
-Sileodepiction: https://featuredpage.getsileo.app/depiction.json
-Filename: https://wwg135.github.io/debs/org.coolstar.sileo_2.5_iphoneos-arm64.deb
-X-Upstream-Source: https://wwg135.github.io/
-X-Upstream-Filename: ./debs/org.coolstar.sileo_2.5_iphoneos-arm64.deb
+SileoDepiction: https://featuredpage.getsileo.app/depiction.json
+Filename: https://repo.getsileo.app/pool/org.coolstar.sileo_2.5.1_iphoneos-arm64.deb
+X-Upstream-Source: https://repo.getsileo.app/
+X-Upstream-Filename: ./pool/org.coolstar.sileo_2.5.1_iphoneos-arm64.deb
 
 Package: org.coolstar.sileo
 Version: 2.5.1-13
@@ -267918,4 +267919,105 @@ SHA256: 70466e8f4fd66f800cc92fca67fd9efcb5c59d166e88a17a322a19373f64602f
 Filename: https://huayuarc.github.io/debs/zqbb.wechatfuk-1.0.2-rootless.deb
 X-Upstream-Source: https://huayuarc.github.io/
 X-Upstream-Filename: debs/zqbb.wechatfuk-1.0.2-rootless.deb
+
+Package: libzstd1
+Architecture: iphoneos-arm
+Version: 1.5.0
+Section: Libraries
+Maintainer: Aarnav Tale <aarnav@tale.me>
+Installed-Size: 1192
+Depends: lz4, lzma
+Size: 304812
+MD5sum: 341308b19358c4daa93f60a7ff2ba5a1
+SHA1: 77c2b36fb189361ccebbeb3207c98dfe14bf8cc1
+SHA256: 8bddfd21ec9e5ce343c3b39281b2b9281a84c8a48f95eb50659d627fdc37fa0a
+SHA512: e0350f38f6120ee34bf570660eabe2aaa84fdbd87b9611213d4f93149c495bd17dee8c852be097ee509ce8d4f7bf50b6b45bf58672f93cfae3cd493c376517ae
+Description: fast lossless compression algorithm
+ Zstd, short for Zstandard, is a fast lossless compression algorithm, targeting
+ real-time compression scenarios at zlib-level compression ratio.
+ .
+ This package contains the shared library.
+Filename: https://repo.getsileo.app/pool/libzstd1_1.5.0_iphoneos-arm.deb
+X-Upstream-Source: https://repo.getsileo.app/
+X-Upstream-Filename: ./pool/libzstd1_1.5.0_iphoneos-arm.deb
+
+Package: lz4
+Architecture: iphoneos-arm
+Version: 1.7.5-1
+Multi-Arch: foreign
+Section: Archiving
+Maintainer: Amy While <me@anamy.gay>
+Installed-Size: 1032
+Pre-Depends: dpkg (>= 1.14.25-8)
+Size: 81660
+MD5sum: d740f1157ab8ead985f3565620c746eb
+SHA1: d35fc9b50f9bce05ad3e0225976f1fe1060c5420
+SHA256: 46fe855b143a758b6c7d9c78a8db9911ef6b079cd5ebd1c527f44dd1ba76720a
+SHA512: bad864fa54e122909962d15ff9b1e1b83423c2e43d1142f62d59ef82bb432e7c207c52c4d52ff7d64d6af4a063f807cc16a93f28d61480eccc211acfb636bb92
+Homepage: http://tukaani.org/lzma/
+Description: Extremely Fast Compression algorithm
+Name: LZ4
+Filename: https://repo.getsileo.app/pool/lz4_1.7.5-1_iphoneos-arm.deb
+X-Upstream-Source: https://repo.getsileo.app/
+X-Upstream-Filename: ./pool/lz4_1.7.5-1_iphoneos-arm.deb
+
+Package: org.coolstar.sileo
+Architecture: iphoneos-arm
+Version: 2.5.1
+Section: Packaging
+Maintainer: Amy While <me@anamy.gay>
+Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
+Size: 2906812
+MD5sum: e752f751f1ec584bce16328403cd6eeb
+SHA1: 7b8409ac962b1f48abf6dc93ef962681c2c036aa
+SHA256: 85f4d93ce78d2a84b776abf91adcbdac41746e751aa3506daaceddabfbf38599
+SHA512: 3e89f6070e9f15200b1d868f8fafa2ead2bdfa77dc7680ffdd89a94232383a83f81ec6e21db9bdbfdde98bdefb9f624cc29a913ccb2a027196782ad7597b2706
+Description: A modern APT package manager frontend
+Name: Sileo
+Author: Amy While <me@anamy.gay>
+Icon: https://getsileo.app/img/icon.png
+SileoDepiction: https://featuredpage.getsileo.app/depiction.json
+Filename: https://repo.getsileo.app/pool/org.coolstar.sileo_2.5.1_iphoneos-arm.deb
+X-Upstream-Source: https://repo.getsileo.app/
+X-Upstream-Filename: ./pool/org.coolstar.sileo_2.5.1_iphoneos-arm.deb
+
+Package: org.coolstar.sileonightly
+Architecture: iphoneos-arm
+Version: 2.5+20230608.1686249632.eece58a
+Section: Packaging
+Maintainer: Amy While <me@anamy.gay>
+Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
+Size: 2891824
+MD5sum: 3e915b0540511c214728b1bbfe4471b5
+SHA1: f0fe53e7bb6030398776876064438753d5a52f5e
+SHA256: 857e33789aa502f11cb9a8bc1c09b836a4e04c9aaf81d8dc254b2052a903fb43
+SHA512: ae38b31ac479d5acccdceee4a581066f1ec31220306d33ed993ac38e36ad4312e19ed18213dbdf24173f5d895faf266f58eb61d8df1924af8272f71bfefaa37a
+Description: A modern APT package manager frontend
+Name: Sileo (Nightly Channel)
+Author: Amy While <me@anamy.gay>
+Icon: https://github.com/Sileo/Sileo/raw/stable/Icons/Nightly/Nightly_iOS.png
+SileoDepiction: https://featuredpage.getsileo.app/depiction.json
+Filename: https://repo.getsileo.app/pool/org.coolstar.sileonightly_2.5+20230608.1686249632.eece58a_iphoneos-arm.deb
+X-Upstream-Source: https://repo.getsileo.app/
+X-Upstream-Filename: ./pool/org.coolstar.sileonightly_2.5+20230608.1686249632.eece58a_iphoneos-arm.deb
+
+Package: org.coolstar.sileonightly
+Architecture: iphoneos-arm64
+Version: 2.5+20230608.1686249632.eece58a
+Section: Packaging
+Maintainer: Amy While <me@anamy.gay>
+Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
+Size: 2895244
+MD5sum: 3842d9651fac9e9389862da0a2eb2b72
+SHA1: a2883fe5c8b416280b1da651fdaca0e6ad80d01d
+SHA256: 134ac93dcc677bd2935f98d4e159ea7ca5a60ba2976f0800ae104cfdf9ba9f6b
+SHA512: c7e0ec54f3bd8bc6fdfac72d4c96d1cd04ce4ed713546277051eabca8e48ee93854c85de4589afa6e0b984e83d5521497028f68e2e1e872b607a7cc553e9afb7
+Description: A modern APT package manager frontend
+Name: Sileo (Nightly Channel)
+Author: Amy While <me@anamy.gay>
+Icon: https://github.com/Sileo/Sileo/raw/stable/Icons/Nightly/Nightly_iOS.png
+SileoDepiction: https://featuredpage.getsileo.app/depiction.json
+Filename: https://repo.getsileo.app/pool/org.coolstar.sileonightly_2.5+20230608.1686249632.eece58a_iphoneos-arm64.deb
+X-Upstream-Source: https://repo.getsileo.app/
+X-Upstream-Filename: ./pool/org.coolstar.sileonightly_2.5+20230608.1686249632.eece58a_iphoneos-arm64.deb
 
