@@ -19,6 +19,8 @@
     {"url": "https://repo.cydiabc.top/", "enabled": true},
     {"url": "https://apt.cydia.pro/", "enabled": true},
     {"url": "https://axs66.github.io/pro/", "enabled": true},
-    {"url": "https://huayuarc.github.io/", "enabled": true}
+    {"url": "https://huayuarc.github.io/", "enabled": true},
+    {"url": "https://zhuti.iosios.net/", "enabled": true},
+    {"url": "https://repo.getsileo.app/", "enabled": true}
   ]
 }
