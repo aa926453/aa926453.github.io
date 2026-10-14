@@ -40471,6 +40471,25 @@ Filename: https://axs.yourepo.com/debs/screencore_1.0.6-1_iphoneos-arm64.deb
 X-Upstream-Source: https://axs.yourepo.com/
 X-Upstream-Filename: debs/screencore_1.0.6-1_iphoneos-arm64.deb
 
+Package: com.yourepo.axs.screenlocktime
+Architecture: iphoneos-arm64
+Name: ScreenLock Time
+Version: 5.2.0-7
+Description: 为原生锁屏时间添加五色渐变，沿用系统字体,兼容BigTime。
+Author: Axs <qiaozhani000@163.com>
+Section: System (Axs-Tweaks)
+Depends: mobilesubstrate, preferenceloader
+Size: 61982
+Maintainer: Axs <qiaozhani000@163.com>
+Md5sum: 45f8d473dbc6d240d347e4ec25e1db7f
+SHA256: 6da0ac84f4f696d03268f00cb5cc6cad2f0cebac0079e076f1c739e3845ede68
+Depiction: https://axs.yourepo.com/pack/screenlocktime
+SileoDepiction: https://axs.yourepo.com/sileo/depiction/screenlocktime
+Icon: https://axs66.github.io/pro/icon/screenlocktime.png
+Filename: https://axs.yourepo.com/debs/screenlocktime_5.2.0-7_iphoneos-arm64.deb
+X-Upstream-Source: https://axs.yourepo.com/
+X-Upstream-Filename: debs/screenlocktime_5.2.0-7_iphoneos-arm64.deb
+
 Package: com.yourepo.axs.screenshellpro
 Architecture: iphoneos-arm64
 Name: ScreenShell Pro
@@ -77774,45 +77793,45 @@ X-Upstream-Filename: debs/com.zegeyoudaoli.home27_2.1.62_iphoneos-arm64e.deb
 
 Package: com.zegeyoudaoli.liquidass27
 Name: Liquid (Gl)ass 27（rootless 测试）
-Version: 1.0.0-55+rootless
+Version: 1.0.0-73+rootless
 Architecture: iphoneos-arm64
 Description: 基于原作者 dylv 的 Liquid (Gl)ass 项目维护自用。
 Maintainer: dylv&泽哥
 Author: dylv&泽哥
-Depiction: https://MrSuuu.github.io/Sileo/depictions/liquidass27.html?v=18
-Sileodepiction: https://MrSuuu.github.io/Sileo/depictions/liquidass27.json?v=18
+Depiction: https://MrSuuu.github.io/Sileo/depictions/liquidass27.html?v=19
+Sileodepiction: https://MrSuuu.github.io/Sileo/depictions/liquidass27.json?v=19
 Section: Tweaks
 Depends: ellekit, firmware (>= 14.0), firmware (<< 26.0), preferenceloader, com.opa334.altlist
 Conflicts: dylv.liquidass, dylv.zege.liquidass, dylv.blurless
 Replaces: dylv.liquidass, dylv.zege.liquidass, dylv.blurless
 Icon: https://MrSuuu.github.io/Sileo/depictions/icon27.png
-Size: 3618228
-MD5sum: f88aaf328d9bd2be8706edde186adf01
-SHA256: 9f37d509dc93bef91cfa04eae3927385262c7388bb1d5246422a23d690187283
-Filename: https://MrSuuu.github.io/Sileo/debs/com.zegeyoudaoli.liquidass27_1.0.0-55+rootless_iphoneos-arm64.deb
+Size: 3602672
+MD5sum: 3687bac34ca45b7fdeeb478f2b11b6a3
+SHA256: 30da0d638d74c2266c1d6954f10e5eed217e46b1e8bfae75c31c15c834565332
+Filename: https://MrSuuu.github.io/Sileo/debs/com.zegeyoudaoli.liquidass27_1.0.0-73+rootless_iphoneos-arm64.deb
 X-Upstream-Source: https://MrSuuu.github.io/Sileo/
-X-Upstream-Filename: debs/com.zegeyoudaoli.liquidass27_1.0.0-55+rootless_iphoneos-arm64.deb
+X-Upstream-Filename: debs/com.zegeyoudaoli.liquidass27_1.0.0-73+rootless_iphoneos-arm64.deb
 
 Package: com.zegeyoudaoli.liquidass27
 Name: Liquid (Gl)ass 27
-Version: 1.0.0-70
+Version: 1.0.0-73
 Architecture: iphoneos-arm64e
 Description: 基于原作者 dylv 的 Liquid (Gl)ass 项目维护自用。
 Maintainer: dylv&泽哥
 Author: dylv&泽哥
-Depiction: https://MrSuuu.github.io/Sileo/depictions/liquidass27.html?v=18
-Sileodepiction: https://MrSuuu.github.io/Sileo/depictions/liquidass27.json?v=18
+Depiction: https://MrSuuu.github.io/Sileo/depictions/liquidass27.html?v=19
+Sileodepiction: https://MrSuuu.github.io/Sileo/depictions/liquidass27.json?v=19
 Section: Tweaks
 Depends: ellekit, firmware (>= 14.0), firmware (<< 26.0), preferenceloader, com.opa334.altlist
 Conflicts: dylv.liquidass, dylv.zege.liquidass, dylv.blurless
 Replaces: dylv.liquidass, dylv.zege.liquidass, dylv.blurless
 Icon: https://MrSuuu.github.io/Sileo/depictions/icon27.png
-Size: 3616652
-MD5sum: 9a743ac2fa92b3e934b7dfe81779bd7f
-SHA256: 2973eb917493e951e172bd82bf8bf358662e8a8ba8af84ed04c8c4f77194c5d4
-Filename: https://MrSuuu.github.io/Sileo/debs/com.zegeyoudaoli.liquidass27_1.0.0-70_iphoneos-arm64e.deb
+Size: 3617466
+MD5sum: 1ae0d4513856b3f9881489097ab97896
+SHA256: b8aa96677af199174519df2af2260942c17c8abbac576150c97707c36662061d
+Filename: https://MrSuuu.github.io/Sileo/debs/com.zegeyoudaoli.liquidass27_1.0.0-73_iphoneos-arm64e.deb
 X-Upstream-Source: https://MrSuuu.github.io/Sileo/
-X-Upstream-Filename: debs/com.zegeyoudaoli.liquidass27_1.0.0-70_iphoneos-arm64e.deb
+X-Upstream-Filename: debs/com.zegeyoudaoli.liquidass27_1.0.0-73_iphoneos-arm64e.deb
 
 Package: dylv.liquidass
 Name: Liquid (Gl)ass · 泽哥维护兼容版（rootless 测试）
@@ -249348,6 +249367,30 @@ Filename: https://axs66.github.io/pro/debs/com.axs.rma_1.0_iphoneos-arm64.deb
 X-Upstream-Source: https://axs66.github.io/pro/
 X-Upstream-Filename: ./debs/com.axs.rma_1.0_iphoneos-arm64.deb
 
+Package: com.axs.screenlocktime
+Version: 5.2.0-7
+Architecture: iphoneos-arm64
+Maintainer: Axs
+Installed-Size: 496
+Depends: mobilesubstrate, preferenceloader
+Size: 62134
+MD5sum: d8fca2a7c255ef9ad02d1f77d1262d58
+SHA1: a649a80d165e2138837c884da1eca2515a1308f9
+SHA256: b90d7dabd241e7fe46a833c24dca324d6d8a4bc3cce560fe037ff78898ecea0d
+Section: Axs-Tweaks
+Description: 为原生锁屏时间添加五色渐变，沿用系统字体。
+ * 支持自定义五种颜色，固定从左到右渐变。
+ * 可选日期与农历渐变，使用系统显示的文字。
+ * 支持调整时间大小与上下位置，设置即时生效。
+ * 支持兼容BigTime插件。
+Author: Axs
+Icon: https://axs66.github.io/pro/icon/screenlocktime.png
+Name: Screen lock time
+Sileodepiction: https://axs66.github.io/pro/sileodepiction/screenlocktime/js.json
+Filename: https://axs66.github.io/pro/debs/com.axs.screenlocktime_5.2.0-7_iphoneos-arm64.deb
+X-Upstream-Source: https://axs66.github.io/pro/
+X-Upstream-Filename: ./debs/com.axs.screenlocktime_5.2.0-7_iphoneos-arm64.deb
+
 Package: com.axs.screenshellpro
 Version: 5.2.0-61
 Architecture: iphoneos-arm64
@@ -253620,6 +253663,44 @@ SHA256: 81f61553026a8870135279ac9c659473b7cca43ab3c01104d528668dae981968
 Filename: https://huayuarc.github.io/debs/com.crassna.appcardlite-3.3.3-END-rootless.deb
 X-Upstream-Source: https://huayuarc.github.io/
 X-Upstream-Filename: debs/com.crassna.appcardlite-3.3.3-END-rootless.deb
+
+Package: com.crctdd.autocopyverify
+Name: Auto Copy Verify
+Description: 自动复制短信、系统邮件、部分主流第三方邮件的验证码到剪切板，第三方邮件只能从临时通知框内获取，获取不到则无法复制；无设置项。（支持iOS 15-17）
+Maintainer: crctdd
+Author: crctdd
+Section: Tweaks
+Depends: mobilesubstrate, firmware (>= 15.0), firmware (<< 18.0)
+Architecture: iphoneos-arm64e
+Version: 0.0.5
+Installed-Size: 740
+icon: https://huayuarc.github.io/icon/disablecutpop.jpg
+Size: 77020
+MD5sum: 9ea7f762e546d706a8a49948a783d3ad
+SHA1: 
+SHA256: 2679502f133174d7974d257037d8f12cccbb4a68e588661763995e99fbb1f711
+Filename: https://huayuarc.github.io/debs/com.crctdd.autocopyverify-0.0.5-roothide.deb
+X-Upstream-Source: https://huayuarc.github.io/
+X-Upstream-Filename: debs/com.crctdd.autocopyverify-0.0.5-roothide.deb
+
+Package: com.crctdd.autocopyverify
+Name: Auto Copy Verify
+Description: 自动复制短信、系统邮件、部分主流第三方邮件的验证码到剪切板，第三方邮件只能从临时通知框内获取，获取不到则无法复制；无设置项。（支持iOS 15-17）
+Maintainer: crctdd
+Author: crctdd
+Section: Tweaks
+Depends: mobilesubstrate, firmware (>= 15.0), firmware (<< 18.0)
+Architecture: iphoneos-arm64
+Version: 0.0.5
+Installed-Size: 1524
+icon: https://huayuarc.github.io/icon/disablecutpop.jpg
+Size: 100760
+MD5sum: f727504dfa7ffe141862227b98487e15
+SHA1: 
+SHA256: 42ae91e492c341c2861add7ba2ccdc5b3d80de06e1de56e2f2e3362394345625
+Filename: https://huayuarc.github.io/debs/com.crctdd.autocopyverify-0.0.5-rootless.deb
+X-Upstream-Source: https://huayuarc.github.io/
+X-Upstream-Filename: debs/com.crctdd.autocopyverify-0.0.5-rootless.deb
 
 Package: com.crctdd.choicy-patch
 Name: Choicy Patch
@@ -260786,16 +260867,16 @@ Author: 半生年华
 Section: Tweaks
 Depends: mobilesubstrate, preferenceloader
 Architecture: iphoneos-arm64e
-Version: 1.3.1
-Installed-Size: 2616
+Version: 1.3.2
+Installed-Size: 6768
 icon: https://huayuarc.github.io/icon/NoAds@2x.png
-Size: 765864
-MD5sum: 2b2f2a28158215a080f6ddf03ea2514e
+Size: 1018232
+MD5sum: c3443a29a36238a02a05c3e14f74aeee
 SHA1: 
-SHA256: c4ee712d376462ffc58b2a82f897038bffc6515e5777b506f90b206e4616db99
-Filename: https://huayuarc.github.io/debs/com.noads.tweka-1.3.1-roothide.deb
+SHA256: 6519099ff081871c7a88b3857372090e9cc461236ff7eeac0790ef656e868dd9
+Filename: https://huayuarc.github.io/debs/com.noads.tweka-1.3.2-roothide.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.noads.tweka-1.3.1-roothide.deb
+X-Upstream-Filename: debs/com.noads.tweka-1.3.2-roothide.deb
 
 Package: com.noads.tweka
 Name: NoAdsX
@@ -260805,16 +260886,16 @@ Author: 半生年华
 Section: Tweaks
 Depends: mobilesubstrate, preferenceloader
 Architecture: iphoneos-arm64
-Version: 1.3.1
-Installed-Size: 2616
+Version: 1.3.2
+Installed-Size: 6768
 icon: https://huayuarc.github.io/icon/NoAds@2x.png
-Size: 767952
-MD5sum: 82d85d4e4bd67eeb40f721e1ea5ee70c
+Size: 1020104
+MD5sum: 760edd97a96df65c25ff6cee15c5017e
 SHA1: 
-SHA256: d6ee3ffc665be31d52e05d3c667bd9930ee49140d196853546ad4dc442d534ef
-Filename: https://huayuarc.github.io/debs/com.noads.tweka-1.3.1-rootless.deb
+SHA256: 7a897a1445748c4f75e7accbb307f6aa3f41c944cd4f3076b121c76f4fea3706
+Filename: https://huayuarc.github.io/debs/com.noads.tweka-1.3.2-rootless.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.noads.tweka-1.3.1-rootless.deb
+X-Upstream-Filename: debs/com.noads.tweka-1.3.2-rootless.deb
 
 Package: com.opa334.trollstorelite
 Name: TrollStore Lite
