@@ -6,10 +6,13 @@ on:
     paths:
       - 'debs/**'
       - 'build_repo.py'
+      - 'sync_wkk.py'
       - 'index.html'
       - 'CydiaIcon.png'
       - '.github/workflows/repo.yml'
   workflow_dispatch:
+  schedule:
+    - cron: '17 * * * *'
 
 permissions:
   contents: write
@@ -27,7 +30,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Build package index
-        run: python3 build_repo.py
+        run: python3 sync_wkk.py
 
       - name: Commit updated index
         run: |
