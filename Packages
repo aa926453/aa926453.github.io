@@ -33,6 +33,50 @@ MD5sum: 0d82b87a44eb8b394a31a4e7e14d2425
 SHA1: cb834bf1d6f211ded122bc2b0bb99255904e257e
 SHA256: 0d23abff9c0fa0cb6c0a46f5b099474a6b9767097440ed2727fba13d156d8e94
 
+Package: byg.iosios.net.sbcpu.floating
+Version: 6.4
+Section: 杂七杂八
+Maintainer: 搬运工
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm64
+Size: 922440
+Installed-Size: 3544
+Description: 灵动监测：CPU、帧率、电池和系统状态浮窗；长按查看详细数据，支持充电管理、插件注入规则扫描与功能分类。保留系统与硬件热安全保护。
+Name: 灵动监测
+Author: MoWang
+Sponsor: 搬运工
+SileoDepiction: https://byg.iosios.net/sileo/3193
+Depiction: https://byg.iosios.net/view/3193
+Icon: https://chinesebuilding.club/pic/cydia.png
+MD5sum: ef341fa577e3752e08fd00a7160a5fd4
+SHA1: 1c8abd85cfeab1b471374768913d0a8b71e38005
+SHA256: 2406ccb54649ade208f5285752ca5a2f58b9a73763d09fffdf7db8a0e09c906d
+Filename: https://byg.iosios.net/debs/3193.deb
+X-Upstream-Source: https://byg.iosios.net/
+X-Upstream-Filename: ./debs/3193.deb
+
+Package: byg.iosios.net.qqdsq
+Version: 1.3.5-1
+Section: 软件破解
+Maintainer: 搬运工
+Depends: mobilesubstrate
+Architecture: iphoneos-arm64
+Size: 114222
+Installed-Size: 404
+Description: 给QQ加点小功能，功能在手机系统设置里，不是QQ里。若不行，请升级新版QQ。已经在研究转发语音和空间跟圈，去广告，防撤回等一些功能还莫急，会上！慢慢更新！
+Name: QQ芭比Q-Rootless
+Author: 来了老弟 X：h_h_x_t
+Sponsor: 搬运工
+SileoDepiction: https://byg.iosios.net/sileo/3192
+Depiction: https://byg.iosios.net/view/3192
+Icon: https://chinesebuilding.club/pic/cydia.png
+MD5sum: 8441ef8530681337a6a51b54da717917
+SHA1: 2d095d306210b7c111161a3a8947584c114e9b5f
+SHA256: 95c3dd716229821113a31858ba73df863ed7d3c258235440dcd41492f87ceb9e
+Filename: https://byg.iosios.net/debs/3192.deb
+X-Upstream-Source: https://byg.iosios.net/
+X-Upstream-Filename: ./debs/3192.deb
+
 Package: byg.iosios.net.shellx
 Version: 11.3
 Section: 系统增强
@@ -54,28 +98,6 @@ SHA256: 0dabe7eb2294a94a21d25628952bbc80061a16759719610219e228d8b993d7f0
 Filename: https://byg.iosios.net/debs/3191.deb
 X-Upstream-Source: https://byg.iosios.net/
 X-Upstream-Filename: ./debs/3191.deb
-
-Package: byg.iosios.net.sbcpu.floating
-Version: 6.2
-Section: 杂七杂八
-Maintainer: 搬运工
-Depends: mobilesubstrate, preferenceloader
-Architecture: iphoneos-arm64
-Size: 889298
-Installed-Size: 3444
-Description: 灵动监测：CPU、帧率、电池和系统状态浮窗；长按查看详细数据，支持充电管理、插件注入规则扫描与功能分类。保留系统与硬件热安全保护。
-Name: 灵动监测
-Author: MoWang
-Sponsor: 搬运工
-SileoDepiction: https://byg.iosios.net/sileo/3190
-Depiction: https://byg.iosios.net/view/3190
-Icon: https://chinesebuilding.club/pic/cydia.png
-MD5sum: 94c2ffb8ea45ea310a6a274945afb0b8
-SHA1: 71fda09df0565932ce332cdd5f1e4a6c44e62a33
-SHA256: 08c9fc7bbfa2a01a96d9fd7c22f02dbe012f3b7c1269822a6bdd651d997b3036
-Filename: https://byg.iosios.net/debs/3190.deb
-X-Upstream-Source: https://byg.iosios.net/
-X-Upstream-Filename: ./debs/3190.deb
 
 Package: byg.iosios.net.themebox.rootless
 Version: 3.0.7
@@ -9576,28 +9598,6 @@ SHA256: b579fc7221312a95b5e26cff648997699358a9749b4bda3a592115ad84048cab
 Filename: https://byg.iosios.net/debs/1667.deb
 X-Upstream-Source: https://byg.iosios.net/
 X-Upstream-Filename: ./debs/1667.deb
-
-Package: byg.iosios.net.qqdsq
-Version: 1.3.5
-Section: 软件破解
-Maintainer: 搬运工
-Depends: mobilesubstrate, preferenceloader
-Architecture: iphoneos-arm64
-Size: 129664
-Installed-Size: 544
-Description: 给QQ加点小功能，功能在手机系统设置里，不是QQ里。若不行，请升级新版QQ。已经在研究转发语音和空间跟圈，去广告，防撤回等一些功能还莫急，会上！慢慢更新！
-Name: QQ芭比Q-Rootless
-Author: 来了老弟 X：h_h_x_t
-Sponsor: 搬运工
-SileoDepiction: https://byg.iosios.net/sileo/1666
-Depiction: https://byg.iosios.net/view/1666
-Icon: https://chinesebuilding.club/pic/cydia.png
-MD5sum: ac654f82bdc843016491890a5a924d54
-SHA1: 42b65306f6f524e3e12185fd15871f3c2ad08831
-SHA256: e2699448024cd82b120a2ec8261b736e9724d15e9f2b660a62230fed82bc57e3
-Filename: https://byg.iosios.net/debs/1666.deb
-X-Upstream-Source: https://byg.iosios.net/
-X-Upstream-Filename: ./debs/1666.deb
 
 Package: byg.iosios.net.miuminuipro
 Version: 1.0
@@ -42867,23 +42867,23 @@ X-Upstream-Source: https://wwg135.github.io/
 X-Upstream-Filename: ./debs/cn.llld.appfix_1.2.21_iphoneos-arm64.deb
 
 Package: cn.llld.bbqzr
-Version: 0.6.1
+Version: 0.6.10
 Architecture: iphoneos-arm64
 Maintainer: 来了老弟
-Installed-Size: 304
+Installed-Size: 404
 Depends: mobilesubstrate
-Size: 38848
-MD5sum: 1ada8c11cd32653ee6606f65bf7605cb
-SHA1: 2a0ed9de5c38550db75838a488f8d8b3b2437b49
-SHA256: 58483d0d6ad3c8c8d600456e077986d2b8d3b90c84e93796152740a664120a74
+Size: 66414
+MD5sum: 161459404051a045d2eb20e51c67dcc7
+SHA1: 37c635102da4fdfec2d2d8670e4542fdd25f7f40
+SHA256: 0d5b8527fb5e32ecd4cdc00f45a04589395c48a5b3875e9f32948ea91604cd97
 Section: rootless应用插件
 Description: ***给QQ加些精简功能，芭比Q可注入可越狱使用，***。QQ对话消息页面长按表情，QQ侧边栏长按 日间 天气，QQ设置右上角都可以进入插件窗口。。。因版本不同 某些函数改动也不同
 Author: 来了老弟
 Name: QQ绿化_芭比Q-rootless
 Sileodepiction: https://laileld.github.io/repo/sileodepiction/cn.llld.bbqzr/bbq.json
-Filename: https://laileld.github.io/repo/debs/rootless/QQ绿化_芭比Q-rootless_0.6.1_iphoneos-arm64.deb
+Filename: https://laileld.github.io/repo/debs/rootless/QQ绿化_芭比Q-rootless_0.6.10-arm64.deb
 X-Upstream-Source: https://laileld.github.io/repo/
-X-Upstream-Filename: ./debs/rootless/QQ绿化_芭比Q-rootless_0.6.1_iphoneos-arm64.deb
+X-Upstream-Filename: ./debs/rootless/QQ绿化_芭比Q-rootless_0.6.10-arm64.deb
 
 Package: cn.llld.biaoji
 Version: 2.0-1+debug
@@ -182737,6 +182737,52 @@ Filename: https://repo.cydiabc.top/debs/13295.deb
 X-Upstream-Source: https://repo.cydiabc.top/
 X-Upstream-Filename: ./debs/13295.deb
 
+Package: com.cydiabc.flexpatchpro-roothide
+Version: 5.3.5-3
+Section: Roothide
+Maintainer: Ai-小苹果™
+Depends: mobilesubstrate, firmware (>= 14.0)
+Architecture: iphoneos-arm64e
+Size: 10213712
+Installed-Size: 236
+Description: FlexPatch Pro 是一款专为越狱 iOS 设备打造的强大本地 Tweak 开发工具。无需依赖 Mac 电脑，即可在设备上直接完成全流程开发：浏览已安装应用、检视 Objective-C 与 Swift 类结构、Hook 方法、篡改返回值及拦截参数。所有修改均可实时编译并打包为 .deb 安装包，真正实现纯移动端的 Tweak 构建体验。
+Name: FlexPatch Pro程序修改器-Roothide
+Author: Tools4cydia
+Sponsor: Ai-小苹果™
+SileoDepiction: https://apt.cydiabc.top/sileo/13622
+Depiction: https://apt.cydiabc.top/view/13622
+Icon: file:///Applications/Cydia.app/Sections/System.png
+Tag: role::enduser
+MD5sum: 56cfedbb2ad4ca1018246f7eb920eb36
+SHA1: f2120a93e85cc205c28120a65f3acf932a22f467
+SHA256: 245a8536712d1236b2e5eb95ac35d422d3ab284d1e0636f2db18113704161f8b
+Filename: https://repo.cydiabc.top/debs/13622.deb
+X-Upstream-Source: https://repo.cydiabc.top/
+X-Upstream-Filename: ./debs/13622.deb
+
+Package: com.cydiabc.flexpatchpro-rootless
+Version: 5.3.5-4
+Section: Rootless
+Maintainer: Ai-小苹果™
+Depends: mobilesubstrate, firmware (>= 14.0)
+Architecture: iphoneos-arm64
+Size: 10298996
+Installed-Size: 240
+Description: FlexPatch Pro 是一款专为越狱 iOS 设备打造的强大本地 Tweak 开发工具。无需依赖 Mac 电脑，即可在设备上直接完成全流程开发：浏览已安装应用、检视 Objective-C 与 Swift 类结构、Hook 方法、篡改返回值及拦截参数。所有修改均可实时编译并打包为 .deb 安装包，真正实现纯移动端的 Tweak 构建体验。
+Name: FlexPatch Pro程序修改器-Rootless
+Author: Tools4cydia
+Sponsor: Ai-小苹果™
+SileoDepiction: https://apt.cydiabc.top/sileo/13621
+Depiction: https://apt.cydiabc.top/view/13621
+Icon: file:///Applications/Cydia.app/Sections/System.png
+Tag: role::enduser
+MD5sum: 5b4f52418291f55c715dcda693e5c666
+SHA1: cfd6e8b3e10b7b1cf41c38feae340ac43de2a87d
+SHA256: ccb454892be6fb4be526327c9e9aa710fcee146a63244ebfcbfd11988b673caf
+Filename: https://repo.cydiabc.top/debs/13621.deb
+X-Upstream-Source: https://repo.cydiabc.top/
+X-Upstream-Filename: ./debs/13621.deb
+
 Package: com.cydiabc.flextool
 Version: 0.0.1-2
 Section: 工具
@@ -234116,50 +234162,50 @@ X-Upstream-Source: https://repo.cydiabc.top/
 X-Upstream-Filename: ./debs/13103.deb
 
 Package: com.cydiabc.xiangyubizhipro-roothide
-Version: 5.0-1
+Version: 5.0-2
 Section: 会员插件
 Maintainer: 神秘人
 Depends: mobilesubstrate,com.cydiabc.applememberserver-roothide
 Architecture: iphoneos-arm64e
-Size: 166898
-Installed-Size: 748
+Size: 179330
+Installed-Size: 764
 Description: 香芋壁纸解锁会员权限，兼容iOS16-iOS17系统，如第一次打开功能无效，划掉APP后台，重新打开既可，破解补丁随时可能失效，不担保长期生效
 Name: 香芋壁纸-Roothide【会员破解】
 Author: 神秘人
 Sponsor: Ai-小苹果™
-SileoDepiction: https://apt.cydiabc.top/sileo/13602
-Depiction: https://apt.cydiabc.top/index.php?pid=13602
+SileoDepiction: https://apt.cydiabc.top/sileo/13620
+Depiction: https://apt.cydiabc.top/index.php?pid=13620
 Icon: file:///Applications/Cydia.app/Sections/Localization.png
 Tag: cydia::commercial
-MD5sum: f70bf5b546eb4c910ec1854b255b46d9
-SHA1: 0f479eea40bc82d2a2fa656a19a95e89285e4baa
-SHA256: 3cd6349e3e05abbb8d568e1e6d2b489152f84a03cc70d0d008c7f70beb67c559
-Filename: https://repo.cydiabc.top/debs/13602.deb
+MD5sum: 85e83bf7acd9dd200db8cdf0270c4be1
+SHA1: b489aa33ef451ff759a2f2595eacf02043cc8d89
+SHA256: 93097aa808dcc3e18f6bf78f5f3c4d937aec4d9b8695f6d819d9dc36fab5d18b
+Filename: https://repo.cydiabc.top/debs/13620.deb
 X-Upstream-Source: https://repo.cydiabc.top/
-X-Upstream-Filename: ./debs/13602.deb
+X-Upstream-Filename: ./debs/13620.deb
 
 Package: com.cydiabc.xiangyubizhipro-rootless
-Version: 5.0-1
+Version: 5.0-2
 Section: 会员插件
 Maintainer: 神秘人
 Depends: mobilesubstrate,com.cydiabc.applememberserver-rootless
 Architecture: iphoneos-arm64
-Size: 166768
-Installed-Size: 748
+Size: 179098
+Installed-Size: 764
 Description: 香芋壁纸解锁会员权限，兼容iOS16-iOS17系统，如第一次打开功能无效，划掉APP后台，重新打开既可，破解补丁随时可能失效，不担保长期生效
 Name: 香芋壁纸-Rootless【会员破解】
 Author: 神秘人
 Sponsor: Ai-小苹果™
-SileoDepiction: https://apt.cydiabc.top/sileo/13601
-Depiction: https://apt.cydiabc.top/index.php?pid=13601
+SileoDepiction: https://apt.cydiabc.top/sileo/13619
+Depiction: https://apt.cydiabc.top/index.php?pid=13619
 Icon: file:///Applications/Cydia.app/Sections/Localization.png
 Tag: cydia::commercial
-MD5sum: c7a458daf514f409935ce7e5dc7229ea
-SHA1: caab51a4fb049bacbc7875badd243d80159a4ea8
-SHA256: 0d71a9e8195aa8b10612a522d57106a55a5d30d21c8062f9ffa1aac7c41ae2e2
-Filename: https://repo.cydiabc.top/debs/13601.deb
+MD5sum: f3fde0950b3939c61681529c3174c7aa
+SHA1: d9d8e4b88831b5448db62fd57582015806dd1d91
+SHA256: 52c0fe39be28af9f8dea4553e8f743476f37988407ad95606272212ad26c20a8
+Filename: https://repo.cydiabc.top/debs/13619.deb
 X-Upstream-Source: https://repo.cydiabc.top/
-X-Upstream-Filename: ./debs/13601.deb
+X-Upstream-Filename: ./debs/13619.deb
 
 Package: com.cydiabc.xiaobanshuiyin
 Version: 1.0-1
@@ -250810,17 +250856,17 @@ Maintainer: 来了老弟
 Section: Tweaks
 SileoDepiction: https://laileld.github.io/repo/sileodepiction/cn.llld.bbqzr/bbq.json
 Architecture: iphoneos-arm64e
-Version: 0.6.1
-Installed-Size: 304
+Version: 0.6.10
+Installed-Size: 404
 Pre-Depends: rootless-compat(>= 0.9)
 icon: https://huayuarc.github.io/icon/qqantirecall.jpg
-Size: 38120
-MD5sum: 76626f48a2fd5241c2c313d3b94e246e
+Size: 65088
+MD5sum: c74941332654aebba40b87b2a0f68745
 SHA1: 
-SHA256: 7cbd0d20a0f2d6ed1900904c1ac0bea502f1e98e87b9cca920a512667b2651ce
-Filename: https://huayuarc.github.io/debs/cn.llld.bbqzr-0.6.1-roothide.deb
+SHA256: 71bb8ebc810cb28de67c4207cfb31c44abe9545b98da453e921a6e03de23851f
+Filename: https://huayuarc.github.io/debs/cn.llld.bbqzr-0.6.10-roothide.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/cn.llld.bbqzr-0.6.1-roothide.deb
+X-Upstream-Filename: debs/cn.llld.bbqzr-0.6.10-roothide.deb
 
 Package: cn.llld.biaoji
 Name: 截图标记
