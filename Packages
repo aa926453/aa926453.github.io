@@ -38971,21 +38971,21 @@ X-Upstream-Filename: debs/iossecuritysuite_1.0.0_iphoneos-arm64.deb
 Package: com.yourepo.axs.ips
 Architecture: iphoneos-arm64
 Name: IPSLog
-Version: 5.2.0-30
-Description: 插件设置面板上一键查看与分析设备上的 .ips 崩溃日志，内置崩溃原因分析；若你遇见没有分析结论的日志，请到QQ群反馈：678055716
+Version: 5.2.0-31
+Description: 设置内一键查看与分析设备上的 .ips 崩溃日志，快速定位崩溃原因。* 崩溃日志查看器：按进程聚合、按时间倒序、关键字搜索、可筛选分类、可一键清空日志* 解析异常类型 / 异常码 / 触发线程 / 崩溃堆栈 / 二进制映像* 支持查看完整原文、复制任意字段、分享导出、删除单条与清空
 Author: Axs <qiaozhani000@163.com>
 Section: System (Axs-Tweaks)
 Depends: preferenceloader
-Size: 85000
+Size: 87604
 Maintainer: Axs <qiaozhani000@163.com>
-Md5sum: 41125bfc9e2ebcdc8431926d41b2cba2
-SHA256: d9dc1b4bc3aa42b00eb29764c7f5fe6d60a31476ab54e7438b31196424452535
+Md5sum: a88fbcc90fd2aa21c72e8f4ecd6f2c18
+SHA256: cfe7dfdba7df8e1ebee5ee45621d3cb874f37f0dcb0333b626956bd69656cb9f
 Depiction: https://axs.yourepo.com/pack/ips
 SileoDepiction: https://axs.yourepo.com/sileo/depiction/ips
 Icon: https://axs66.github.io/pro/icon/ips.png
-Filename: https://axs.yourepo.com/debs/ips_5.2.0-30_iphoneos-arm64.deb
+Filename: https://axs.yourepo.com/debs/ips_5.2.0-31_iphoneos-arm64.deb
 X-Upstream-Source: https://axs.yourepo.com/
-X-Upstream-Filename: debs/ips_5.2.0-30_iphoneos-arm64.deb
+X-Upstream-Filename: debs/ips_5.2.0-31_iphoneos-arm64.deb
 
 Package: com.yourepo.axs.jikan
 Architecture: iphoneos-arm64
@@ -40474,21 +40474,21 @@ X-Upstream-Filename: debs/screencore_1.0.6-1_iphoneos-arm64.deb
 Package: com.yourepo.axs.screenlocktime
 Architecture: iphoneos-arm64
 Name: ScreenLock Time
-Version: 5.2.0-7
+Version: 5.2.0-8
 Description: 为原生锁屏时间添加五色渐变，沿用系统字体,兼容BigTime。
-Author: Axs <qiaozhani000@163.com>
+Author: Axs <a200591949@gmail.com>
 Section: System (Axs-Tweaks)
 Depends: mobilesubstrate, preferenceloader
-Size: 61982
-Maintainer: Axs <qiaozhani000@163.com>
-Md5sum: 45f8d473dbc6d240d347e4ec25e1db7f
-SHA256: 6da0ac84f4f696d03268f00cb5cc6cad2f0cebac0079e076f1c739e3845ede68
+Size: 62096
+Maintainer: Axs <a200591949@gmail.com>
+Md5sum: 9696eb6f5b639734a0b46bdd568c1e4a
+SHA256: d89534b4db6a66ac84bdc348714bc8469d2b6f7ec4a4b420383cfbce2a182632
 Depiction: https://axs.yourepo.com/pack/screenlocktime
 SileoDepiction: https://axs.yourepo.com/sileo/depiction/screenlocktime
 Icon: https://axs66.github.io/pro/icon/screenlocktime.png
-Filename: https://axs.yourepo.com/debs/screenlocktime_5.2.0-7_iphoneos-arm64.deb
+Filename: https://axs.yourepo.com/debs/screenlocktime_5.2.0-8_iphoneos-arm64.deb
 X-Upstream-Source: https://axs.yourepo.com/
-X-Upstream-Filename: debs/screenlocktime_5.2.0-7_iphoneos-arm64.deb
+X-Upstream-Filename: debs/screenlocktime_5.2.0-8_iphoneos-arm64.deb
 
 Package: com.yourepo.axs.screenshellpro
 Architecture: iphoneos-arm64
@@ -249195,15 +249195,15 @@ X-Upstream-Source: https://axs66.github.io/pro/
 X-Upstream-Filename: ./debs/com.axs.ios16dao_5.2.0-244_iphoneos-arm64.deb
 
 Package: com.axs.ipslog
-Version: 5.2.0-30
+Version: 5.2.0-31
 Architecture: iphoneos-arm64
 Maintainer: Axs <qiaozhani000@163.com>
-Installed-Size: 496
+Installed-Size: 512
 Depends: preferenceloader
-Size: 85156
-MD5sum: e7b9d46820e1405e0462c9f6d8666f7f
-SHA1: 47b508302393fa008b8f8f3471c7dd52e41b5ad0
-SHA256: 6a796508f5c122e5929013cf3bef99760ab828415759c56748560f05a20f5b91
+Size: 87630
+MD5sum: fba662bc47c8159b3fbe82076e7f3d73
+SHA1: 2f77e56fb8f4804ef64d9efd141ff0e71e49977d
+SHA256: 0d899012456e9acc3542ec4385a9e0a956e1beaea7153f74aafe080be57542a3
 Section: Axs-Tweaks
 Description: 设置内一键查看与分析设备上的 .ips 崩溃日志，快速定位崩溃原因。
  * 崩溃日志查看器：按进程聚合、按时间倒序、关键字搜索、可筛选分类、可一键清空日志
@@ -249213,20 +249213,20 @@ Author: Axs <qiaozhani000@163.com>
 Icon: https://axs66.github.io/pro/icon/ips.png
 Name: IPSLog
 Sileodepiction: https://axs66.github.io/pro/sileodepiction/ipslog/js.json
-Filename: https://axs66.github.io/pro/debs/com.axs.ipslog_5.2.0-30_iphoneos-arm64.deb
+Filename: https://axs66.github.io/pro/debs/com.axs.ipslog_5.2.0-31_iphoneos-arm64.deb
 X-Upstream-Source: https://axs66.github.io/pro/
-X-Upstream-Filename: ./debs/com.axs.ipslog_5.2.0-30_iphoneos-arm64.deb
+X-Upstream-Filename: ./debs/com.axs.ipslog_5.2.0-31_iphoneos-arm64.deb
 
 Package: com.axs.ipslog
-Version: 5.2.0-30
+Version: 5.2.0-31
 Architecture: iphoneos-arm64e
 Maintainer: Axs <qiaozhani000@163.com>
-Installed-Size: 496
+Installed-Size: 512
 Depends: preferenceloader
-Size: 84186
-MD5sum: af8bf675427f2da0622fb1c006a677f3
-SHA1: dc82c106fa0175f8e7280245ece4adc4ffb76869
-SHA256: 78fa9e89b8aa2a3f99bef422d06437e6950ce12c7eb311fe29941dd29e52a961
+Size: 87864
+MD5sum: 127031f60618f90c275312aad0899841
+SHA1: 80a1684c6c34a57438d39a03a62b3b1558be6836
+SHA256: 3ce1c25f9a5dcb8eb3e3b2d5ede15a5af641638f8871b053018c7d504000aa18
 Section: Axs-Tweaks
 Description: 设置内一键查看与分析设备上的 .ips 崩溃日志，快速定位崩溃原因。
  * 崩溃日志查看器：按进程聚合、按时间倒序、关键字搜索、可筛选分类、可一键清空日志
@@ -249236,9 +249236,9 @@ Author: Axs <qiaozhani000@163.com>
 Icon: https://axs66.github.io/pro/icon/ips.png
 Name: IPSLog
 Sileodepiction: https://axs66.github.io/pro/sileodepiction/ipslog/js.json
-Filename: https://axs66.github.io/pro/debs/com.axs.ipslog_5.2.0-30_iphoneos-arm64e.deb
+Filename: https://axs66.github.io/pro/debs/com.axs.ipslog_5.2.0-31_iphoneos-arm64e.deb
 X-Upstream-Source: https://axs66.github.io/pro/
-X-Upstream-Filename: ./debs/com.axs.ipslog_5.2.0-30_iphoneos-arm64e.deb
+X-Upstream-Filename: ./debs/com.axs.ipslog_5.2.0-31_iphoneos-arm64e.deb
 
 Package: com.axs.keyboardtools
 Version: 5.2.0-191
@@ -249451,15 +249451,15 @@ X-Upstream-Source: https://axs66.github.io/pro/
 X-Upstream-Filename: ./debs/com.axs.rma_1.0_iphoneos-arm64.deb
 
 Package: com.axs.screenlocktime
-Version: 5.2.0-7
+Version: 5.2.0-8
 Architecture: iphoneos-arm64
 Maintainer: Axs
 Installed-Size: 496
 Depends: mobilesubstrate, preferenceloader
-Size: 62134
-MD5sum: d8fca2a7c255ef9ad02d1f77d1262d58
-SHA1: a649a80d165e2138837c884da1eca2515a1308f9
-SHA256: b90d7dabd241e7fe46a833c24dca324d6d8a4bc3cce560fe037ff78898ecea0d
+Size: 62246
+MD5sum: 19f5fb5010d60de52393c8b954ab171f
+SHA1: b7fabdafe90324f4d7709b490967dd78fbbb599e
+SHA256: 0ec6b866e4aceeb88f22b796b07cebc3cdca6929bd7e5b914b2c041bbe6f4ac6
 Section: Axs-Tweaks
 Description: 为原生锁屏时间添加五色渐变，沿用系统字体。
  * 支持自定义五种颜色，固定从左到右渐变。
@@ -249468,11 +249468,11 @@ Description: 为原生锁屏时间添加五色渐变，沿用系统字体。
  * 支持兼容BigTime插件。
 Author: Axs
 Icon: https://axs66.github.io/pro/icon/screenlocktime.png
-Name: Screen lock time
+Name: ScreenLock Time
 Sileodepiction: https://axs66.github.io/pro/sileodepiction/screenlocktime/js.json
-Filename: https://axs66.github.io/pro/debs/com.axs.screenlocktime_5.2.0-7_iphoneos-arm64.deb
+Filename: https://axs66.github.io/pro/debs/com.axs.screenlocktime_5.2.0-8_iphoneos-arm64.deb
 X-Upstream-Source: https://axs66.github.io/pro/
-X-Upstream-Filename: ./debs/com.axs.screenlocktime_5.2.0-7_iphoneos-arm64.deb
+X-Upstream-Filename: ./debs/com.axs.screenlocktime_5.2.0-8_iphoneos-arm64.deb
 
 Package: com.axs.screenshellpro
 Version: 5.2.0-61
@@ -255935,46 +255935,6 @@ Filename: https://huayuarc.github.io/debs/com.huayuarc.bdtbnoads-0.0.1-rootless.
 X-Upstream-Source: https://huayuarc.github.io/
 X-Upstream-Filename: debs/com.huayuarc.bdtbnoads-0.0.1-rootless.deb
 
-Package: com.huayuarc.cputhermal
-Name: CPU 解除温控
-Author: Huayuarc
-Description: 基于 1.6.2-154 的 CPU 专用低功耗隔离修复。保留双模式、控制中心及原有附加功能；模式切换不启用全局 PowerSave、不重启温控守护、不递归缩放热配置。显示守卫独立于 CPU 预算。
-Depends: mobilesubstrate, preferenceloader
-Maintainer: Huayuarc
-Section: Tweaks
-Icon: https://huayuarc.github.io/icon/cputhermal.png
-Sileodepiction: https://huayuarc.github.io/sileodepiction/CPUthermal/js.json
-Architecture: iphoneos-arm64e
-Version: 1.6.2-154+isolation.4
-Installed-Size: 2164
-Size: 160800
-MD5sum: 67523e748997478bb2494f0d51392da4
-SHA1: 
-SHA256: a7d54757ce4707d7dfd7a81d26c4f5167706f4bcd806e6575e44a86dba0fd95b
-Filename: https://huayuarc.github.io/debs/com.huayuarc.cputhermal-1.6.2-154+isolation.4-roothide.deb
-X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.huayuarc.cputhermal-1.6.2-154+isolation.4-roothide.deb
-
-Package: com.huayuarc.cputhermal
-Name: CPU 解除温控
-Author: Huayuarc
-Description: 基于 1.6.2-154 的 CPU 专用低功耗隔离修复。保留双模式、控制中心及原有附加功能；模式切换不启用全局 PowerSave、不重启温控守护、不递归缩放热配置。显示守卫独立于 CPU 预算。
-Depends: mobilesubstrate, preferenceloader
-Maintainer: Huayuarc
-Section: Tweaks
-Icon: https://huayuarc.github.io/icon/cputhermal.png
-Sileodepiction: https://huayuarc.github.io/sileodepiction/CPUthermal/js.json
-Architecture: iphoneos-arm64
-Version: 1.6.2-154+isolation.4
-Installed-Size: 2180
-Size: 166712
-MD5sum: 37bafe7c6f1b58cc93d47de84d2e186d
-SHA1: 
-SHA256: 7e1fdc25d957d73afbae7b8985a5b2b361f4971548bfaaabbcc32025ae2098ff
-Filename: https://huayuarc.github.io/debs/com.huayuarc.cputhermal-1.6.2-154+isolation.4-rootless.deb
-X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.huayuarc.cputhermal-1.6.2-154+isolation.4-rootless.deb
-
 Package: com.huayuarc.facedownlock
 Name: 设备朝下自动锁屏
 Author: Huayuarc
@@ -259164,6 +259124,48 @@ Filename: https://huayuarc.github.io/debs/com.muzi.dndscheduler-1.0.1-rootless.d
 X-Upstream-Source: https://huayuarc.github.io/
 X-Upstream-Filename: debs/com.muzi.dndscheduler-1.0.1-rootless.deb
 
+Package: com.muzi.keyboardx
+Name: KeyboardX
+Description: 键盘增强 + 剪贴板管理 二合一插件。集成 TypeX 的双工具栏/六向手势/滑动面板/桌面手势/自定义动作/JS 引擎/AI 面板，与 Kayoko 的剪切板历史管理/搜索/标签/悬浮粘贴。
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Conflicts: com.muzi.kayoko, com.lindo.typex, com.restiveconch.actionbar, com.udevs.dockx, com.lindo.dockx, codes.aurora.kayoko, dev.traurige.kayoko, com.82flex.kayoko, com.skypain.kayoko, com.dao.kayoko, xyz.cypwn.kayoko
+Replaces: com.muzi.kayoko, com.lindo.typex, com.restiveconch.actionbar, com.udevs.dockx, com.lindo.dockx, codes.aurora.kayoko, dev.traurige.kayoko, com.82flex.kayoko, com.skypain.kayoko, com.dao.kayoko, xyz.cypwn.kayoko
+Maintainer: Muzi
+Author: Muzi
+Section: Tweaks
+Architecture: iphoneos-arm64e
+Version: 1.0.2
+Installed-Size: 7120
+icon: https://huayuarc.github.io/icon/KeyboardXHeaderIcon.png
+Size: 1775308
+MD5sum: e5077f0c2b6a02fd7dc87afe6b221621
+SHA1: 
+SHA256: d4811a01f01a01a3debb2baf92f9a999566d5a572bdb45cf48906661b98727be
+Filename: https://huayuarc.github.io/debs/com.muzi.keyboardx-1.0.2-roothide.deb
+X-Upstream-Source: https://huayuarc.github.io/
+X-Upstream-Filename: debs/com.muzi.keyboardx-1.0.2-roothide.deb
+
+Package: com.muzi.keyboardx
+Name: KeyboardX
+Description: 键盘增强 + 剪贴板管理 二合一插件。集成 TypeX 的双工具栏/六向手势/滑动面板/桌面手势/自定义动作/JS 引擎/AI 面板，与 Kayoko 的剪切板历史管理/搜索/标签/悬浮粘贴。
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Conflicts: com.muzi.kayoko, com.lindo.typex, com.restiveconch.actionbar, com.udevs.dockx, com.lindo.dockx, codes.aurora.kayoko, dev.traurige.kayoko, com.82flex.kayoko, com.skypain.kayoko, com.dao.kayoko, xyz.cypwn.kayoko
+Replaces: com.muzi.kayoko, com.lindo.typex, com.restiveconch.actionbar, com.udevs.dockx, com.lindo.dockx, codes.aurora.kayoko, dev.traurige.kayoko, com.82flex.kayoko, com.skypain.kayoko, com.dao.kayoko, xyz.cypwn.kayoko
+Maintainer: Muzi
+Author: Muzi
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.0.2
+Installed-Size: 7120
+icon: https://huayuarc.github.io/icon/KeyboardXHeaderIcon.png
+Size: 1781068
+MD5sum: c8127d1d957c52ef88498467359c5e09
+SHA1: 
+SHA256: cbe5914947ae003d7841c72f6643cef1c87aa653ccddc2db3fb7aefdb639a0b8
+Filename: https://huayuarc.github.io/debs/com.muzi.keyboardx-1.0.2-rootless.deb
+X-Upstream-Source: https://huayuarc.github.io/
+X-Upstream-Filename: debs/com.muzi.keyboardx-1.0.2-rootless.deb
+
 Package: com.muzi.mupill
 Name: 悬浮药丸独立版
 Description: 桌面悬浮信息药丸独立版：实时网速 / CPU / 内存 / 时间 / 电池电量，Liquid Glass 风格，透明度与字号可调，拖动持久化，锁屏自动隐藏
@@ -259246,7 +259248,7 @@ X-Upstream-Filename: debs/com.muzi.mutescheduler-1.0.1-rootless.deb
 
 Package: com.muzi.mutool
 Name: MUtool
-Description: 多功能工具集：灵动岛电池胶囊（长按状态栏电池弹出完整电池信息，真机机型贴合挖孔展开，锁屏充电常驻大字电量/预计充满、未充电也常驻显示，长按弹出电源菜单（快速注销/强制注销/重启桌面/安全模式/重启空间/重启设备/设备关机），桌面空白处长按也可弹出电源菜单）、定时任务、自动禁用 SIM 与卡槽管理 / IPCC 运营商配置 / WiFi 永连（锁屏保持 Wi-Fi 常连）、充电管理（充电提示音：接入提示音、MagSafe 动画、灵动岛电池与电池提醒；充电限制：IORegistry 停充不再跳过设定值、限充阈值停充并回落 5% 自动恢复、阻止充电/电源、满血快充、智能充电计划）、文件夹主题（名称/文字/图标/背景配色、毛玻璃、大文件夹、标题字号对齐加粗与隐藏）、温控（阻止降频、CPU 功率锁定、模拟降频）、系统增强（自动进桌面、通知亮屏、隐藏与禁用）、录制增强（通话自动录音、录屏取消 DRM 静音、锁屏继续录制、录屏录制通话声音、录屏轨迹触点大小与图片可自定义）、美化相关（状态栏前景色 / 隐藏时间 / 强制浅深色）、桌面悬浮信息药丸（最多三个竖屏悬浮窗 + 一个横屏悬浮窗，各窗口独立配置实时网速 / CPU / 内存 / 时间 / 农历 / 公历 / 周几 / 电池电量，Liquid Glass 风格，透明度与字号可调，元素颜色可自定义或随机，拖动持久化，锁屏自动隐藏，截图/录屏/屏幕镜像时自动隐藏）、电池健康与深度信息
+Description: 多功能工具集：灵动岛电池胶囊（长按状态栏电池弹出完整电池信息，真机机型贴合挖孔展开，锁屏充电常驻大字电量/预计充满、未充电也常驻显示，长按弹出电源菜单（快速注销/强制注销/重启桌面/安全模式/重启空间/重启设备/设备关机），桌面空白处长按也可弹出电源菜单）、定时任务、自动禁用 SIM 与卡槽管理 / IPCC 运营商配置 / WiFi 永连（锁屏保持 Wi-Fi 常连）、充电提示音（接入提示音、MagSafe 动画、灵动岛电池与电池提醒）、文件夹主题（名称/文字/图标/背景配色、毛玻璃、大文件夹、标题字号对齐加粗与隐藏）、温控（阻止降频、CPU 功率锁定、模拟降频）、系统增强（二级分类：锁屏增强 / 主屏幕增强 / 桌面增强，所有说明统一以 ⓘ 图标点击查看；锁屏：自动进桌面、解锁显示、通知亮屏、锁屏禁用与隐藏、唤醒与锁屏、锁屏充电胶囊、动作反馈；主屏幕：禁用项、隐藏项、小组件多选拖动、底栏设置、动画与后台；桌面：图标下载进度条与阴影、桌面电源菜单）、录制增强（通话自动录音、录屏取消 DRM 静音、锁屏继续录制、录屏录制通话声音、录屏轨迹触点大小与图片可自定义）、美化相关（状态栏前景色 / 隐藏时间 / 强制浅深色）、桌面悬浮信息药丸（最多三个竖屏悬浮窗 + 一个横屏悬浮窗，各窗口独立配置实时网速 / CPU / 内存 / 时间 / 农历 / 公历 / 周几 / 电池电量，Liquid Glass 风格，透明度与字号可调，元素颜色可自定义或随机，拖动持久化，锁屏自动隐藏，截图/录屏/屏幕镜像时自动隐藏）、电池健康与深度信息。2.2.01 彻底移除充电限制/充电控制功能（阻止充电、阻止电源、限充阈值、智能充电计划、温度停充、满血充电、充电诊断日志），充电行为完全回归系统默认；升级/卸载自动清理历史版本写入的 SMC/IORegistry 充电残留与守护进程。
 Maintainer: Muzi
 Author: Muzi
 Section: Tweaks
@@ -259255,19 +259257,19 @@ Conflicts: com.muzi.mutoollite
 Icon: https://muzikeji.github.io/sileo/icons/mutool.png
 SileoDepiction: https://muzikeji.github.io/sileo/depictions/com.muzi.mutool.json
 Architecture: iphoneos-arm64e
-Version: 2.1.86
-Installed-Size: 4904
-Size: 721816
-MD5sum: 4729a6ab394da86b12f7cc5490d51b58
+Version: 2.2.01
+Installed-Size: 4748
+Size: 727852
+MD5sum: fa7a89f2933ed2e70a2944952c50d0ad
 SHA1: 
-SHA256: 555ab46daa2ef2e9c9ee9fcf2708af4b56eb1b86fd3b86dd6566131c3301190c
-Filename: https://huayuarc.github.io/debs/com.muzi.mutool-2.1.86-roothide.deb
+SHA256: 95730266e4a9ad5951ee1028b74f03aef79523c0c1414b687a5468a7b90acc93
+Filename: https://huayuarc.github.io/debs/com.muzi.mutool-2.2.01-roothide.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.muzi.mutool-2.1.86-roothide.deb
+X-Upstream-Filename: debs/com.muzi.mutool-2.2.01-roothide.deb
 
 Package: com.muzi.mutool
 Name: MUtool
-Description: 多功能工具集：灵动岛电池胶囊（长按状态栏电池弹出完整电池信息，真机机型贴合挖孔展开，锁屏充电常驻大字电量/预计充满、未充电也常驻显示，长按弹出电源菜单（快速注销/强制注销/重启桌面/安全模式/重启空间/重启设备/设备关机），桌面空白处长按也可弹出电源菜单）、定时任务、自动禁用 SIM 与卡槽管理 / IPCC 运营商配置 / WiFi 永连（锁屏保持 Wi-Fi 常连）、充电管理（充电提示音：接入提示音、MagSafe 动画、灵动岛电池与电池提醒；充电限制：IORegistry 停充不再跳过设定值、限充阈值停充并回落 5% 自动恢复、阻止充电/电源、满血快充、智能充电计划）、文件夹主题（名称/文字/图标/背景配色、毛玻璃、大文件夹、标题字号对齐加粗与隐藏）、温控（阻止降频、CPU 功率锁定、模拟降频）、系统增强（自动进桌面、通知亮屏、隐藏与禁用）、录制增强（通话自动录音、录屏取消 DRM 静音、锁屏继续录制、录屏录制通话声音、录屏轨迹触点大小与图片可自定义）、美化相关（状态栏前景色 / 隐藏时间 / 强制浅深色）、桌面悬浮信息药丸（最多三个竖屏悬浮窗 + 一个横屏悬浮窗，各窗口独立配置实时网速 / CPU / 内存 / 时间 / 农历 / 公历 / 周几 / 电池电量，Liquid Glass 风格，透明度与字号可调，元素颜色可自定义或随机，拖动持久化，锁屏自动隐藏，截图/录屏/屏幕镜像时自动隐藏）、电池健康与深度信息
+Description: 多功能工具集：灵动岛电池胶囊（长按状态栏电池弹出完整电池信息，真机机型贴合挖孔展开，锁屏充电常驻大字电量/预计充满、未充电也常驻显示，长按弹出电源菜单（快速注销/强制注销/重启桌面/安全模式/重启空间/重启设备/设备关机），桌面空白处长按也可弹出电源菜单）、定时任务、自动禁用 SIM 与卡槽管理 / IPCC 运营商配置 / WiFi 永连（锁屏保持 Wi-Fi 常连）、充电提示音（接入提示音、MagSafe 动画、灵动岛电池与电池提醒）、文件夹主题（名称/文字/图标/背景配色、毛玻璃、大文件夹、标题字号对齐加粗与隐藏）、温控（阻止降频、CPU 功率锁定、模拟降频）、系统增强（二级分类：锁屏增强 / 主屏幕增强 / 桌面增强，所有说明统一以 ⓘ 图标点击查看；锁屏：自动进桌面、解锁显示、通知亮屏、锁屏禁用与隐藏、唤醒与锁屏、锁屏充电胶囊、动作反馈；主屏幕：禁用项、隐藏项、小组件多选拖动、底栏设置、动画与后台；桌面：图标下载进度条与阴影、桌面电源菜单）、录制增强（通话自动录音、录屏取消 DRM 静音、锁屏继续录制、录屏录制通话声音、录屏轨迹触点大小与图片可自定义）、美化相关（状态栏前景色 / 隐藏时间 / 强制浅深色）、桌面悬浮信息药丸（最多三个竖屏悬浮窗 + 一个横屏悬浮窗，各窗口独立配置实时网速 / CPU / 内存 / 时间 / 农历 / 公历 / 周几 / 电池电量，Liquid Glass 风格，透明度与字号可调，元素颜色可自定义或随机，拖动持久化，锁屏自动隐藏，截图/录屏/屏幕镜像时自动隐藏）、电池健康与深度信息。2.2.01 彻底移除充电限制/充电控制功能（阻止充电、阻止电源、限充阈值、智能充电计划、温度停充、满血充电、充电诊断日志），充电行为完全回归系统默认；升级/卸载自动清理历史版本写入的 SMC/IORegistry 充电残留与守护进程。
 Maintainer: Muzi
 Author: Muzi
 Section: Tweaks
@@ -259276,15 +259278,15 @@ Conflicts: com.muzi.mutoollite
 Icon: https://muzikeji.github.io/sileo/icons/mutool.png
 SileoDepiction: https://muzikeji.github.io/sileo/depictions/com.muzi.mutool.json
 Architecture: iphoneos-arm64
-Version: 2.1.86
-Installed-Size: 4920
-Size: 730208
-MD5sum: 048ae46dc47949adeed20f7064b7aeee
+Version: 2.2.01
+Installed-Size: 4780
+Size: 733796
+MD5sum: 6caa8d9c298c2a961b1024552cfcbce6
 SHA1: 
-SHA256: 4e10a44996ffb060733b74442204e654a1d36d30c5d6cb503e30636fb037f70d
-Filename: https://huayuarc.github.io/debs/com.muzi.mutool-2.1.86-rootless.deb
+SHA256: a9e59268d38b50b02dd96a96b5142cf61a5185266486683d94af826c010a277a
+Filename: https://huayuarc.github.io/debs/com.muzi.mutool-2.2.01-rootless.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.muzi.mutool-2.1.86-rootless.deb
+X-Upstream-Filename: debs/com.muzi.mutool-2.2.01-rootless.deb
 
 Package: com.nahtedetihw.volvibes
 Name: VolVibes
@@ -260950,16 +260952,16 @@ Author: 半生年华
 Section: Tweaks
 Depends: mobilesubstrate, preferenceloader
 Architecture: iphoneos-arm64e
-Version: 1.3.2
-Installed-Size: 6768
+Version: 1.3.3
+Installed-Size: 9080
 icon: https://huayuarc.github.io/icon/NoAds@2x.png
-Size: 1018232
-MD5sum: c3443a29a36238a02a05c3e14f74aeee
+Size: 1305252
+MD5sum: 5ee3488e25fb5bd903d45bc65e272be3
 SHA1: 
-SHA256: 6519099ff081871c7a88b3857372090e9cc461236ff7eeac0790ef656e868dd9
-Filename: https://huayuarc.github.io/debs/com.noads.tweka-1.3.2-roothide.deb
+SHA256: 4477361fc3f156e5bfe2cfb9b6e7d72e20772bae49d8e331d80845a37805456e
+Filename: https://huayuarc.github.io/debs/com.noads.tweka-1.3.3-roothide.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.noads.tweka-1.3.2-roothide.deb
+X-Upstream-Filename: debs/com.noads.tweka-1.3.3-roothide.deb
 
 Package: com.noads.tweka
 Name: NoAdsX
@@ -260969,16 +260971,16 @@ Author: 半生年华
 Section: Tweaks
 Depends: mobilesubstrate, preferenceloader
 Architecture: iphoneos-arm64
-Version: 1.3.2
-Installed-Size: 6768
+Version: 1.3.3
+Installed-Size: 9080
 icon: https://huayuarc.github.io/icon/NoAds@2x.png
-Size: 1020104
-MD5sum: 760edd97a96df65c25ff6cee15c5017e
+Size: 1306308
+MD5sum: 04ddf1f58e90a51755046cb9d4077bc0
 SHA1: 
-SHA256: 7a897a1445748c4f75e7accbb307f6aa3f41c944cd4f3076b121c76f4fea3706
-Filename: https://huayuarc.github.io/debs/com.noads.tweka-1.3.2-rootless.deb
+SHA256: d45927cf8f62a4a5adb4aada9dbbb2e8ac82dcdc0cd80f45e1eaf6fb89384361
+Filename: https://huayuarc.github.io/debs/com.noads.tweka-1.3.3-rootless.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.noads.tweka-1.3.2-rootless.deb
+X-Upstream-Filename: debs/com.noads.tweka-1.3.3-rootless.deb
 
 Package: com.opa334.trollstorelite
 Name: TrollStore Lite
