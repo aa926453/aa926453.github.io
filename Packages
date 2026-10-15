@@ -4414,24 +4414,24 @@ X-Upstream-Source: https://byg.iosios.net/
 X-Upstream-Filename: ./debs/2556.deb
 
 Package: com.xybp888.callassist16.dopamine
-Version: 3.2.1
+Version: 3.2.2
 Priority: optional
 Section: Tweaks
 Maintainer: xybp888
 Depends: firmware (>= 15.0), preferenceloader, com.opa334.libsandy
 Architecture: iphoneos-arm64
-Size: 3621386
+Size: 3620838
 Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
 Name: 电话助手iOS16-正式版(Rootless)
 Author: xybp888
-Depiction: https://apt.htv123.com/view/1072
-SileoDepiction: https://apt.htv123.com/sileo/1072
-MD5sum: 157cdc3f2ae6bd0953908ec29791c402
-SHA1: 8dacb0ebaeff052ba11e1a19c9c2497774c4f320
-SHA256: 84e090062b92b654c26d06ce6968b72125959f937613c15e7cd82089f9dc0a37
-Filename: https://apt.htv123.com/debs/1072.deb
+Depiction: https://apt.htv123.com/view/1076
+SileoDepiction: https://apt.htv123.com/sileo/1076
+MD5sum: caac5613618703894357896419a86a20
+SHA1: acf2bb9845652c53f632a90e3ad8328e2bd515ff
+SHA256: c2a094ae48ab3b34799a9a9a08189431273a36bef8736dd27350ca7d62544b75
+Filename: https://apt.htv123.com/debs/1076.deb
 X-Upstream-Source: https://apt.htv123.com/
-X-Upstream-Filename: ./debs/1072.deb
+X-Upstream-Filename: ./debs/1076.deb
 
 Package: byg.iosios.net.autoscroll
 Version: 1.0.5
@@ -45012,16 +45012,16 @@ Author: Netskao
 Maintainer: Nets
 Section: Tweaks
 Architecture: iphoneos-arm64
-Version: 1.1-3
+Version: 1.1-5
 Installed-Size: 72
-icon: https://huayuarc.github.io/icon/WeChat.jpg
-Size: 2368
-MD5sum: 619c3f840c1354b2b99e0757f894cfb8
+Icon: https://huayuarc.github.io/icon/WeChat.jpg
+Size: 2472
+MD5sum: 2a306048c326881d7ae0ed8a368104f3
 SHA1: 
-SHA256: 434e206864b31e9f4517ce777f03289be3ee7b03df4aa11aa837c29d24900375
-Filename: https://huayuarc.github.io/debs/com.netskao.wcdisablehotupdates-1.1-3-rootless.deb
+SHA256: b9cbe7055076e6f2ac8047de9e44e92fd9dd841f94ee57e48a337e956f3e9f6a
+Filename: https://huayuarc.github.io/debs/com.netskao.wcdisablehotupdates-1.1-5-rootless.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.netskao.wcdisablehotupdates-1.1-3-rootless.deb
+X-Upstream-Filename: debs/com.netskao.wcdisablehotupdates-1.1-5-rootless.deb
 
 SileoDepiction: https://jailrepo.initnil.com/api?Package=com.netskao.wcmypageinfocenter
 Package: com.netskao.wcmypageinfocenter
@@ -70227,64 +70227,64 @@ X-Upstream-Source: https://apt.htv123.com/
 X-Upstream-Filename: ./debs/627.deb
 
 Package: com.xybp888.callassist16.dopamine.roothide
-Version: 3.2.1
+Version: 3.2.2
 Priority: optional
 Section: Tweaks
 Maintainer: xybp888
 Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
 Architecture: iphoneos-arm64e
-Size: 3613704
+Size: 3623426
 Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
 Name: 电话助手iOS16-正式版(Roothide)
 Author: xybp888
-Depiction: https://apt.htv123.com/view/1071
-SileoDepiction: https://apt.htv123.com/sileo/1071
-MD5sum: 2106105b37c28ecfa16dab1184269668
-SHA1: 068187e46572e0cf4348528251b6f6f27306741b
-SHA256: d97ed6d9b9d4e51f71eb216e1e6cc1759c76be6265240fb1e92272985e8c9485
-Filename: https://apt.htv123.com/debs/1071.deb
+Depiction: https://apt.htv123.com/view/1075
+SileoDepiction: https://apt.htv123.com/sileo/1075
+MD5sum: f0af4676168c204a4d0798c75482384a
+SHA1: 81f25860b971751f332f36fbc3d094496bb66ea4
+SHA256: 4a5a08a784dff4b3bebc9830531443d68c5041e54893c236f686f025f93ed4fc
+Filename: https://apt.htv123.com/debs/1075.deb
 X-Upstream-Source: https://apt.htv123.com/
-X-Upstream-Filename: ./debs/1071.deb
+X-Upstream-Filename: ./debs/1075.deb
 
 Package: com.xybp888.callassist17.dopamine
-Version: 2.3.0
+Version: 2.3.1
 Priority: optional
 Section: Tweaks
 Maintainer: xybp888
 Depends: firmware (>= 17.0), preferenceloader, com.opa334.libsandy
 Architecture: iphoneos-arm64
-Size: 3656864
+Size: 3675648
 Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
 Name: 电话助手iOS17-正式版(Rootless)
 Author: xybp888
-Depiction: https://apt.htv123.com/view/1073
-SileoDepiction: https://apt.htv123.com/sileo/1073
-MD5sum: fbb982b5db0614b4a8916f9bfc3e53bf
-SHA1: 078cbd1249363621394439f8db9a33b5df3be262
-SHA256: 0287f9c04e93c3b3dcae6d8b781a193cd080e6194a6344ef1a63fae17aa95f2f
-Filename: https://apt.htv123.com/debs/1073.deb
+Depiction: https://apt.htv123.com/view/1077
+SileoDepiction: https://apt.htv123.com/sileo/1077
+MD5sum: 751cee671a284ab2b60fbc714742df95
+SHA1: 4b27ed3e7986be0adde7e563e9b21819536564c8
+SHA256: ece073395000dc703d3017e054d61cd62dd5d99b6e8812c3fd3f4aa796322e09
+Filename: https://apt.htv123.com/debs/1077.deb
 X-Upstream-Source: https://apt.htv123.com/
-X-Upstream-Filename: ./debs/1073.deb
+X-Upstream-Filename: ./debs/1077.deb
 
 Package: com.xybp888.callassist17.roothide
-Version: 2.3.0
+Version: 2.3.1
 Priority: optional
 Section: Tweaks
 Maintainer: xybp888
 Depends: firmware (>= 17.0), preferenceloader, com.opa334.libsandy
 Architecture: iphoneos-arm64e
-Size: 3643472
+Size: 3641028
 Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
 Name: 电话助手iOS17-正式版(Roothide)
 Author: xybp888
-Depiction: https://apt.htv123.com/view/1074
-SileoDepiction: https://apt.htv123.com/sileo/1074
-MD5sum: ed293f02e20bf07cba134c1214e79394
-SHA1: 3a71f4b2e74354386079e1aced2e1359e932af2e
-SHA256: e828c10ad60c2764e8fdf1adf1f00c978025c335e90db583bd5147932affdbd0
-Filename: https://apt.htv123.com/debs/1074.deb
+Depiction: https://apt.htv123.com/view/1078
+SileoDepiction: https://apt.htv123.com/sileo/1078
+MD5sum: 823ccc9a95a7d52a1a05bc41929b0b8b
+SHA1: 93264e75ce3a8a6d258dcbf317ac5c015917aa9b
+SHA256: 5a57e0c05a2881dc322153e4562574d266d3542aeffbe337ef56a97dde6b9275
+Filename: https://apt.htv123.com/debs/1078.deb
 X-Upstream-Source: https://apt.htv123.com/
-X-Upstream-Filename: ./debs/1074.deb
+X-Upstream-Filename: ./debs/1078.deb
 
 Package: com.xybp888.disabledgesture
 Version: 0.0.1-75
@@ -73117,20 +73117,20 @@ Package: com.sbcpu.floating
 Name: 灵动监测
 Maintainer: MoWang
 Author: MoWang
-Description: 灵动监测：CPU、帧率、电池和系统状态浮窗；长按查看详细数据，支持充电管理、插件注入规则扫描与功能分类。保留系统与硬件热安全保护。
+Description: 灵动监测：CPU、帧率、电池和系统状态浮窗；长按查看详细数据，支持充电管理、插件注入规则扫描与功能分类。保留系统与硬件热安全保护。（修复了一下浮窗文字排版）
 Section: Tweaks
 Depends: mobilesubstrate, preferenceloader
 Architecture: iphoneos-arm64e
-Version: 6.4
+Version: 6.6.1
 Installed-Size: 3544
 icon: https://huayuarc.github.io/icon/floating.jpg
-Size: 493032
-MD5sum: a82a71b0fa65f332ec0237216e040682
+Size: 495920
+MD5sum: 846cc0d1e8e3e81fbe49544ba241474f
 SHA1: 
-SHA256: b1eb8cce9acdff605c55fa7e369e56c3e9bcafd2223636ec63698027265e9966
-Filename: https://huayuarc.github.io/debs/com.sbcpu.floating-6.4-roothide.deb
+SHA256: 336636b241ff426bf86069402827893fb107b4581b61a5b9f39bafc2c0a5dc0c
+Filename: https://huayuarc.github.io/debs/com.sbcpu.floating-6.6.1-roothide.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.sbcpu.floating-6.4-roothide.deb
+X-Upstream-Filename: debs/com.sbcpu.floating-6.6.1-roothide.deb
 
 Package: com.snapbackup
 Version: 3.6.5
@@ -257636,6 +257636,149 @@ Filename: https://huayuarc.github.io/debs/com.jzksnsjswkw.feemcrack_0.0.1_iphone
 X-Upstream-Source: https://huayuarc.github.io/
 X-Upstream-Filename: debs/com.jzksnsjswkw.feemcrack_0.0.1_iphoneos-arm64e.deb
 
+Package: com.kanuo.screencore
+Name: screencore-窗口调度版
+Description: 浮窗管理、收藏切换、单窗口替换和独立 App 跳转小窗。
+ 作者：kanuo；版本：windowscheduler.12-1。
+ 基于 windowscheduler.11.pulloverjump，保留原有切换响应、启动失败保护、键盘避让和悬浮球适配。
+ 修复作者改名后与主模块预期信息不一致、导致分屏及触发区域调试无法启用的问题。
+ .
+ 功能与快捷操作：
+ 点击卡片左上角应用图标放大，再次点击还原；长按显示或隐藏收藏栏。
+ 点击收藏应用切换当前卡片；上下滑动滚动收藏；长按后拖动使收藏栏与卡片联动移动。
+ 多窗口模式下长按收藏应用并原地松手另开窗口；数量上限为 1 时自动替换当前窗口。
+ 普通小窗沿用原版退场与入场，已放大卡片切换应用使用淡入淡出。
+ App 跳转弹窗处理符合条件的文件、链接及跨 App 请求，独立于普通窗口名额。
+ 支持原版 ARC、侧边手势、应用快捷方式、快捷指令、URL 工具与系统控制配置。
+ 收藏应用支持搜索、增删和排序，可分别调整收藏图标大小、收藏栏及窗口按钮不透明度。
+ 悬浮球显示和返回需配套插件；第三方快捷栏需对应插件支持。
+ .
+ 设置：系统设置 → screencore-窗口调度版 → 分屏设置 → 窗口调度与收藏栏。
+ 完整功能与快捷操作说明已加入本插件设置首页下方和包内使用说明书。
+ 安装后重启桌面。
+Maintainer: kanuo
+Author: kanuo
+Icon: https://repo.susubaby.cn/icons/ScreenCore.png
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader, com.opa334.altlist
+Architecture: iphoneos-arm64e
+Version: 2.0.3+windowscheduler.12-1
+Installed-Size: 3207
+Conflicts: com.qianuo.screencore.windowscheduler, com.qianuo.screencore.ballcompat
+Replaces: com.qianuo.screencore.windowscheduler, com.qianuo.screencore.ballcompat
+X-Window-Scheduler-Version: 0.1.6
+X-Window-Scheduler-Author: kanuo
+X-Rollback-Base-Version: 2.0.3+windowscheduler.7
+X-Rollback-Base-SHA256: 1182a594a4de6eb1cde9a3249ae1d94ab89a4bd1d142f432bd6dc0f422113a58
+X-Floating-Ball-Bridge-Version: 0.3.0
+X-Window-Scheduler-Revision: rollback7-native6-pulloverjump.1
+X-Release-Base-Version: 2.0.3+windowscheduler.11.pulloverjump
+X-Release-Base-SHA256: c063fab8acfed990afd7bb91e12947553b7fe593d026687c8afba4f99bac1457
+X-Core-Identity-Revision: expected-author-kanuo.1
+SileoDepiction: https://jimkanuo.github.io/apt-repo/depiction/com.susudear.screencore.json
+Size: 521972
+MD5sum: cf7b3cdc47ea219ec6dcc107cf874124
+SHA1: 
+SHA256: b1c93e3ea7d792db03d3f7c4986e98e875a1b729cbc5ccce77146455d0496f0e
+Filename: https://huayuarc.github.io/debs/com.kanuo.screencore-2.0.3+windowscheduler.12-1-roothide.deb
+X-Upstream-Source: https://huayuarc.github.io/
+X-Upstream-Filename: debs/com.kanuo.screencore-2.0.3+windowscheduler.12-1-roothide.deb
+
+Package: com.kanuo.screencore
+Name: screencore-窗口调度版
+Description: 浮窗管理、收藏切换、单窗口替换和独立 App 跳转小窗。
+ 作者：kanuo；版本：windowscheduler.12-12。
+ 基于 windowscheduler.11.pulloverjump，保留原有切换响应、启动失败保护、键盘避让和悬浮球适配。
+ 修复作者改名后与主模块预期信息不一致、导致分屏及触发区域调试无法启用的问题。
+ .
+ 功能与快捷操作：
+ 点击卡片左上角应用图标放大，再次点击还原；长按显示或隐藏收藏栏。
+ 点击收藏应用切换当前卡片；上下滑动滚动收藏；长按后拖动使收藏栏与卡片联动移动。
+ 多窗口模式下长按收藏应用并原地松手另开窗口；数量上限为 1 时自动替换当前窗口。
+ 普通小窗沿用原版退场与入场，已放大卡片切换应用使用淡入淡出。
+ App 跳转弹窗处理符合条件的文件、链接及跨 App 请求，独立于普通窗口名额。
+ 支持原版 ARC、侧边手势、应用快捷方式、快捷指令、URL 工具与系统控制配置。
+ 收藏应用支持搜索、增删和排序，可分别调整收藏图标大小、收藏栏及窗口按钮不透明度。
+ 悬浮球显示和返回需配套插件；第三方快捷栏需对应插件支持。
+ .
+ 设置：系统设置 → screencore-窗口调度版 → 分屏设置 → 窗口调度与收藏栏。
+ 完整功能与快捷操作说明已加入本插件设置首页下方和包内使用说明书。
+ 安装后重启桌面。
+ 修复小窗退出后同一 App 全屏偶尔遗留 16:9 尺寸、底部出现黑边的问题。
+ 尺寸恢复通过原版队列补发，不延迟切换；重新打开小窗时取消旧恢复，不修改键盘避让。
+ App 跳转小窗使用原始尺寸和完整画面比例，不套用普通分屏的 16:9 预设。
+ 复用已有窗口时同步原始比例；普通分屏、收藏切换和键盘避让保持原方案。
+ 补全巨魔安装应用等特殊接收端的键盘场景归属，并为缺少可用宿主的真实键盘层提供显示接入。
+ 复用原版键盘窗口及输入框避让，不改普通或跳转小窗比例、动画、启动保护、悬浮球及应用注入。
+ 修复左上角放大后底部点击及上划无法退出：手势区保留在屏幕内，关闭前释放强制铺满。
+ 沿用原版退出流程及上划开关和阈值；取消旧放大回调，不改变键盘避让、快捷切换和悬浮球适配。
+ 长按收藏 App 原地松手打开自由独立窗口，不受普通浮窗数量、单窗口替换或自动边缘停靠限制。
+ 独立窗口沿用分屏比例，不依赖 App 跳转弹窗开关；普通切换保留它，同 App 复用原窗口。
+ 保留放大退出修复、原生切换响应、启动失败保护、键盘避让及悬浮球适配。
+ 设置新增移除底部系统 Dock 开关，默认关闭，更改立即生效；不影响键盘或应用内底栏。
+ 保留长按独立窗口、原生切换响应、启动失败保护、键盘避让及悬浮球适配。
+ 左上角通过原版流程转系统全屏，保留同一 App 返回图标；点击恢复小窗位置、收藏栏与独立属性。
+ 返回图标不抢焦点，只接收图标区域触摸；其他应用、桌面及锁屏隐藏，全屏输入由正常应用处理。
+ 保留原版交接失败恢复、键盘避让、快捷切换、悬浮球、独立窗口和 Dock 开关。
+ 左上角通过原版流程转系统全屏，保留同一 App 返回图标；点击恢复小窗位置、收藏栏与独立属性。
+ 返回图标不抢焦点，只接收图标区域触摸；其他应用、桌面及锁屏隐藏，全屏输入由正常应用处理。
+ 保留原版交接失败恢复、键盘避让、快捷切换、悬浮球、独立窗口和 Dock 开关。
+ 左上角通过原版流程转系统全屏，保留同一 App 返回图标；点击恢复小窗位置、收藏栏与独立属性。
+ 返回图标不抢焦点，只接收图标区域触摸；其他应用、桌面及锁屏隐藏，全屏输入由正常应用处理。
+ 保留原版交接失败恢复、键盘避让、快捷切换、悬浮球、独立窗口和 Dock 开关。
+ 左上角通过原版流程转系统全屏，保留同一 App 返回图标；点击恢复小窗位置、收藏栏与独立属性。
+ 返回图标不抢焦点，只接收图标区域触摸；其他应用、桌面及锁屏隐藏，全屏输入由正常应用处理。
+ 保留原版交接失败恢复、键盘避让、快捷切换、悬浮球、独立窗口和 Dock 开关。
+Maintainer: kanuo
+Author: kanuo
+Icon: https://repo.susubaby.cn/icons/ScreenCore.png
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader, com.opa334.altlist
+Architecture: iphoneos-arm64
+Version: 2.0.3+windowscheduler.12-12
+Installed-Size: 4342
+Conflicts: com.qianuo.screencore.windowscheduler, com.qianuo.screencore.ballcompat
+Replaces: com.qianuo.screencore.windowscheduler, com.qianuo.screencore.ballcompat
+X-Window-Scheduler-Version: 0.1.6
+X-Window-Scheduler-Author: kanuo
+X-Rollback-Base-Version: 2.0.3+windowscheduler.7
+X-Rollback-Base-SHA256: 1182a594a4de6eb1cde9a3249ae1d94ab89a4bd1d142f432bd6dc0f422113a58
+X-Floating-Ball-Bridge-Version: 0.3.0
+X-Window-Scheduler-Revision: rollback7-native6-pulloverjump.1
+X-Install-Environment: standard-rootless-var-jb
+X-Rootless-Input-SHA256: c063fab8acfed990afd7bb91e12947553b7fe593d026687c8afba4f99bac1457
+X-Rootless-Revision: exact11-libroot-paths.1
+X-Release-Base-Version: 2.0.3+windowscheduler.11.pulloverjump
+X-Release-Base-SHA256: 64fc26d41398f82dee8c641dc82a401d5dc908d5ef75deb55fb5af6334f8762e
+X-Core-Identity-Revision: expected-author-kanuo.1
+X-Scene-Geometry-Recovery: native-close-16x9.1
+X-Geometry-Base-SHA256: e9cabb058422ab075eac379c15438bf6a962e86bccfa870ee7bc62cc8b286028
+X-Native-Jump-Geometry: popup-only-native-size.1
+X-Native-Jump-Base-SHA256: ff0edfa8b9ce6ee38054136a0e2da0d69004907dad70e00d8b8f24f74fa171fc
+X-Keyboard-Compatibility: scene-identity-and-missing-host.1
+X-Keyboard-Base-SHA256: 800e03d7f9f55d66479729b6ff73b9f446efa62b503104a54944f64a2e3eef28
+X-Fullscreen-Exit: onscreen-native-region-and-dismissal-release.1
+X-Fullscreen-Exit-Base-SHA256: cc28b5bc9408b504b09179029545c90c7d3fd6f110af80b2a8b520f76e5204e0
+X-Favorite-Standalone: independent-policy-normal-split-geometry.1
+X-Favorite-Standalone-Base-SHA256: f76ac941e43f74f0c57dff7b93ea3907d6af4e739b3497b865c555c3e2fa09a7
+X-Fullscreen-Native-Canvas: physical-screen-reversible-queued-geometry.1
+X-Fullscreen-Base-SHA256: 472fac2e6b474876df278e7c5fb457f443d155e1b34981d21e26f7ee38038bf6
+X-Fullscreen-Rendered-Canvas: instance-settings-hosted-resize-ack-validation.1
+X-Fullscreen-Rendered-Base-SHA256: 311a97ab829ac8dbcdd53964dab86477b1b30576a23e690f6fe5c7d1790db0a1
+X-Native-Fullscreen-Return: native-promotion-scoped-nonkey-icon.1
+X-Native-Fullscreen-Base-SHA256: 74aa276a95ac2633d2ecf174254bc04b9aded83084d61109cb9fffe723cdfaf8
+X-Native-Fullscreen-Return-Animation: reverse-native-presentation.1
+X-Native-Fullscreen-Canvas-Handoff: atomic-hosted-resize.1
+X-Native-Fullscreen-Scene-State: scoped-input-layout.1
+SileoDepiction: https://jimkanuo.github.io/apt-repo/depiction/com.susudear.screencore.json
+Size: 620908
+MD5sum: bf546252c7a43dbd42dba792224ad5fa
+SHA1: 
+SHA256: 2ee13b5ec6a3212781e92c12c0d358edf8c5a1832d55321f5f7d5af2fa05223a
+Filename: https://huayuarc.github.io/debs/com.kanuo.screencore-2.0.3+windowscheduler.12-12-rootless.deb
+X-Upstream-Source: https://huayuarc.github.io/
+X-Upstream-Filename: debs/com.kanuo.screencore-2.0.3+windowscheduler.12-12-rootless.deb
+
 Package: com.kdt.unrestrictmirroring
 Name: UnrestrictMirroring
 Description: Enables iPhone Mirroring while unlocked and Device Hub remote control ios 18.0+ 解锁设备时继续使用 iPhoneMirroring，并启用 Device Hub 远程控制。
@@ -258139,42 +258282,42 @@ X-Upstream-Filename: debs/com.m4fn3.badgecolorfix17-1.0.0-rootless.deb
 
 Package: com.m4fn3.k2gecamen
 Name: K2gecamen
-Description: Capture moments with photos, videos, and audio in the background with ease.
-Maintainer: mafu
-Author: mafu
-Section: Tweaks
-Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, com.opa334.ccsupport
-Icon: https://m4fn3.github.io/repo/web/images/K2gecamen.png
-Architecture: iphoneos-arm64
-Version: 1.0.5
-Installed-Size: 6204
-Size: 2112344
-MD5sum: 86b482d9192dd2fa4a5b4f3e2a7c3a8d
-SHA1: 
-SHA256: 4ac34b93b94db644d467f702a0645ceb4ed9138c8cfda2d268726ff8da08a619
-Filename: https://huayuarc.github.io/debs/com.m4fn3.k2gecamen_1.0.5_iphoneos-arm64.deb
-X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.m4fn3.k2gecamen_1.0.5_iphoneos-arm64.deb
-
-Package: com.m4fn3.k2gecamen
-Name: K2gecamen
-Description: Capture moments with photos, videos, and audio in the background with ease.
+Description: 隐私相机，轻松捕捉照片、视频和音频的时刻。Capture moments with photos, videos, and audio in the background with ease.
 Maintainer: mafu
 Author: mafu
 Section: Tweaks
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, com.opa334.ccsupport
 Icon: https://m4fn3.github.io/repo/web/images/K2gecamen.png
 Architecture: iphoneos-arm64e
-Version: 1.0.5
-Installed-Size: 6204
+Version: 1.1.0
+Installed-Size: 8928
 Pre-Depends: rootless-compat(>= 0.9)
-Size: 2082772
-MD5sum: 05d0680bd6594525043f26ee2f3657f1
+Size: 2989100
+MD5sum: af6f0922e0fa6730ee5a67716117ea3b
 SHA1: 
-SHA256: 69c0ce003aa4e0985b2c34458be52f41373e923778661aa44e3fc5d024cac588
-Filename: https://huayuarc.github.io/debs/com.m4fn3.k2gecamen_1.0.5_iphoneos-arm64e.deb
+SHA256: 63a988cc23fabf46b554be38d79c77ab5d16d550208209fcb38abfbe103cbd0e
+Filename: https://huayuarc.github.io/debs/com.m4fn3.k2gecamen-1.1.0-roothide.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.m4fn3.k2gecamen_1.0.5_iphoneos-arm64e.deb
+X-Upstream-Filename: debs/com.m4fn3.k2gecamen-1.1.0-roothide.deb
+
+Package: com.m4fn3.k2gecamen
+Name: K2gecamen
+Description: 隐私相机，轻松捕捉照片、视频和音频的时刻。Capture moments with photos, videos, and audio in the background with ease.
+Maintainer: mafu
+Author: mafu
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, com.opa334.ccsupport
+Icon: https://m4fn3.github.io/repo/web/images/K2gecamen.png
+Architecture: iphoneos-arm64
+Version: 1.1.0
+Installed-Size: 8928
+Size: 3035580
+MD5sum: f793c7a357abbd6532fec09b1c3a746e
+SHA1: 
+SHA256: 5dc6db08da29a280fe9aec46e279925467bfd6ea6fef2721e7e2f1758e3cf0c1
+Filename: https://huayuarc.github.io/debs/com.m4fn3.k2gecamen-1.1.0-rootless.deb
+X-Upstream-Source: https://huayuarc.github.io/
+X-Upstream-Filename: debs/com.m4fn3.k2gecamen-1.1.0-rootless.deb
 
 Package: com.m4fn3.mikkyy
 Name: Mikkyy 主題管理
@@ -260795,16 +260938,16 @@ Author: Netskao
 Maintainer: Nets
 Section: Tweaks
 Architecture: iphoneos-arm64e
-Version: 1.1-3
+Version: 1.1-5
 Installed-Size: 72
-icon: https://huayuarc.github.io/icon/WeChat.jpg
-Size: 2296
-MD5sum: a418cb8d6c66faec61325297b7800902
+Icon: https://huayuarc.github.io/icon/WeChat.jpg
+Size: 2400
+MD5sum: da84f0639ca245ef86e8357fb60ae16f
 SHA1: 
-SHA256: 8351bee4690f22056ceb0ae66fc60b712b41834194c96cc1328d9af1f503825f
-Filename: https://huayuarc.github.io/debs/com.netskao.wcdisablehotupdates-1.1-3-roothide.deb
+SHA256: d68cece57a72d17bf1eb3c719e4e08a9bd1d43eb354917eff1225daab5fdf097
+Filename: https://huayuarc.github.io/debs/com.netskao.wcdisablehotupdates-1.1-5-roothide.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.netskao.wcdisablehotupdates-1.1-3-roothide.deb
+X-Upstream-Filename: debs/com.netskao.wcdisablehotupdates-1.1-5-roothide.deb
 
 SileoDepiction: https://jailrepo.initnil.com/api?Package=com.netskao.wcmypageinfocenter
 Package: com.netskao.wcmypageinfocenter
@@ -261419,15 +261562,15 @@ Priority: optional
 Icon: https://qq391160.github.io/repo/icons/thermal.png
 Depends: firmware (>= 16.0)
 Architecture: iphoneos-arm64e
-Version: 2.0.109
-Installed-Size: 4220
-Size: 619596
-MD5sum: 7797ae00c40f42aec8ab1e058a9ee730
+Version: 2.0.119
+Installed-Size: 4400
+Size: 667128
+MD5sum: e3125fbb001165d0d8811d41d288c62f
 SHA1: 
-SHA256: 496716f6dd40cf5849b27194122c2bc2ba22e0eca61420a9674928598f99165e
-Filename: https://huayuarc.github.io/debs/com.qq391160.cpucore-2.0.109-roothide.deb
+SHA256: 5a6ac72ebfb9ce474e796277a4c8163b5f8e62f046cc1b64ae15a6c856907482
+Filename: https://huayuarc.github.io/debs/com.qq391160.cpucore-2.0.119-roothide.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.qq391160.cpucore-2.0.109-roothide.deb
+X-Upstream-Filename: debs/com.qq391160.cpucore-2.0.119-roothide.deb
 
 Package: com.qq391160.cpucore
 Name: CPU智能温控(iOS16/17)
@@ -261441,15 +261584,15 @@ Priority: optional
 Icon: https://qq391160.github.io/repo/icons/thermal.png
 Depends: firmware (>= 16.0)
 Architecture: iphoneos-arm64
-Version: 2.0.109
-Installed-Size: 4012
-Size: 578520
-MD5sum: 49034672b829e99390eccc3f9d646bb7
+Version: 2.0.119
+Installed-Size: 4180
+Size: 606924
+MD5sum: 33687349a194e3c22cad3da8f4a94bb3
 SHA1: 
-SHA256: ab727015ae1cb2f57726bf2f03524b4439c8d66954f3dbe9b930e3a8796ba36a
-Filename: https://huayuarc.github.io/debs/com.qq391160.cpucore-2.0.109-rootless.deb
+SHA256: fe16ae2f4b6440e8ad8312b480fe2b893c9ef497024b068b1edb8423e7333b80
+Filename: https://huayuarc.github.io/debs/com.qq391160.cpucore-2.0.119-rootless.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.qq391160.cpucore-2.0.109-rootless.deb
+X-Upstream-Filename: debs/com.qq391160.cpucore-2.0.119-rootless.deb
 
 Package: com.rain.actionbutton
 Name: Rain的操作按钮
@@ -261834,20 +261977,20 @@ Package: com.sbcpu.floating
 Name: 灵动监测
 Maintainer: MoWang
 Author: MoWang
-Description: 灵动监测：CPU、帧率、电池和系统状态浮窗；长按查看详细数据，支持充电管理、插件注入规则扫描与功能分类。保留系统与硬件热安全保护。
+Description: 灵动监测：CPU、帧率、电池和系统状态浮窗；长按查看详细数据，支持充电管理、插件注入规则扫描与功能分类。保留系统与硬件热安全保护。（修复了一下浮窗文字排版）
 Section: Tweaks
 Depends: mobilesubstrate, preferenceloader
 Architecture: iphoneos-arm64
-Version: 6.4
-Installed-Size: 3544
+Version: 6.61
+Installed-Size: 3560
 icon: https://huayuarc.github.io/icon/floating.jpg
-Size: 494064
-MD5sum: 1e28e004b94fd57e05bfe8b23acfe3fb
+Size: 496180
+MD5sum: 2c8917715c3e562493fd7fbf2ab99751
 SHA1: 
-SHA256: 98ecde8fe928dd119e45c1c4a1dd77fd2e40d54aa78f5dedb9cb90428087edca
-Filename: https://huayuarc.github.io/debs/com.sbcpu.floating-6.4-rootless.deb
+SHA256: 01001e4299d67273dacdc73bda53881931b1f45b20c48ee3462ed89ff1f9dd88
+Filename: https://huayuarc.github.io/debs/com.sbcpu.floating-6.61-rootless.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.sbcpu.floating-6.4-rootless.deb
+X-Upstream-Filename: debs/com.sbcpu.floating-6.61-rootless.deb
 
 Package: com.senseTechLab.duodash
 Version: 1.1.3
@@ -263567,6 +263710,27 @@ SHA256: 82183b50a329b1f5bd53b38395740a0191df385f6f455639e33ca5060cb1228b
 Filename: https://huayuarc.github.io/debs/com.triggr.cn.l10n-1.0.4.1-cn.6-rootless.deb
 X-Upstream-Source: https://huayuarc.github.io/
 X-Upstream-Filename: debs/com.triggr.cn.l10n-1.0.4.1-cn.6-rootless.deb
+
+Package: com.tsangbaby.arcx
+Name: Arc-X
+Description: Independent Arc-X fullscreen app launcher.
+Maintainer: Tsangbaby
+Author: Tsangbaby
+Section: Tweaks
+Icon: https://tsangbaby.github.io/Icon/Arc-X.png
+Depends: mobilesubstrate, preferenceloader, com.opa334.altlist, firmware (>= 15.0)
+Conflicts: com.arcx.launcher
+Replaces: com.arcx.launcher
+Architecture: iphoneos-arm64e
+Version: 1.0.4
+Installed-Size: 1648
+Size: 270744
+MD5sum: e1c81ef128b00fd50b44b5cf24c34593
+SHA1: 
+SHA256: 6ed965b1810c9b48607354ec198ebb954c9e0fd3578e49236fa966ad4e516f1f
+Filename: https://huayuarc.github.io/debs/com.tsangbaby.arcx-1.0.4-roothide.deb
+X-Upstream-Source: https://huayuarc.github.io/
+X-Upstream-Filename: debs/com.tsangbaby.arcx-1.0.4-roothide.deb
 
 Package: com.tsangbaby.kayoko
 Name: Kayoko
@@ -265314,21 +265478,19 @@ Maintainer: Banana
 Author: Banana
 Section: Tweaks
 Depends: firmware (>= 15.0), firmware (<< 27.0), mobilesubstrate, preferenceloader
-Conflicts: com.82flex.singlevpn, com.ryannair05.audiosnapshotserver2
-Replaces: com.ryannair05.audiosnapshotserver2
-Provides: com.ryannair05.audiosnapshotserver2 (= 2.1+lunora1)
-Breaks: com.ryannair05.libmitsuha6 (<< 2.0)
+Conflicts: com.82flex.singlevpn
+Suggests: iya.banana.audioservice (>= 1.0.4)
 Architecture: iphoneos-arm64e
-Version: 1.0.8
-Installed-Size: 4664
+Version: 1.0.9
+Installed-Size: 4524
 icon: https://huayuarc.github.io/icon/iPhoneDuoIcon.png
-Size: 756572
-MD5sum: ed5423e6f64fcfb397c87e120c40d5a9
+Size: 794728
+MD5sum: 5a29cf6d51fd2b129e04c23bc3e93f3b
 SHA1: 
-SHA256: 641b04b8ad8ccd8748bfa92fb8e1c7a754f5636d267db110cd09b59c076063a2
-Filename: https://huayuarc.github.io/debs/iya.banana.iphoneduoicon-1.0.8-roothide.deb
+SHA256: 282d2bdeea85e84bbdcaac352b9899279d370ad4cc7f521f6f456200ebb5f805
+Filename: https://huayuarc.github.io/debs/iya.banana.iphoneduoicon-1.0.9-roothide.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/iya.banana.iphoneduoicon-1.0.8-roothide.deb
+X-Upstream-Filename: debs/iya.banana.iphoneduoicon-1.0.9-roothide.deb
 
 Package: iya.banana.iphoneduoicon
 Name: Lunora
@@ -265337,21 +265499,19 @@ Maintainer: Banana
 Author: Banana
 Section: Tweaks
 Depends: firmware (>= 15.0), firmware (<< 27.0), mobilesubstrate, preferenceloader
-Conflicts: com.82flex.singlevpn, com.ryannair05.audiosnapshotserver2
-Replaces: com.ryannair05.audiosnapshotserver2
-Provides: com.ryannair05.audiosnapshotserver2 (= 2.1+lunora1)
-Breaks: com.ryannair05.libmitsuha6 (<< 2.0)
+Conflicts: com.82flex.singlevpn
+Suggests: iya.banana.audioservice (>= 1.0.4)
 Architecture: iphoneos-arm64
-Version: 1.0.8
-Installed-Size: 4680
+Version: 1.0.9
+Installed-Size: 4524
 icon: https://huayuarc.github.io/icon/iPhoneDuoIcon.png
-Size: 760676
-MD5sum: 0ee92b9725055620c7dc93dab50a6b0b
+Size: 797380
+MD5sum: f81e27e32ac073b9815266d7a4f27f65
 SHA1: 
-SHA256: f877b7a01d3d06322c9d666d5f6a7ed12be32576bb8539624f75ee40960455e9
-Filename: https://huayuarc.github.io/debs/iya.banana.iphoneduoicon-1.0.8-rootless.deb
+SHA256: 451ae151c98da0a0cb27704306f97d988174a41a45980a0fbc25044c94935922
+Filename: https://huayuarc.github.io/debs/iya.banana.iphoneduoicon-1.0.9-rootless.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/iya.banana.iphoneduoicon-1.0.8-rootless.deb
+X-Upstream-Filename: debs/iya.banana.iphoneduoicon-1.0.9-rootless.deb
 
 Package: iya.banana.jumpguard
 Name: JumpGuard
@@ -267584,17 +267744,17 @@ Author: 𝙓
 Section: Tweaks
 Depends: mobilesubstrate (>= 0.9.5000)
 Architecture: iphoneos-arm64e
-Version: 2.0.7
-Installed-Size: 9412
+Version: 2.1.3
+Installed-Size: 9980
 Pre-Depends: rootless-compat(>= 0.9)
 icon: https://huayuarc.github.io/icon/xhs.jpg
-Size: 3691800
-MD5sum: ae6c00fd9b998c33d8cf74321511ad68
+Size: 3921612
+MD5sum: 0f82d4e609256cbb24755f0e63d8255f
 SHA1: 
-SHA256: f9dbbeded551ec0dfba95dd6f1bd28485d0a6fd4584aef8e01fe6ae329320584
-Filename: https://huayuarc.github.io/debs/xhs.x-2.0.7-roothide.deb
+SHA256: d8f12a87fa67b0ae272de3bd9b28d8727b8a4c821a0243ed9b2acf2e453116fb
+Filename: https://huayuarc.github.io/debs/xhs.x-2.1.3-roothide.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/xhs.x-2.0.7-roothide.deb
+X-Upstream-Filename: debs/xhs.x-2.1.3-roothide.deb
 
 Package: xhs.x
 Conflicts: com.xx.xhshook
@@ -267611,16 +267771,16 @@ Author: 𝙓
 Section: Tweaks
 Depends: mobilesubstrate (>= 0.9.5000)
 Architecture: iphoneos-arm64
-Version: 2.0.7
-Installed-Size: 9412
+Version: 2.1.3
+Installed-Size: 9980
 icon: https://huayuarc.github.io/icon/xhs.jpg
-Size: 3689532
-MD5sum: e248a1a00b5eca9979fc59b26ea8cff8
+Size: 3922460
+MD5sum: 2e97ddf8b2dcf720a812f19399cac9fd
 SHA1: 
-SHA256: 5dca204bf73b99f908e4f268589b846583b1841aea1f507689cd175c43dc1039
-Filename: https://huayuarc.github.io/debs/xhs.x-2.0.7-rootless.deb
+SHA256: 5e3d98a0dfc33ec18bca7f4654a5fcfbea024236536875007eebc54d56074dfd
+Filename: https://huayuarc.github.io/debs/xhs.x-2.1.3-rootless.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/xhs.x-2.0.7-rootless.deb
+X-Upstream-Filename: debs/xhs.x-2.1.3-rootless.deb
 
 Package: xyz.cypwn.anouk
 Maintainer: CyPwn
