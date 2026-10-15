@@ -4414,24 +4414,24 @@ X-Upstream-Source: https://byg.iosios.net/
 X-Upstream-Filename: ./debs/2556.deb
 
 Package: com.xybp888.callassist16.dopamine
-Version: 3.2.0
+Version: 3.2.1
 Priority: optional
 Section: Tweaks
 Maintainer: xybp888
 Depends: firmware (>= 15.0), preferenceloader, com.opa334.libsandy
 Architecture: iphoneos-arm64
-Size: 3638618
+Size: 3621386
 Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
 Name: 电话助手iOS16-正式版(Rootless)
 Author: xybp888
-Depiction: https://apt.htv123.com/view/1068
-SileoDepiction: https://apt.htv123.com/sileo/1068
-MD5sum: 97fb32c48fe66be98c565fdd6d4cf122
-SHA1: aa1b758a2bca0cde7ad44a832d24c57e1bce790d
-SHA256: defce5a0217a86e768608c1380b7254659c2cb76d9dcb45fa513368cabb2be63
-Filename: https://apt.htv123.com/debs/1068.deb
+Depiction: https://apt.htv123.com/view/1072
+SileoDepiction: https://apt.htv123.com/sileo/1072
+MD5sum: 157cdc3f2ae6bd0953908ec29791c402
+SHA1: 8dacb0ebaeff052ba11e1a19c9c2497774c4f320
+SHA256: 84e090062b92b654c26d06ce6968b72125959f937613c15e7cd82089f9dc0a37
+Filename: https://apt.htv123.com/debs/1072.deb
 X-Upstream-Source: https://apt.htv123.com/
-X-Upstream-Filename: ./debs/1068.deb
+X-Upstream-Filename: ./debs/1072.deb
 
 Package: byg.iosios.net.autoscroll
 Version: 1.0.5
@@ -70227,64 +70227,64 @@ X-Upstream-Source: https://apt.htv123.com/
 X-Upstream-Filename: ./debs/627.deb
 
 Package: com.xybp888.callassist16.dopamine.roothide
-Version: 3.2.0
+Version: 3.2.1
 Priority: optional
 Section: Tweaks
 Maintainer: xybp888
 Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
 Architecture: iphoneos-arm64e
-Size: 3641776
+Size: 3613704
 Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
 Name: 电话助手iOS16-正式版(Roothide)
 Author: xybp888
-Depiction: https://apt.htv123.com/view/1067
-SileoDepiction: https://apt.htv123.com/sileo/1067
-MD5sum: d96fc9c05d9d8108acb6dfd3bdcc0512
-SHA1: 5fffa53908692f618b78cf947741af2abbf00b77
-SHA256: 290fa1dfbad0620ec6ae814f9a9acdcdc2869c6b87a3a040fb3585362e36c685
-Filename: https://apt.htv123.com/debs/1067.deb
+Depiction: https://apt.htv123.com/view/1071
+SileoDepiction: https://apt.htv123.com/sileo/1071
+MD5sum: 2106105b37c28ecfa16dab1184269668
+SHA1: 068187e46572e0cf4348528251b6f6f27306741b
+SHA256: d97ed6d9b9d4e51f71eb216e1e6cc1759c76be6265240fb1e92272985e8c9485
+Filename: https://apt.htv123.com/debs/1071.deb
 X-Upstream-Source: https://apt.htv123.com/
-X-Upstream-Filename: ./debs/1067.deb
+X-Upstream-Filename: ./debs/1071.deb
 
 Package: com.xybp888.callassist17.dopamine
-Version: 2.2.9
+Version: 2.3.0
 Priority: optional
 Section: Tweaks
 Maintainer: xybp888
 Depends: firmware (>= 17.0), preferenceloader, com.opa334.libsandy
 Architecture: iphoneos-arm64
-Size: 3691298
+Size: 3656864
 Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
 Name: 电话助手iOS17-正式版(Rootless)
 Author: xybp888
-Depiction: https://apt.htv123.com/view/1069
-SileoDepiction: https://apt.htv123.com/sileo/1069
-MD5sum: fe18568371befd2a6358a5bc6ec44e22
-SHA1: c28ca783b9493b7bd44b281fd0d711599e449ba9
-SHA256: 0dc4c560813669fe68fe85d1e180006ff589b895d5df24981a42e669a6373d60
-Filename: https://apt.htv123.com/debs/1069.deb
+Depiction: https://apt.htv123.com/view/1073
+SileoDepiction: https://apt.htv123.com/sileo/1073
+MD5sum: fbb982b5db0614b4a8916f9bfc3e53bf
+SHA1: 078cbd1249363621394439f8db9a33b5df3be262
+SHA256: 0287f9c04e93c3b3dcae6d8b781a193cd080e6194a6344ef1a63fae17aa95f2f
+Filename: https://apt.htv123.com/debs/1073.deb
 X-Upstream-Source: https://apt.htv123.com/
-X-Upstream-Filename: ./debs/1069.deb
+X-Upstream-Filename: ./debs/1073.deb
 
 Package: com.xybp888.callassist17.roothide
-Version: 2.2.9
+Version: 2.3.0
 Priority: optional
 Section: Tweaks
 Maintainer: xybp888
 Depends: firmware (>= 17.0), preferenceloader, com.opa334.libsandy
 Architecture: iphoneos-arm64e
-Size: 3672918
+Size: 3643472
 Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
 Name: 电话助手iOS17-正式版(Roothide)
 Author: xybp888
-Depiction: https://apt.htv123.com/view/1070
-SileoDepiction: https://apt.htv123.com/sileo/1070
-MD5sum: cc95bdecd29bb9894135dc2f5c2815cc
-SHA1: 6ffdf5d2d242a3a2778658efc28d84644c9e4abe
-SHA256: aaeb60481166854b8469f7de7a56591015fbd0a968f36011395379532873fbbf
-Filename: https://apt.htv123.com/debs/1070.deb
+Depiction: https://apt.htv123.com/view/1074
+SileoDepiction: https://apt.htv123.com/sileo/1074
+MD5sum: ed293f02e20bf07cba134c1214e79394
+SHA1: 3a71f4b2e74354386079e1aced2e1359e932af2e
+SHA256: e828c10ad60c2764e8fdf1adf1f00c978025c335e90db583bd5147932affdbd0
+Filename: https://apt.htv123.com/debs/1074.deb
 X-Upstream-Source: https://apt.htv123.com/
-X-Upstream-Filename: ./debs/1070.deb
+X-Upstream-Filename: ./debs/1074.deb
 
 Package: com.xybp888.disabledgesture
 Version: 0.0.1-75
@@ -244221,25 +244221,25 @@ X-Upstream-Source: https://axs66.github.io/pro/
 X-Upstream-Filename: ./debs/com.Axs.copylog_1.7.1_iphoneos-arm64.deb
 
 Package: com.Axs.copyvault
-Version: 1.9.0-1
+Version: 1.9.0-2
 Architecture: iphoneos-arm64
-Maintainer: SquidForce, Backup
-Installed-Size: 6868
+Maintainer: SquidForce
+Installed-Size: 6220
 Depends: mobilesubstrate, preferenceloader, com.opa334.altlist
-Conflicts: com.squidforce.copyvault,cn.octoforce.copyvault
-Size: 1851480
-MD5sum: addc3c9f68aaba62f8ddcf65d08be19a
-SHA1: 54c7197eec177512c06ae5e30225dabaad70643f
-SHA256: 3822f1c66dae2a23bff392d1f7d8f23c50349f3bf1ca9153d821eff825201559
+Conflicts: com.squidforce.copyvault
+Size: 1672600
+MD5sum: 541cf50aee25e6e0867792170a719b18
+SHA1: bd2e01ee9272f26a5aea5d1c25002b282811692d
+SHA256: 1dbbec7db1c0c5e2941318aef6146be23dcff82b852f2af0a9d6804db978589f
 Section: Tweaks
-Description: 激活码用户或需要激活码的用户安装这个，非激活码用户不要安装！！ [本包已内嵌 CCrack：安装后自动生成离线授权，无需激活码。CCrack 仅注入 SpringBoard。]
-Author: SquidForce, Backup
+Description: 激活码用户或需要激活码的用户安装这个，非激活码用户不要安装！！
+Author: SquidForce
 Icon: https://axs66.github.io/pro/icon/copyvault.png
-Name: CopyVault 鱿鱼剪贴板
+Name: CopyVault(激活码版)
 Sileodepiction: https://axs66.github.io/pro/sileodepiction/copyvault/js.json
-Filename: https://axs66.github.io/pro/debs/com.Axs.copyvault_1.9.0-1_iphoneos-arm64.deb
+Filename: https://axs66.github.io/pro/debs/com.Axs.copyvault_1.9.0-2_iphoneos-arm64.deb
 X-Upstream-Source: https://axs66.github.io/pro/
-X-Upstream-Filename: ./debs/com.Axs.copyvault_1.9.0-1_iphoneos-arm64.deb
+X-Upstream-Filename: ./debs/com.Axs.copyvault_1.9.0-2_iphoneos-arm64.deb
 
 Package: com.Axs.cozybadges
 Version: 2.1
@@ -247200,18 +247200,19 @@ X-Upstream-Filename: ./debs/com.Axs.springanimations_1.1.1_iphoneos-arm64.deb
 Package: com.Axs.squidextender
 Version: 3.7.4-2
 Architecture: iphoneos-arm64
-Maintainer: SquidForce, Backup
+Maintainer: SquidForce
+Installed-Size: 9988
 Depends: mobilesubstrate, preferenceloader, com.opa334.libsandy
-Conflicts: com.squidforce.squidextender,cn.octoforce.squidextender
-Size: 2623880
-MD5sum: 2842eb2484107c4d3d23d7559af8c8e1
-SHA1: c39eeec9490fc170f6e931b168d17a05e3b3a9ac
-SHA256: fc3c603c01aa9a7c9967b169ffb6919334bdbb3a677d6de153a8bfc98ce597ca
+Conflicts: com.squidforce.squidextender
+Size: 2285372
+MD5sum: d3128885f3a8ec3827ea265b6f3c07a5
+SHA1: 1f4074b8a904c9849bf5ae185e3e8919f5861977
+SHA256: 208f9da2f9c8d1860abbb4f2033a819b5b31735ce9558b997a1d955a4a89031d
 Section: Tweaks
-Description: SquidExtender + PCrack 离线授权（本地生成合法授权，不改二进制）
-Author: SquidForce, Backup
+Description: 激活码用户或需要激活码的用户安装这个，非激活码用户不要安装！
+Author: SquidForce
 Icon: https://axs66.github.io/pro/icon/squidextender.png
-Name: SquidExtender 鱿鱼键盘
+Name: SquidExtender(激活码版)
 Sileodepiction: https://axs66.github.io/pro/sileodepiction/squidextender/js.json
 Filename: https://axs66.github.io/pro/debs/com.Axs.squidextender_3.7.4-2_iphoneos-arm64.deb
 X-Upstream-Source: https://axs66.github.io/pro/
@@ -247240,19 +247241,19 @@ X-Upstream-Filename: ./debs/com.Axs.squidforce_1.0.1-1_iphoneos-arm64.deb
 Package: com.Axs.squidgesturepro
 Version: 2.7.6-2
 Architecture: iphoneos-arm64
-Maintainer: SquidForce, Backup
-Installed-Size: 7347
+Maintainer: SquidForce
+Installed-Size: 6620
 Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0)
-Conflicts: com.lclrc.squidgesture, com.lclrc.squidgesturepro,cn.octoforce.squidgesturepro
-Size: 1932796
-MD5sum: 6ff7aca0fd748a6b9400a39da6b4e367
-SHA1: 0ccdfaf64a094a22a5224576ded46417cda80aa3
-SHA256: fc0a86397b1318190e9dabbc8eb79c5d6ddd967f3d12e567fe089f559710d32f
+Conflicts: com.lclrc.squidgesture, com.lclrc.squidgesturepro
+Size: 1769472
+MD5sum: 5a72f85244a42675d0e67abc5207b134
+SHA1: 9943cc3a57af138d48e54919fa71de2f9b507b7d
+SHA256: 8b03cf6286fe2fc09ba69fa61178103ae451bc79ec3e278e754234aba0005606
 Section: Tweaks
-Description: 内置 DCrack 离线授权（本地生成、绑定设备、无需激活服务器）。
-Author: SquidForce, Backup
+Description: Gestures，激活码用户或需要激活码的用户安装此包，非激活码用户不要装!
+Author: SquidForce
 Icon: https://axs66.github.io/pro/icon/gesturepro.png
-Name: SquidGesturePro 鱿鱼手势
+Name: SquidGesturePro(激活码版)
 Sileodepiction: https://axs66.github.io/pro/sileodepiction/squidgesturepro/js.json
 Filename: https://axs66.github.io/pro/debs/com.Axs.squidgesturepro_2.7.6-2_iphoneos-arm64.deb
 X-Upstream-Source: https://axs66.github.io/pro/
@@ -248835,22 +248836,24 @@ X-Upstream-Source: https://axs66.github.io/pro/
 X-Upstream-Filename: ./debs/com.axs.appdowngrade_5.2.0-19_iphoneos-arm64.deb
 
 Package: com.axs.appguard
-Version: 5.2.0-2
+Version: 5.2.0-6
 Architecture: iphoneos-arm64
 Maintainer: Axs
 Installed-Size: 688
 Depends: mobilesubstrate, preferenceloader
-Size: 62868
-MD5sum: 8e2f6d6311358a6aef866d3f8e968514
-SHA1: 2a944e53a257c2253345e022d7bee6ee08ce84fa
-SHA256: 7a928c2e2ba051e1df0fe67ac60c6612220f66bf362f0c33aa655408eed4fed7
-Section: Tweaks
+Size: 62966
+MD5sum: d90abda01b476c28df5425503b0ff00d
+SHA1: 7b7f070c2c30e68e2b84b4a1abee93fe16bef72a
+SHA256: ea588a1c2d1a009d03521c813920f22af097e496a237210f2621c0501398b370
+Section: Axs-Tweaks
 Description: iOS 14-17 进程守护与性能优化工具，支持针对每个进程独立设置活跃/非活跃内存限制、Jetsam 优先级、CPU Nice 调度优先级，并可剥离系统托管标记阻止内核自动覆盖配置。内置后台守护进程实时监控进程状态，支持有根/无根/隐藏越狱三种环境。
 Author: Axs
+Icon: https://axs66.github.io/pro/icon/appguard.png
 Name: AppGuard
-Filename: https://axs66.github.io/pro/debs/com.axs.appguard_5.2.0-2_iphoneos-arm64.deb
+Sileodepiction: https://axs66.github.io/pro/sileodepiction/appguard/js.json
+Filename: https://axs66.github.io/pro/debs/com.axs.appguard_5.2.0-6_iphoneos-arm64.deb
 X-Upstream-Source: https://axs66.github.io/pro/
-X-Upstream-Filename: ./debs/com.axs.appguard_5.2.0-2_iphoneos-arm64.deb
+X-Upstream-Filename: ./debs/com.axs.appguard_5.2.0-6_iphoneos-arm64.deb
 
 Package: com.axs.appselect
 Version: 5.2.0-12
