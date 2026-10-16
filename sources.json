@@ -1,26 +1,3 @@
 {
-  "sources": [
-    {"url": "https://byg.iosios.net/", "enabled": true},
-    {"url": "https://sini921.github.io/", "enabled": true},
-    {"url": "https://trollstorex.github.io/repo/", "enabled": true},
-    {"url": "https://axs.yourepo.com/", "enabled": true},
-    {"url": "https://wwg135.github.io/", "enabled": true},
-    {"url": "https://xiangfeidexiaohuo.github.io/", "enabled": true},
-    {"url": "http://apt.htv123.com/", "enabled": true},
-    {"url": "https://apt.wxhbts.com/", "enabled": true},
-    {"url": "https://qi-ting-zhang.github.io/sileo/", "enabled": true},
-    {"url": "https://jimkanuo.github.io/apt-repo/", "enabled": true},
-    {"url": "https://laileld.github.io/repo/", "enabled": true},
-    {"url": "http://apt.25mao.com/", "enabled": true},
-    {"url": "https://lclrc.github.io/repo/", "enabled": true},
-    {"url": "https://MrSuuu.github.io/Sileo/", "enabled": true},
-    {"url": "https://zlw555.github.io/repo/", "enabled": true},
-    {"url": "https://yttxcs.com/", "enabled": true},
-    {"url": "https://repo.cydiabc.top/", "enabled": true},
-    {"url": "https://apt.cydia.pro/", "enabled": true},
-    {"url": "https://axs66.github.io/pro/", "enabled": true},
-    {"url": "https://huayuarc.github.io/", "enabled": true},
-    {"url": "https://zhuti.iosios.net/", "enabled": true},
-    {"url": "https://repo.getsileo.app/", "enabled": true}
-  ]
+  "sources": []
 }

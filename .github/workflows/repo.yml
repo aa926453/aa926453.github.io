@@ -6,14 +6,10 @@ on:
     paths:
       - 'debs/**'
       - 'build_repo.py'
-      - 'sync_wkk.py'
-      - 'sources.json'
       - 'index.html'
       - 'CydiaIcon.png'
       - '.github/workflows/repo.yml'
   workflow_dispatch:
-  schedule:
-    - cron: '0 * * * *'
 
 permissions:
   contents: write
@@ -35,31 +31,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Restore last successful metadata cache
-        uses: actions/cache/restore@v4
-        with:
-          path: .sync-cache
-          key: source-metadata-${{ github.ref_name }}-${{ github.run_id }}-${{ github.run_attempt }}
-          restore-keys: |
-            source-metadata-${{ github.ref_name }}-
-
       - name: Build package index
-        run: python3 sync_wkk.py
-
-      - name: Save private metadata cache
-        if: always()
-        uses: actions/cache/save@v4
-        with:
-          path: .sync-cache
-          key: source-metadata-${{ github.ref_name }}-${{ github.run_id }}-${{ github.run_attempt }}
-
-      - name: Save audit report (not Pages)
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: source-audit-${{ github.run_id }}
-          path: sync-report.json
-          retention-days: 14
+        run: python3 build_repo.py
 
       - name: Commit updated index only
         run: |
