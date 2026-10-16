@@ -1,27 +1,44 @@
-Package: com.opa334.trollstorelites
-Name: TrollStore Lite 白巨魔
-Description: 巨魔商店越狱版
- * 支持安装 IPA 文件
- * 重启设备后丢失越狱环境将失效
- * TrollStore for jailbroken iOS
-Depends: ldid
-Maintainer: opa334
-Author: opa334
-Section: Applications
+Package: com.cydiabc.nopassafterrespringsafe-roothide
+Version: 1.0-1
+Description: iPhone已解锁或者未设置密码/Face ID的情况下，注销设备后无需再次输入密码或验证Face ID即可进入桌面，安装即可生效，无设置
+A12: 1
+Section: Roothide
+Maintainer: Brend0n
+Depends: mobilesubstrate
 Architecture: iphoneos-arm64e
-Version: 2.1.1-1
-Installed-Size: 592
-Icon: https://TrollStoreX.Github.io/sileodepiction/TrollStore/icon.png
-SileoDepiction: https://TrollStoreX.Github.io/sileodepiction/TrollStore/js.json
-Conflicts: com.opa334.trollstorelite
-Filename: debs/TrollStore Lite 白巨魔-2.1.1-1-iphoneos-arm64e.deb
-Size: 212360
-MD5sum: a33e1900db0f74f0964bc64c66ae8763
-SHA1: dd98e9517a4e33da530b9ceeff69ecff2003af46
-SHA256: 6429e7e65bd6d5d8211f623d0f5810cdcecde0423164322b2ff15272f107aff8
+Installed-Size: 152
+Name: 注销不锁屏
+Author: Brend0n
+Sponsor: Ai-小苹果™
+Icon: file:///Applications/Cydia.app/Sections/System.png
+Icon2: 17.png
+Filename: debs/注销不锁屏-1.0-1-roothide.deb
+Size: 5644
+MD5sum: b61d49eda4368a7fe8cc7b098de0143b
+SHA1: 880544b8d0f07504ac6602b411dbc7941f8b38d5
+SHA256: bb9b8a23a070ba2f4788d152168ca71a6683a93b8fb3fc57820d28309d3fc5af
+
+Package: com.cydiabc.trollstore-lite-roothide
+Version: 2.1.1-2
+Description: TrollStore Lite 新增对 arm64e RootHide 环境的完整支持，修复 iOS 17.2 及更高版本上的 App 崩溃问题
+A12: 1
+Section: Roothide
+Maintainer: opa334
+Architecture: iphoneos-arm64e
+Installed-Size: 3948
+Name: 白巨魔
+Author: opa334
+Sponsor: Ai-小苹果™
+Icon: file:///Applications/Cydia.app/Sections/System.png
+Icon2: 17.png
+Filename: debs/白巨魔-2.1.1-2-roothide.deb
+Size: 1893260
+MD5sum: 29def844097183f5cace9ef4a454898d
+SHA1: a8ebf0183312e750bfad25bdf6eb6ffd199fcade
+SHA256: 5a18efec0f99dcd70d155f2e0e6ef1acdcd89f3faadeccbb2aedecd1bed036aa
 
 Package: com.fluoxetine.jumor
-Name: 巨魔R
+Name: 红巨魔
 Description: 巨魔 R由Fluoxetine为Relaxin越狱特别制作。支持免签安装IPA,Tipa应用。支持注入任意dylib和deb插件。Bug反馈及意见建议:1103945342@qq.com。感谢Relaxin越狱，感谢opa334。
 Depends: ldid, ellekit
 Maintainer: Fluoxetine <1103945342@qq.com>
@@ -31,9 +48,9 @@ Architecture: iphoneos-arm64e
 Version: 1.0.4
 Installed-Size: 1361
 icon: https://huayuarc.github.io/icon/jumor.jpg
-Filename: debs/TrollStoreR-1.0.4-iphoneos-arm64e.deb
-Size: 592248
-MD5sum: 13393effd766d34834b4f24503019576
-SHA1: 695f5afac627c873d8ea74517b4358a1a8592da1
-SHA256: d44774a4504308384ddda9bedd57e13ec01617f8f69412f0ed335abc74029eea
+Filename: debs/红巨魔-1.0.4.deb
+Size: 614874
+MD5sum: 20da60b803946dbbf6cc2fad6a648aac
+SHA1: 24d8625f8a0a6bdb281cd8513c22bbeecb214e3f
+SHA256: 15fc3d29fef5203805ba91885a5133fd7327d66ebc4936e427059b4a9510c534
 
