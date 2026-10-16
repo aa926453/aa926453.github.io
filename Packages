@@ -16,6 +16,66 @@ MD5sum: b3e509e9d682968fb3b4b72453a7d8f5
 SHA1: c84907b25143f9c6e05eeba033ccebca501fa307
 SHA256: 43f5a4cd2dcfa2a7da1fd65c20bc2f29b745ea4045c15434b81594798a582e9e
 
+Package: com.axs.ipslog
+Name: 崩溃日志
+Description: 设置内一键查看与分析设备上的 .ips 崩溃日志，快速定位崩溃原因。
+ * 崩溃日志查看器：按进程聚合、按时间倒序、关键字搜索、可筛选分类、可一键清空日志
+ * 解析异常类型 / 异常码 / 触发线程 / 崩溃堆栈 / 二进制映像
+ * 支持查看完整原文、复制任意字段、分享导出、删除单条与清空
+Maintainer: Axs <qiaozhani000@163.com>
+Author: Axs <qiaozhani000@163.com>
+Section: Tweaks
+Depends: preferenceloader
+Icon: https://axs66.github.io/pro/icon/ips.png
+Architecture: iphoneos-arm64e
+Version: 5.2.0-31
+Installed-Size: 512
+Filename: debs/崩溃日志-5.2.0-31-roothide.deb
+Size: 113234
+MD5sum: 6ddda262f44729c2bbfe341fb7a1814d
+SHA1: 9839b4583f50ff0f379973e2e0c2d2ea60e21ab1
+SHA256: 1a36efb838e538f2e25f1d3b2dee257be56a8b14efdf4ac52e8868085e258886
+
+Package: com.wxhbts.onesettings.rootless
+Version: 2.2
+Section: 常用插件
+Maintainer: Nightwind
+Depends: firmware (>= 14.0), mobilesubstrate (>= 0.9.5000), com.mrgcgamer.libgcuniversal, preferenceloader
+Conflicts: com.shepgoba.settingswidgets, com.creaturecoding.shuffle
+Architecture: iphoneos-arm64e
+Installed-Size: 1084
+Name: 插件归类
+Description: 重新定义iPhone的手机设置界面
+Author: Nightwind
+Icon: https://apt.wxhbts.com/icon/%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6.png
+Depiction: https://apt.wxhbts.com/view/10475
+SileoDepiction: https://apt.wxhbts.com/sileo/10475
+Filename: debs/插件归类-2.2-roothide.deb
+Size: 247964
+MD5sum: 7a8e4e4ce8705c849a51c631089d3c6e
+SHA1: 5699ad8240a10b144ab8f8fdb2ab32c72cb5feed
+SHA256: 064993d758af640d33e7b2e3016c9d07c04e1be6bef457717736b69696d70d7f
+
+Package: com.mrgcgamer.libgcuniversal
+Version: 1.7.0
+Section: 插件依赖
+Maintainer: MrGcGamer
+Depends: firmware (>= 14.0) | ws.hbang.alderis, firmware (>= 12.0)
+Provides: com.mrgcgamer.libgcimagepicker, com.mrgcgamer.libgccolorpicker
+Architecture: iphoneos-arm64e
+Installed-Size: 380
+Name: 插件归类依赖库
+Description: An awesome library of some sort!!
+Author: MrGcGamer
+Icon: https://apt.wxhbts.com/icon/%E6%8F%92%E4%BB%B6%E4%BE%9D%E8%B5%96.png
+Depiction: https://apt.wxhbts.com/view/10013
+SileoDepiction: https://apt.wxhbts.com/sileo/10013
+Filename: debs/插件归类依赖库-1.7.0-roothide.deb
+Size: 62274
+MD5sum: 102f520259a5d39340ba238118e1338c
+SHA1: 53e4f11a1f757e295ede0afc8b60b055dbbb501b
+SHA256: f283f8a9888597c0d73291bce267cad8ab270108d467be2bbb82f1e5328f006d
+
 Package: com.cydiabc.nopassafterrespringsafe-roothide
 Version: 1.0-1
 Description: iPhone已解锁或者未设置密码/Face ID的情况下，注销设备后无需再次输入密码或验证Face ID即可进入桌面，安装即可生效，无设置
