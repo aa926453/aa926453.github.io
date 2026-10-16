@@ -1,37 +1,25 @@
-Package: com.axs.cpufree
-Name: CPU Free
-Description: 一个强大的 iOS 温控管理插件，接管系统温控决策，让 iPhone 发热时不再被强行降频、降亮度。
- * 一、双防护层拦截
- * 1. IOKit 层：拦截传感器温度读取、降频指令、限频属性写入和高温广播，从源头掐断降频动作；
- * 2. ObjC 层：钩住内部决策类，阻止决策树评估、软化控制力度、改写热配置表，并把热状态重置为正常。
- * 二、双功率模式
- * 1. 防温控：减少降频、防止降亮度，重载场景尽量维持满血频率；
- * 2. 低功耗：限制 CPU 最高 2016MHz，不抬高待机频率，兼顾省电与性能。
- * 三、独立开关
- * 1. CPU 防降频、屏幕防降亮度、屏蔽高温提醒（含设置内的散热建议）均可单独开关；
- * 2. 保留 70°C 安全阀：温度超过 70°C 或读温失败时自动放行系统保护，防止异常发热与黑屏。
- * 四、控制中心模块
- * 1. 功率模式切换：一键在「防温控 / 低功耗」之间切换；
- * 2. CPU实时频率：显示大核最大驻留档位（实际工作频率），低功耗模式下不超过上限 2016MHz。
- * 五、状态栏显示
- * 1. 状态栏显示大核实时频率 + 整机 CPU 占用率（形如 3468MHz 42%），文字颜色跟随状态栏；
- * 2. 位置可用面板的「水平 / 垂直偏移」微调，避开其它状态栏插件。
- * 六、机型适配
- * 1. 内置 A11–A17 Pro 大核上限表（2390 / 2490 / 2650 / 3090 / 3230 / 3468 / 3780MHz），按机型自动匹配上限。
-Maintainer: Axs<qiaozhani000@163.com>
-Author: Axs<qiaozhani000@163.com>
-Section: Axs-Tweaks
-Depends: mobilesubstrate, preferenceloader
-Icon: https://axs66.github.io/pro/icon/cpufree.png
-Sileodepiction: https://axs66.github.io/pro/sileodepiction/cpufree/js.json
+Package: byg.iosios.net.kuaipanel.rootless
+Version: 3.1-1
+Priority: optional
+Section: 系统增强
+Maintainer: 搬运工
+Depends: firmware (>= 15.0), mobilesubstrate (>= 0.9.5000)
 Architecture: iphoneos-arm64
-Version: 5.2.0-68
-Installed-Size: 1428
-Filename: debs/com.axs.cpufree_5.2.0-68_iphoneos-arm64.deb
-Size: 96040
-MD5sum: 0d82b87a44eb8b394a31a4e7e14d2425
-SHA1: cb834bf1d6f211ded122bc2b0bb99255904e257e
-SHA256: 0d23abff9c0fa0cb6c0a46f5b099474a6b9767097440ed2727fba13d156d8e94
+Size: 2876854
+Installed-Size: 8648
+Description: 本插件需要购买激活使用，源主觉得不错，所以上架备份一下，效果可以看截图，觉得有需要的小伙们可以选择是否付费激活！一些快捷操作，看起来还不错！
+Name: 快捷面板-Rootless
+Author: Mao
+Sponsor: 搬运工
+SileoDepiction: https://byg.iosios.net/sileo/3196
+Depiction: https://byg.iosios.net/view/3196
+Icon: https://chinesebuilding.club/pic/cydia.png
+MD5sum: eae222d6886dc4ae34a1c12f344b643e
+SHA1: ee8fc317e98b7dde3d8c8566c8ef284d4f37904b
+SHA256: 2ed8901ac9150054fc5cd713b278b050b0155e7589ef769813cea803b8e9cad1
+Filename: https://byg.iosios.net/debs/3196.deb
+X-Upstream-Source: https://byg.iosios.net/
+X-Upstream-Filename: ./debs/3196.deb
 
 Package: byg.iosios.net.liquidas
 Version: 0.1.1b+banana54
@@ -9222,28 +9210,6 @@ Name: libflora
 Filename: https://wwg135.github.io/debs/flora_1.0.1_iphoneos-arm64.deb
 X-Upstream-Source: https://wwg135.github.io/
 X-Upstream-Filename: ./debs/flora_1.0.1_iphoneos-arm64.deb
-
-Package: byg.iosios.net.kuaipanel.rootless
-Version: 2.0-4
-Priority: optional
-Section: 系统增强
-Maintainer: 搬运工
-Depends: firmware (>= 5.0), mobilesubstrate, preferenceloader, com.opa334.altlist (>=1.0.4),ws.hbang.alderis (>= 1.1)
-Architecture: iphoneos-arm64
-Size: 4824158
-Description: 本插件需要购买激活使用，源主觉得不错，所以上架备份一下，效果可以看截图，觉得有需要的小伙们可以选择是否付费激活！一些快捷操作，看起来还不错！
-Name: 快捷面板-Rootless
-Author: Mao
-Sponsor: 搬运工
-SileoDepiction: https://byg.iosios.net/sileo/1702
-Depiction: https://byg.iosios.net/view/1702
-Icon: https://chinesebuilding.club/pic/cydia.png
-MD5sum: a53c09293d66426f09547cf307b09ba2
-SHA1: d9331ef4dc7e74167915305047d8ed9548d986d9
-SHA256: 30ae80a2958970d7b478fb6eaa3515be7b087050c19917c90795ba3f4b4ade5c
-Filename: https://byg.iosios.net/debs/1702.deb
-X-Upstream-Source: https://byg.iosios.net/
-X-Upstream-Filename: ./debs/1702.deb
 
 Package: byg.iosios.net.nowplayingvolumecontrol
 Version: 1.0
@@ -37382,22 +37348,22 @@ X-Upstream-Filename: debs/bigshot_1.1_iphoneos-arm64.deb
 Package: com.yourepo.axs.bigtime
 Architecture: iphoneos-arm64
 Name: BigTime
-Version: 5.2.0-74
+Version: 5.2.0-79
 Description: 液态锁屏时间+五色渐变锁屏时间
 Author: Axs <qiaozhani000@163.com>
 Section: System (Axs-Tweaks)
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 15.0), preferenceloader
 Conflicts: com.axs.screenlocktime
-Size: 135322
+Size: 144002
 Maintainer: Axs <qiaozhani000@163.com>
-Md5sum: c16bf77fc48316269cdd329a255cbd67
-SHA256: 77fa7eb38fa22801445e577a291045b6c7e3787ca1a97a194c5a7ed542c8b39c
+Md5sum: 180fa1d2c9d545b5ad265ba4fd229139
+SHA256: 66bb1a87ece80468b53bb368d7f57a4f68ad9c2cfdf4eafa3d04613b5d9d6c22
 Depiction: https://axs.yourepo.com/pack/bigtime
 SileoDepiction: https://axs.yourepo.com/sileo/depiction/bigtime
 Icon: https://axs66.github.io/pro/icon/bigtime.png
-Filename: https://axs.yourepo.com/debs/bigtime_5.2.0-74_iphoneos-arm64.deb
+Filename: https://axs.yourepo.com/debs/bigtime_5.2.0-79_iphoneos-arm64.deb
 X-Upstream-Source: https://axs.yourepo.com/
-X-Upstream-Filename: debs/bigtime_5.2.0-74_iphoneos-arm64.deb
+X-Upstream-Filename: debs/bigtime_5.2.0-79_iphoneos-arm64.deb
 
 Package: com.yourepo.axs.bizhi
 Architecture: iphoneos-arm64
@@ -41376,22 +41342,22 @@ X-Upstream-Filename: debs/trollpad_1.3_iphoneos-arm64.deb
 Package: com.yourepo.axs.tweakshub
 Architecture: iphoneos-arm64
 Name: TweaksHub
-Version: 5.2.0-86
+Version: 5.2.0-88
 Description: 集中收纳统一管理越狱插件与第三方 App 设置，支持插件自定义名称和图标,支持插件自定义排序，支持屏蔽系统更新、设置小红点、电池信息中的未知部件。
 Author: Axs <qiaozhani000@163.com>
 Section: System (Axs-Tweaks)
 Depends: mobilesubstrate, preferenceloader
 Conflicts: com.nightwind.onesettings, com.creaturecoding.shuffle, com.sop.settingsrevamp, com.hk.settingsrevamp, com.dao.settingsrevamp, byg.iosios.net.settingsrevamp
-Size: 68022
+Size: 68414
 Maintainer: Axs <qiaozhani000@163.com>
-Md5sum: dffc268bfe711c895331565de0787a42
-SHA256: 802de19cad815aca987120c98c9c315f3656befe8142c2d6107eace984945457
+Md5sum: b59fadf9b409f8de0ca41bdf2cc77fd4
+SHA256: cf1ba749d5959343901b6420c8390d8cc2130334e0c75bfa5f8b243852447938
 Depiction: https://axs.yourepo.com/pack/tweakshub
 SileoDepiction: https://axs.yourepo.com/sileo/depiction/tweakshub
 Icon: https://axs66.github.io/pro/icon/tweakshub.png
-Filename: https://axs.yourepo.com/debs/tweakshub_5.2.0-86_iphoneos-arm64.deb
+Filename: https://axs.yourepo.com/debs/tweakshub_5.2.0-88_iphoneos-arm64.deb
 X-Upstream-Source: https://axs.yourepo.com/
-X-Upstream-Filename: debs/tweakshub_5.2.0-86_iphoneos-arm64.deb
+X-Upstream-Filename: debs/tweakshub_5.2.0-88_iphoneos-arm64.deb
 
 Package: com.yourepo.axs.tweaktool
 Architecture: iphoneos-arm64
@@ -77882,6 +77848,44 @@ SHA256: 91f49a6ae4a6ad10f5e2a28306c1a9fe1d553b97fdda381b7191975c131994ff
 Filename: https://MrSuuu.github.io/Sileo/debs/com.zegeyoudaoli.liquidass27_1.0.0-74_iphoneos-arm64e.deb
 X-Upstream-Source: https://MrSuuu.github.io/Sileo/
 X-Upstream-Filename: debs/com.zegeyoudaoli.liquidass27_1.0.0-74_iphoneos-arm64e.deb
+
+Package: com.zegeyoudaoli.torchtimeout
+Name: 定时关闭手电筒（rootless 测试）
+Version: 1.0.6+rootless
+Architecture: iphoneos-arm64
+Description: 开启手电筒后，按设定的延时自动关闭。
+Maintainer: 泽哥
+Author: 泽哥
+Depiction: https://MrSuuu.github.io/Sileo/depictions/torchtimeout.html
+Sileodepiction: https://MrSuuu.github.io/Sileo/depictions/torchtimeout.json
+Section: Tweaks
+Depends: mobilesubstrate
+Icon: https://MrSuuu.github.io/Sileo/depictions/icon-torchtimeout.png
+Size: 47700
+MD5sum: 5dc73126bffdeed4404edba47f3dc6fc
+SHA256: 7c01dbaac67a6460537da55bf6b3ced6afe75fb3a7d82e5159af83f3b7d27fb6
+Filename: https://MrSuuu.github.io/Sileo/debs/com.zegeyoudaoli.torchtimeout_1.0.6+rootless_iphoneos-arm64.deb
+X-Upstream-Source: https://MrSuuu.github.io/Sileo/
+X-Upstream-Filename: debs/com.zegeyoudaoli.torchtimeout_1.0.6+rootless_iphoneos-arm64.deb
+
+Package: com.zegeyoudaoli.torchtimeout
+Name: 定时关闭手电筒
+Version: 1.0.6
+Architecture: iphoneos-arm64e
+Description: 开启手电筒后，按设定的延时自动关闭。
+Maintainer: 泽哥
+Author: 泽哥
+Depiction: https://MrSuuu.github.io/Sileo/depictions/torchtimeout.html
+Sileodepiction: https://MrSuuu.github.io/Sileo/depictions/torchtimeout.json
+Section: Tweaks
+Depends: mobilesubstrate
+Icon: https://MrSuuu.github.io/Sileo/depictions/icon-torchtimeout.png
+Size: 51334
+MD5sum: f38b86f1ee9092699697197c06ebd0ae
+SHA256: dfd7c7fc7f8f98cd038cd7a4799c9394194bfc6b4b7da2cf6882c95ef57fda8c
+Filename: https://MrSuuu.github.io/Sileo/debs/com.zegeyoudaoli.torchtimeout_1.0.6_iphoneos-arm64e.deb
+X-Upstream-Source: https://MrSuuu.github.io/Sileo/
+X-Upstream-Filename: debs/com.zegeyoudaoli.torchtimeout_1.0.6_iphoneos-arm64e.deb
 
 Package: dylv.liquidass
 Name: Liquid (Gl)ass · 泽哥维护兼容版（rootless 测试）
@@ -248979,18 +248983,18 @@ X-Upstream-Source: https://axs66.github.io/pro/
 X-Upstream-Filename: ./debs/com.axs.axswidget_5.2.0-15_iphoneos-arm64.deb
 
 Package: com.axs.bigtime
-Version: 5.2.0-74
+Version: 5.2.0-80
 Architecture: iphoneos-arm64
 Maintainer: Axs <qiaozhani000@163.com>
-Installed-Size: 980
+Installed-Size: 1032
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 15.0), preferenceloader
 Conflicts: com.axs.screenlocktime
-Size: 135688
-MD5sum: df1e59309a6165cb14b27f40ac9de9b9
-SHA1: ceb6f946049029899426e74529c6807026389557
-SHA256: e16fa5b5a56beaf199c4ed4e72ab626cb45f7ccb7e55c983529831cb5414cd86
+Size: 144952
+MD5sum: 8815bab7f7b309763cdd267d893e56bd
+SHA1: 8ee387941f0ec80d647326ac9d3dceda43af895b
+SHA256: 5f98d4e97e2f2fa5238e5afd59e178bf6ebfdda8369b6649d4b0b04aa5b08204
 Section: Axs-Tweaks
-Description: 一个简单的锁屏时钟插件，需要在“/var/mobile/Axs/字体素材”文件夹里面放入“axs66.otf"字体素材，才能生效。
+Description: 一个简单的锁屏时钟插件，支持在设置面板导入或选择 OTF、TTF 字体，素材目录为 /var/mobile/Axs/字体素材。
  * 1.锁屏大字时钟玻璃效果，隐藏系统时间（锁屏时）;
  * 2.支持锁屏时钟启用开关、帧率上限和垂直偏移调节;
  * 3.支持玻璃边缘、模糊、厚度和折射调节;
@@ -249000,23 +249004,23 @@ Author: Axs <qiaozhani000@163.com>
 Icon: https://axs66.github.io/pro/icon/bigtime.png
 Name: BigTime
 Sileodepiction: https://axs66.github.io/pro/sileodepiction/bigtime/js.json
-Filename: https://axs66.github.io/pro/debs/com.axs.bigtime_5.2.0-74_iphoneos-arm64.deb
+Filename: https://axs66.github.io/pro/debs/com.axs.bigtime_5.2.0-80_iphoneos-arm64.deb
 X-Upstream-Source: https://axs66.github.io/pro/
-X-Upstream-Filename: ./debs/com.axs.bigtime_5.2.0-74_iphoneos-arm64.deb
+X-Upstream-Filename: ./debs/com.axs.bigtime_5.2.0-80_iphoneos-arm64.deb
 
 Package: com.axs.bigtime
-Version: 5.2.0-74
+Version: 5.2.0-80
 Architecture: iphoneos-arm64e
 Maintainer: Axs <qiaozhani000@163.com>
-Installed-Size: 980
+Installed-Size: 1032
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 15.0), preferenceloader
 Conflicts: com.axs.screenlocktime
-Size: 135038
-MD5sum: 5625e187a59c06770932f1e0cfeddc18
-SHA1: 089be5d071c9bd0ea526f22aea1d742dd266c779
-SHA256: cb14c54f5fddac29d6b15193beb91ae1ad7acdbd1f0fe4feb829fdebde257ba9
+Size: 144164
+MD5sum: 44684b217545d280b8c8364d235d295b
+SHA1: 79c4c1b65c5d1511a5505c393a70e1981724661f
+SHA256: f1f5b5b04468f03266164554a966fcd9b41e735280fec494d9f2265029da64d5
 Section: Axs-Tweaks
-Description: 一个简单的锁屏时钟插件，需要在“/var/mobile/Axs/字体素材”文件夹里面放入“axs66.otf"字体素材，才能生效。
+Description: 一个简单的锁屏时钟插件，支持在设置面板导入或选择 OTF、TTF 字体，素材目录为 /var/mobile/Axs/字体素材。
  * 1.锁屏大字时钟玻璃效果，隐藏系统时间（锁屏时）;
  * 2.支持锁屏时钟启用开关、帧率上限和垂直偏移调节;
  * 3.支持玻璃边缘、模糊、厚度和折射调节;
@@ -249026,9 +249030,9 @@ Author: Axs <qiaozhani000@163.com>
 Icon: https://axs66.github.io/pro/icon/bigtime.png
 Name: BigTime
 Sileodepiction: https://axs66.github.io/pro/sileodepiction/bigtime/js.json
-Filename: https://axs66.github.io/pro/debs/com.axs.bigtime_5.2.0-74_iphoneos-arm64e.deb
+Filename: https://axs66.github.io/pro/debs/com.axs.bigtime_5.2.0-80_iphoneos-arm64e.deb
 X-Upstream-Source: https://axs66.github.io/pro/
-X-Upstream-Filename: ./debs/com.axs.bigtime_5.2.0-74_iphoneos-arm64e.deb
+X-Upstream-Filename: ./debs/com.axs.bigtime_5.2.0-80_iphoneos-arm64e.deb
 
 Package: com.axs.bigtime
 Version: 5.2.0-74
@@ -249104,6 +249108,43 @@ Sileodepiction: https://axs66.github.io/pro/sileodepiction/contactsfs/js.json
 Filename: https://axs66.github.io/pro/debs/com.axs.contactsfs_1.0.1_iphoneos-arm64.deb
 X-Upstream-Source: https://axs66.github.io/pro/
 X-Upstream-Filename: ./debs/com.axs.contactsfs_1.0.1_iphoneos-arm64.deb
+
+Package: com.axs.cpufree
+Version: 5.2.0-68
+Architecture: iphoneos-arm64
+Maintainer: Axs<qiaozhani000@163.com>
+Installed-Size: 1428
+Depends: mobilesubstrate, preferenceloader
+Size: 96040
+MD5sum: 0d82b87a44eb8b394a31a4e7e14d2425
+SHA1: cb834bf1d6f211ded122bc2b0bb99255904e257e
+SHA256: 0d23abff9c0fa0cb6c0a46f5b099474a6b9767097440ed2727fba13d156d8e94
+Section: Axs-Tweaks
+Description: 一个强大的 iOS 温控管理插件，接管系统温控决策，让 iPhone 发热时不再被强行降频、降亮度。
+ * 一、双防护层拦截
+ * 1. IOKit 层：拦截传感器温度读取、降频指令、限频属性写入和高温广播，从源头掐断降频动作；
+ * 2. ObjC 层：钩住内部决策类，阻止决策树评估、软化控制力度、改写热配置表，并把热状态重置为正常。
+ * 二、双功率模式
+ * 1. 防温控：减少降频、防止降亮度，重载场景尽量维持满血频率；
+ * 2. 低功耗：限制 CPU 最高 2016MHz，不抬高待机频率，兼顾省电与性能。
+ * 三、独立开关
+ * 1. CPU 防降频、屏幕防降亮度、屏蔽高温提醒（含设置内的散热建议）均可单独开关；
+ * 2. 保留 70°C 安全阀：温度超过 70°C 或读温失败时自动放行系统保护，防止异常发热与黑屏。
+ * 四、控制中心模块
+ * 1. 功率模式切换：一键在「防温控 / 低功耗」之间切换；
+ * 2. CPU实时频率：显示大核最大驻留档位（实际工作频率），低功耗模式下不超过上限 2016MHz。
+ * 五、状态栏显示
+ * 1. 状态栏显示大核实时频率 + 整机 CPU 占用率（形如 3468MHz 42%），文字颜色跟随状态栏；
+ * 2. 位置可用面板的「水平 / 垂直偏移」微调，避开其它状态栏插件。
+ * 六、机型适配
+ * 1. 内置 A11–A17 Pro 大核上限表（2390 / 2490 / 2650 / 3090 / 3230 / 3468 / 3780MHz），按机型自动匹配上限。
+Author: Axs<qiaozhani000@163.com>
+Icon: https://axs66.github.io/pro/icon/cpufree.png
+Name: CPU Free
+Sileodepiction: https://axs66.github.io/pro/sileodepiction/cpufree/js.json
+Filename: https://axs66.github.io/pro/debs/com.axs.cpufree_5.2.0-68_iphoneos-arm64.deb
+X-Upstream-Source: https://axs66.github.io/pro/
+X-Upstream-Filename: ./debs/com.axs.cpufree_5.2.0-68_iphoneos-arm64.deb
 
 Package: com.axs.duostatus
 Version: 5.2.0-119
@@ -249755,16 +249796,16 @@ X-Upstream-Source: https://axs66.github.io/pro/
 X-Upstream-Filename: ./debs/com.axs.touchtrail_5.2.0-56_iphoneos-arm64.deb
 
 Package: com.axs.tweakshub
-Version: 5.2.0-86
+Version: 5.2.0-88
 Architecture: iphoneos-arm64
 Maintainer: Axs <qiaozhani000@163.com>
 Installed-Size: 728
 Depends: mobilesubstrate, preferenceloader
 Conflicts: com.nightwind.onesettings, com.creaturecoding.shuffle, com.sop.settingsrevamp, com.hk.settingsrevamp, com.dao.settingsrevamp, byg.iosios.net.settingsrevamp
-Size: 68362
-MD5sum: 09da0f94ab11c40c2767cb14ff0f551d
-SHA1: aa3ce5c443b8a5c8d8dd9666e9eea4afa575dda3
-SHA256: 0b376d41693251cec6e2b3247583d4eeb4216155426297b2ceca68943a0e6a95
+Size: 68756
+MD5sum: 62d412e63ad0014bfabbee2a527749a2
+SHA1: e449a8a9e6ceb985b80c180dda0e0ad81d05eae5
+SHA256: 682c0de9641abc4e856d2ab886b4f73bd63adff47679619e212f3261faeeb65b
 Section: Axs-Tweaks
 Description: 集中收纳统一管理越狱插件与第三方 App 设置，支持插件自定义名称和图标。
  * 设置首页同组并排两个入口：越狱插件 + 应用软件
@@ -249779,9 +249820,38 @@ Author: Axs <qiaozhani000@163.com>
 Icon: https://axs66.github.io/pro/icon/tweakshub.png
 Name: TweaksHub
 Sileodepiction: https://axs66.github.io/pro/sileodepiction/tweakshub/js.json
-Filename: https://axs66.github.io/pro/debs/com.axs.tweakshub_5.2.0-86_iphoneos-arm64.deb
+Filename: https://axs66.github.io/pro/debs/com.axs.tweakshub_5.2.0-88_iphoneos-arm64.deb
 X-Upstream-Source: https://axs66.github.io/pro/
-X-Upstream-Filename: ./debs/com.axs.tweakshub_5.2.0-86_iphoneos-arm64.deb
+X-Upstream-Filename: ./debs/com.axs.tweakshub_5.2.0-88_iphoneos-arm64.deb
+
+Package: com.axs.tweakshub
+Version: 5.2.0-88
+Architecture: iphoneos-arm64e
+Maintainer: Axs <qiaozhani000@163.com>
+Installed-Size: 728
+Depends: mobilesubstrate, preferenceloader
+Conflicts: com.nightwind.onesettings, com.creaturecoding.shuffle, com.sop.settingsrevamp, com.hk.settingsrevamp, com.dao.settingsrevamp, byg.iosios.net.settingsrevamp
+Size: 68682
+MD5sum: 451e3da291a234cb3cb96a3f693c2294
+SHA1: 6d5245640913b441f56b631ebed43ae5e9e94f36
+SHA256: 4d4a84f4ce6480f768d3106aacdac1ae43235ecf51089e9b81a4bff894814cc2
+Section: Axs-Tweaks
+Description: 集中收纳统一管理越狱插件与第三方 App 设置，支持插件自定义名称和图标。
+ * 设置首页同组并排两个入口：越狱插件 + 应用软件
+ * 自动隐藏其他插件的首页独立入口，整组收纳系统第三方 App 设置
+ * 越狱插件面板递归聚合所有已装插件设置
+ * 应用软件面板收录第三方 App 设置入口（点击仍进原生设置页）
+ * 支持 Prefs:root=TWEAKS_CELL / TWEAKS_APPS_CELL 深链直达
+ * 「附加功能」新增屏蔽部件与维修记录（隐藏非原装电池、维修记录相关提示行）
+ * 「附加功能」新增屏蔽系统更新提示（隐藏设置首页「现有 iOS xx 可用」行）
+ * 「附加功能」新增自定义插件名称与图标，图标放进 /var/mobile/Axs/TweaksHub/ 即可用
+Author: Axs <qiaozhani000@163.com>
+Icon: https://axs66.github.io/pro/icon/tweakshub.png
+Name: TweaksHub
+Sileodepiction: https://axs66.github.io/pro/sileodepiction/tweakshub/js.json
+Filename: https://axs66.github.io/pro/debs/com.axs.tweakshub_5.2.0-88_iphoneos-arm64e.deb
+X-Upstream-Source: https://axs66.github.io/pro/
+X-Upstream-Filename: ./debs/com.axs.tweakshub_5.2.0-88_iphoneos-arm64e.deb
 
 Package: com.axs.wcplugins.rootless
 Version: 0.1-7
