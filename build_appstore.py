@@ -26,7 +26,7 @@ SOURCES = [
 UA = 'OmniSign/7.7'
 SOURCE_URL = 'https://aa926453.github.io/appstore.json'
 SOURCE_NAME = '不知道起什么名'
-SOURCE_ICON = 'https://aa926453.github.io/flag_cn.png'
+SOURCE_ICON = 'https://aa926453.github.io/flag2.png'
 OWNER_QQ = '1505435445'
 KEEP_FIELDS = ('name', 'bundleIdentifier', 'version', 'versionDate', 'iconURL',
                'downloadURL', 'size', 'tintColor', 'type')
