@@ -6,16 +6,16 @@ Version: 1.0
 Architectures: iphoneos-arm64e
 Components: main
 Description: aa926453 的 Sileo 软件源
-Date: Fri, 16 Oct 2026 11:54:54 +0000
+Date: Fri, 16 Oct 2026 11:55:58 +0000
 MD5Sum:
  b555f6eaf05135cad2110b8e029b7f59 1514 Packages
- f791796cb3fa0cbe3687fd4c7ff95366 888 Packages.gz
+ ce880514337dc74edb7ff54f7d6f531c 888 Packages.gz
  7ff198db8bfd7ef49c36712e5a828a46 1034 Packages.bz2
 SHA1:
  986c3ad1876f1fadabb420b1a973424664f8f93a 1514 Packages
- fd6d07f449bbeb791e1187cb848741638fadfddd 888 Packages.gz
+ 2cb5aca6a2a849d7091e7481503a36066829ffa4 888 Packages.gz
  ad9c9b468accdeb663fc78c15ab8e326f4a91a5d 1034 Packages.bz2
 SHA256:
  50985e590310cf064932bbfc5d21f4b319f41c1803f3db1e5e3a7218f139976b 1514 Packages
- fd2bbebbd422bf421fed4d43af9f671423abe2a6e30d22db2855bea75da2813d 888 Packages.gz
+ 9211cab7b21df9d55e97234040bac43a770a94429c080447945cc87b9f40dc2d 888 Packages.gz
  7397a612d6a0be9db19d0a289acb8ce6262fba73a52130dea4f443c67a1c3d60 1034 Packages.bz2
