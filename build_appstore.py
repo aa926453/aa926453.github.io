@@ -26,7 +26,7 @@ SOURCES = [
 UA = 'OmniSign/7.7'
 SOURCE_URL = 'https://aa926453.github.io/appstore.json'
 SOURCE_NAME = '不知道起什么名'
-SOURCE_ICON = 'https://aa926453.github.io/flag2.png'
+SOURCE_ICON = 'https://aa926453.github.io/flag_cn.png'
 OWNER_QQ = '1505435445'
 KEEP_FIELDS = ('name', 'bundleIdentifier', 'version', 'versionDate', 'iconURL',
                'downloadURL', 'size', 'tintColor', 'type')
@@ -125,12 +125,23 @@ def main():
                f'最近 30 分钟更新 {updated_30min} 个 · 今日更新 {updated_today} 个\n'
                f'源主 QQ：{OWNER_QQ}')
 
+    news = [{
+        'title': '源公告',
+        'identifier': 'io.github.aa926453.aggappstore.notice',
+        'caption': f'勿忘国耻，吾辈自强！\n\n源主 QQ：{OWNER_QQ}\n有问题加 QQ 联系',
+        'tintColor': '#DE2910',
+        'imageURL': 'https://aa926453.github.io/bg_news.jpg',
+        'date': today,
+        'notify': False,
+    }]
+
     doc = {
         'name': SOURCE_NAME,
         'identifier': 'io.github.aa926453.aggappstore',
         'sourceURL': SOURCE_URL,
         'sourceicon': SOURCE_ICON,
         'message': message,
+        'news': news,
         'apps': apps,
     }
     with open(OUT, 'w', encoding='utf-8') as f:
