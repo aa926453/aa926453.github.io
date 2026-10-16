@@ -33,6 +33,51 @@ MD5sum: 0d82b87a44eb8b394a31a4e7e14d2425
 SHA1: cb834bf1d6f211ded122bc2b0bb99255904e257e
 SHA256: 0d23abff9c0fa0cb6c0a46f5b099474a6b9767097440ed2727fba13d156d8e94
 
+Package: byg.iosios.net.liquidas
+Version: 0.1.1b+banana54
+Section: 杂七杂八
+Maintainer: 搬运工
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), firmware (<< 26.0), preferenceloader, com.opa334.altlist
+Conflicts: dylv.liquidass
+Architecture: iphoneos-arm64
+Size: 5386222
+Installed-Size: 9336
+Description: 让你的旧设备体验 Liquid Glass 液态玻璃。
+Name: Liquid (Gl)ass 液态玻璃
+Author: dylv
+Sponsor: 搬运工
+SileoDepiction: https://byg.iosios.net/sileo/3195
+Depiction: https://byg.iosios.net/view/3195
+Icon: https://chinesebuilding.club/pic/cydia.png
+MD5sum: ec4d2f5f05bd8dc0f9215605b55b23c4
+SHA1: 1f1b64de0117f345b20494737f4d43681227e690
+SHA256: 53094582a75095eccca1e0fe14b37df5603bfb6fa9b5db84d87b4359a8457174
+Filename: https://byg.iosios.net/debs/3195.deb
+X-Upstream-Source: https://byg.iosios.net/
+X-Upstream-Filename: ./debs/3195.deb
+
+Package: byg.iosios.net.cputhermal.zl
+Version: 2.0.119
+Section: 系统增强
+Maintainer: 搬运工
+Depends: firmware (>= 16.0)
+Architecture: iphoneos-arm64
+Size: 1144156
+Installed-Size: 4180
+Description: 又是一款温控插件，层出不穷。这一款大家也可以试试。三种模式一键切换的智能温控管理。智能：游戏满频、应用低频率、桌面原生、滑动提速、熄屏省电；低功耗：全局省电，可放行个别应用；解除温控：全局满频，可单独压低指定应用；每个应用可单独设置档位。
+Name: CPU智能温控
+Author: 391160
+Sponsor: 搬运工
+SileoDepiction: https://byg.iosios.net/sileo/3194
+Depiction: https://byg.iosios.net/view/3194
+Icon: https://chinesebuilding.club/pic/cydia.png
+MD5sum: a8055c680de56a584417480c844981df
+SHA1: 363e14d15fc3fcb1d9bdc5ed8fff507bf50928f3
+SHA256: 0bcd0fbd73c6cdf6974494b7780ba0a1e5abc8927bc445b04e2e9be42288ffb9
+Filename: https://byg.iosios.net/debs/3194.deb
+X-Upstream-Source: https://byg.iosios.net/
+X-Upstream-Filename: ./debs/3194.deb
+
 Package: byg.iosios.net.sbcpu.floating
 Version: 6.4
 Section: 杂七杂八
@@ -231,28 +276,6 @@ SHA256: c002250881a868da85060f7a5447bca54aa20b3d8292aee70e607344a017423c
 Filename: https://byg.iosios.net/debs/3184.deb
 X-Upstream-Source: https://byg.iosios.net/
 X-Upstream-Filename: ./debs/3184.deb
-
-Package: byg.iosios.net.cputhermal.zl
-Version: 2.0.91
-Section: 系统增强
-Maintainer: 搬运工
-Depends: firmware (>= 16.0)
-Architecture: iphoneos-arm64
-Size: 1014550
-Installed-Size: 3736
-Description: 又是一款温控插件，层出不穷。这一款大家也可以试试。三种模式一键切换的智能温控管理。智能：游戏满频、应用低频率、桌面原生、滑动提速、熄屏省电；低功耗：全局省电，可放行个别应用；解除温控：全局满频，可单独压低指定应用；每个应用可单独设置档位。
-Name: CPU智能温控
-Author: 391160
-Sponsor: 搬运工
-SileoDepiction: https://byg.iosios.net/sileo/3183
-Depiction: https://byg.iosios.net/view/3183
-Icon: https://chinesebuilding.club/pic/cydia.png
-MD5sum: d6db06c63e41cc75be4051e78b1d5725
-SHA1: 39ebee65b14207ff8692a703f6da89afc50916f2
-SHA256: dd2a651df3fd6e499ee78449897e8c27a0f0cfd27d27b5a70fdad460e795366d
-Filename: https://byg.iosios.net/debs/3183.deb
-X-Upstream-Source: https://byg.iosios.net/
-X-Upstream-Filename: ./debs/3183.deb
 
 Package: byg.iosios.net.xhshook
 Version: 2.0.7
@@ -787,29 +810,6 @@ SHA256: 91ad74c4471c56339b4f0179444a91c288e2e13dd1255295fcd11545c41d819a
 Filename: https://byg.iosios.net/debs/3141.deb
 X-Upstream-Source: https://byg.iosios.net/
 X-Upstream-Filename: ./debs/3141.deb
-
-Package: byg.iosios.net.liquidas
-Version: 0.1.0b
-Section: 杂七杂八
-Maintainer: 搬运工
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
-Conflicts: dylv.liquidass
-Architecture: iphoneos-arm64
-Size: 1668384
-Installed-Size: 3596
-Description: 让你的旧设备体验 Liquid Glass 液态玻璃。
-Name: Liquid (Gl)ass 液态玻璃
-Author: dylv
-Sponsor: 搬运工
-SileoDepiction: https://byg.iosios.net/sileo/3133
-Depiction: https://byg.iosios.net/view/3133
-Icon: https://chinesebuilding.club/pic/cydia.png
-MD5sum: 9865d458feb2c893587510c520417544
-SHA1: 4183685e8f39042c23f91af7971ea9794512db4d
-SHA256: a1ee8739654f904d7fb36e373e0ee11ad6e8438e08cffbd30246722c40b435c8
-Filename: https://byg.iosios.net/debs/3133.deb
-X-Upstream-Source: https://byg.iosios.net/
-X-Upstream-Filename: ./debs/3133.deb
 
 Package: byg.iosios.net.HBWechatHelper.rootlless
 Version: 2.1.5
@@ -73046,22 +73046,25 @@ X-Upstream-Source: https://jimkanuo.github.io/apt-repo/
 X-Upstream-Filename: debs/备份源/com.qianuo.smartdeck.app_0.8.19_iphoneos-arm64e.deb
 
 Package: com.quicklaunch.tweak
-Version: 0.1.55
+Version: 0.1.58
 Architecture: iphoneos-arm64
 Maintainer: kanuo
-Installed-Size: 1284
+Installed-Size: 1356
 Depends: firmware (>= 15.0), firmware (<= 17.3.1), mobilesubstrate, preferenceloader, uikittools
 Conflicts: com.quicklaunch.tweak-rootful
-Size: 376910
-MD5sum: a9c698127733b2725d9904d1958b6b97
-SHA1: 517fce803743dd87152e29fdff12f190e1b4a09c
-SHA256: cf69aa1028a0200a15f81209faf8f6f65840c61483d494b19f6c57bc506d3770
+Size: 404468
+MD5sum: 12f5d622490873b01ba0c4d6029cefc4
+SHA1: 9ae28ca732dc8a1463ab4d46ade1167d03669170
+SHA256: 34e10361594aabbcff0b6a320d21cbac06491f7cfba7d98a67eb0995ae2ce015
 Section: Tweaks
 Priority: optional
 Description: Independent quick-launch rail and notification capsule for iOS 15.0-17.3.1 rootless.
  Choose fullscreen, PullOver-X or ScreenCore floating windows independently for both overlays.
  Optional independent radial menu with progressive swipe reveal, bounce and haptic feedback.
  Circular menu supports unlimited selections, concentric rings, stronger adjustable bounce and persistent invisible touch regions.
+ Choose left or right radial activation with mirrored swipe animation and debug touch regions.
+ Group related preferences into module pages, with optional timed hold to open radial apps fullscreen.
+ Automatically remove confirmed unavailable apps from all menus, preserving URLs and valid app records.
  Optionally retain one to three empty Home Screen pages after existing pages.
  Keep two overlays with separate apps and settings, adapting to portrait and landscape.
  Select any number of rail apps; scroll within a fixed eight-slot viewport.
@@ -73075,27 +73078,30 @@ Name: QuickLaunch
 Author: kanuo
 Icon: https://jimkanuo.github.io/apt-repo/depiction/quicklaunch/icon.png
 SileoDepiction: https://jimkanuo.github.io/apt-repo/depiction/com.quicklaunch.tweak.json
-Filename: https://jimkanuo.github.io/apt-repo/debs/备份源/com.quicklaunch.tweak_0.1.55_iphoneos-arm64.deb
+Filename: https://jimkanuo.github.io/apt-repo/debs/备份源/com.quicklaunch.tweak_0.1.58_iphoneos-arm64.deb
 X-Upstream-Source: https://jimkanuo.github.io/apt-repo/
-X-Upstream-Filename: debs/备份源/com.quicklaunch.tweak_0.1.55_iphoneos-arm64.deb
+X-Upstream-Filename: debs/备份源/com.quicklaunch.tweak_0.1.58_iphoneos-arm64.deb
 
 Package: com.quicklaunch.tweak
-Version: 0.1.55
+Version: 0.1.58
 Architecture: iphoneos-arm64e
 Maintainer: kanuo
-Installed-Size: 708
+Installed-Size: 748
 Depends: firmware (>= 15.0), firmware (<= 17.3.1), mobilesubstrate, preferenceloader, uikittools
 Conflicts: com.quicklaunch.tweak-rootful
-Size: 225456
-MD5sum: 58e6d7226aa6a44f1091d098a66558bd
-SHA1: df2e463dde6ede789cf7a1ab29ed74c55e582797
-SHA256: 09260ee552deea35f6573fbd34a870aae8ddcdbec92b8361b7c229d89c876509
+Size: 242638
+MD5sum: 5ccdf5f654dae0402fbb24db5e4fbf37
+SHA1: 00ac3e1bed9a25604f793ae22263af7d58b15d03
+SHA256: d1654269372fba7ca3ad80959c498628772710088a9c0c24afceae4c3d865692
 Section: Tweaks
 Priority: optional
 Description: Independent quick-launch rail and notification capsule for iOS 15.0-17.3.1 RootHide.
  Choose fullscreen, PullOver-X or ScreenCore floating windows independently for both overlays.
  Optional independent radial menu with progressive swipe reveal, bounce and haptic feedback.
  Circular menu supports unlimited selections, concentric rings, stronger adjustable bounce and persistent invisible touch regions.
+ Choose left or right radial activation with mirrored swipe animation and debug touch regions.
+ Group related preferences into module pages, with optional timed hold to open radial apps fullscreen.
+ Automatically remove confirmed unavailable apps from all menus, preserving URLs and valid app records.
  Optionally retain one to three empty Home Screen pages after existing pages.
  Keep two overlays with separate apps and settings, adapting to portrait and landscape.
  Select any number of rail apps; scroll within a fixed eight-slot viewport.
@@ -73109,9 +73115,9 @@ Name: QuickLaunch
 Author: kanuo
 Icon: https://jimkanuo.github.io/apt-repo/depiction/quicklaunch/icon.png
 SileoDepiction: https://jimkanuo.github.io/apt-repo/depiction/com.quicklaunch.tweak.json
-Filename: https://jimkanuo.github.io/apt-repo/debs/备份源/com.quicklaunch.tweak_0.1.55_iphoneos-arm64e.deb
+Filename: https://jimkanuo.github.io/apt-repo/debs/备份源/com.quicklaunch.tweak_0.1.58_iphoneos-arm64e.deb
 X-Upstream-Source: https://jimkanuo.github.io/apt-repo/
-X-Upstream-Filename: debs/备份源/com.quicklaunch.tweak_0.1.55_iphoneos-arm64e.deb
+X-Upstream-Filename: debs/备份源/com.quicklaunch.tweak_0.1.58_iphoneos-arm64e.deb
 
 Package: com.sbcpu.floating
 Name: 灵动监测
@@ -163159,50 +163165,50 @@ X-Upstream-Source: https://repo.cydiabc.top/
 X-Upstream-Filename: ./debs/11853.deb
 
 Package: com.cydiabc.aipukejpqpro-roothide
-Version: 5.0-2
+Version: 5.0-3
 Section: 会员插件
 Maintainer: 神秘人
 Depends: mobilesubstrate,com.cydiabc.applememberserver-roothide
 Architecture: iphoneos-arm64e
-Size: 186950
+Size: 189054
 Installed-Size: 828
 Description: AI扑克记牌器解锁会员权限，兼容iOS15-iOS17系统，如第一次打开功能无效，划掉APP后台，重新打开既可，破解补丁随时可能失效，不担保长期生效
 Name: AI扑克记牌器-Roothide【会员破解】
 Author: 神秘人
 Sponsor: Ai-小苹果™
-SileoDepiction: https://apt.cydiabc.top/sileo/12951
-Depiction: https://apt.cydiabc.top/index.php?pid=12951
+SileoDepiction: https://apt.cydiabc.top/sileo/13633
+Depiction: https://apt.cydiabc.top/index.php?pid=13633
 Icon: file:///Applications/Cydia.app/Sections/Localization.png
 Tag: cydia::commercial
-MD5sum: 0702ca2b174c2ba8b021e298f19e9138
-SHA1: 15ff5a31f75a06821f55dd45007c4df10dd3e316
-SHA256: d9390d89a0be59f52dea45dfec1a753d31a064202843370274299d367c06cd6d
-Filename: https://repo.cydiabc.top/debs/12951.deb
+MD5sum: 435f1c7379c8c9bfb161403cea651480
+SHA1: 7b3b6d0fba4fc477b29eb4594402f5946750f852
+SHA256: cd88df80c5314390f7765c3038388a4951214bcb41aa539f4e7759d9c95ecc29
+Filename: https://repo.cydiabc.top/debs/13633.deb
 X-Upstream-Source: https://repo.cydiabc.top/
-X-Upstream-Filename: ./debs/12951.deb
+X-Upstream-Filename: ./debs/13633.deb
 
 Package: com.cydiabc.aipukejpqpro-rootless
-Version: 5.0-2
+Version: 5.0-3
 Section: 会员插件
 Maintainer: 神秘人
 Depends: mobilesubstrate,com.cydiabc.applememberserver-rootless
 Architecture: iphoneos-arm64
-Size: 185910
+Size: 190476
 Installed-Size: 828
 Description: AI扑克记牌器万能记牌器助手解锁会员权限，兼容iOS15-iOS17系统，如第一次打开功能无效，划掉APP后台，重新打开既可，破解补丁随时可能失效，不担保长期生效
 Name: AI扑克记牌器-Rootless【会员破解】
 Author: 神秘人
 Sponsor: Ai-小苹果™
-SileoDepiction: https://apt.cydiabc.top/sileo/12950
-Depiction: https://apt.cydiabc.top/index.php?pid=12950
+SileoDepiction: https://apt.cydiabc.top/sileo/13632
+Depiction: https://apt.cydiabc.top/index.php?pid=13632
 Icon: file:///Applications/Cydia.app/Sections/Localization.png
 Tag: cydia::commercial
-MD5sum: 873323be2cd361137ea722fb77377fab
-SHA1: 8c8074e8f19f55f336c61283ee5a514ccad43365
-SHA256: 3ea28b57fd3521b1a00b2ee3427a44896a964081642ab3c37e843190dce518fd
-Filename: https://repo.cydiabc.top/debs/12950.deb
+MD5sum: a5bd2a79b331142ef97bec97ede557ca
+SHA1: 5c2aec8e141b14c7039bb116f8299ab0d77b708a
+SHA256: 02a409bdcc2a08574929565fac43fcf4a710d5fbd3e43d6c0fff3cdec3c6509b
+Filename: https://repo.cydiabc.top/debs/13632.deb
 X-Upstream-Source: https://repo.cydiabc.top/
-X-Upstream-Filename: ./debs/12950.deb
+X-Upstream-Filename: ./debs/13632.deb
 
 Package: com.cydiabc.airaw
 Version: 1.5.5
@@ -171579,92 +171585,92 @@ X-Upstream-Source: https://repo.cydiabc.top/
 X-Upstream-Filename: ./debs/12612.deb
 
 Package: com.cydiabc.callassist16-roothide
-Version: 3.2.0
+Version: 3.2.2
 Priority: optional
 Section: Roothide
 Maintainer: xybp888
 Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
 Architecture: iphoneos-arm64e
-Size: 3641796
+Size: 3623444
 Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
 Name: 电话助手iOS16-正式版-Roothide
 Author: xybp888
 Sponsor: Ai-小苹果™
-SileoDepiction: https://apt.cydiabc.top/sileo/13583
-Depiction: https://apt.cydiabc.top/view/13583
+SileoDepiction: https://apt.cydiabc.top/sileo/13629
+Depiction: https://apt.cydiabc.top/view/13629
 Icon: file:///Applications/Cydia.app/Sections/System.png
-MD5sum: 44f11a3f631e11f8935332ad8512f467
-SHA1: 641abc48e9fcbab9c316d7347afc2141e7110ba6
-SHA256: 6d6ce28995b315adf1dc44cca74f5dbb6134f17954c70e2ef04409ba3e672d41
-Filename: https://repo.cydiabc.top/debs/13583.deb
+MD5sum: e3afd2f50d754d761a896c90e6e66513
+SHA1: a23ab9d3ab5425664a0875439bcec81038f5c6c2
+SHA256: 8ec6c01816c9968a12848233fdbbfdbba5c8bfd012b54256608ff7735243da7d
+Filename: https://repo.cydiabc.top/debs/13629.deb
 X-Upstream-Source: https://repo.cydiabc.top/
-X-Upstream-Filename: ./debs/13583.deb
+X-Upstream-Filename: ./debs/13629.deb
 
 Package: com.cydiabc.callassist16.dopamine
-Version: 3.2.0
+Version: 3.2.2
 Priority: optional
 Section: Rootless
 Maintainer: xybp888
 Depends: firmware (>= 15.0), preferenceloader, com.opa334.libsandy
 Architecture: iphoneos-arm64
-Size: 3638648
+Size: 3620872
 Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
 Name: 电话助手iOS16-正式版-Rootless
 Author: xybp888
 Sponsor: Ai-小苹果™
-SileoDepiction: https://apt.cydiabc.top/sileo/13582
-Depiction: https://apt.cydiabc.top/view/13582
+SileoDepiction: https://apt.cydiabc.top/sileo/13628
+Depiction: https://apt.cydiabc.top/view/13628
 Icon: file:///Applications/Cydia.app/Sections/Tweaks.png
-MD5sum: 9b715c494b10149b12f27b5120791f3d
-SHA1: 6297543aef888bc47e18553dabdfc5ab03776074
-SHA256: 494167833fcc2ad8d79c97ee70f2bc8032a55ad220346ed10cf48be79331a7f5
-Filename: https://repo.cydiabc.top/debs/13582.deb
+MD5sum: e202a5426213eab953899fdc542d2214
+SHA1: c13126435370246adf61e77212ef3fd0479a20b7
+SHA256: da98655b77eef230b854271dfacd144fa8f9c8353a312f3d33ac5114faf1b718
+Filename: https://repo.cydiabc.top/debs/13628.deb
 X-Upstream-Source: https://repo.cydiabc.top/
-X-Upstream-Filename: ./debs/13582.deb
+X-Upstream-Filename: ./debs/13628.deb
 
 Package: com.cydiabc.callassist17-roothide
-Version: 2.2.9
+Version: 2.3.1
 Priority: optional
 Section: Roothide
 Maintainer: xybp888
 Depends: firmware (>= 17.0), preferenceloader, com.opa334.libsandy
 Architecture: iphoneos-arm64e
-Size: 3672946
+Size: 3641052
 Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
 Name: 电话助手iOS17-正式版-Roothide
 Author: xybp888
 Sponsor: Ai-小苹果™
-SileoDepiction: https://apt.cydiabc.top/sileo/13585
-Depiction: https://apt.cydiabc.top/view/13585
+SileoDepiction: https://apt.cydiabc.top/sileo/13631
+Depiction: https://apt.cydiabc.top/view/13631
 Icon: file:///Applications/Cydia.app/Sections/System.png
-MD5sum: 45c3ef91d94067acdc8e7881d0b9e10a
-SHA1: 63694fad0c15e4fe911c614899b35f33892e1c08
-SHA256: 1e226e567ba627ff5eb128b9c17dbdc89173bded6aec628d81b5af5a8fb489b6
-Filename: https://repo.cydiabc.top/debs/13585.deb
+MD5sum: 09eab780641b02f3a5ec3b40ad17848a
+SHA1: 756194467370d2494a48196a8be611f392f316ff
+SHA256: 2c01cc0c2bdfe5e72aff38eb2d3f982e421afc2331c713c200a5ee78d1fe6dcc
+Filename: https://repo.cydiabc.top/debs/13631.deb
 X-Upstream-Source: https://repo.cydiabc.top/
-X-Upstream-Filename: ./debs/13585.deb
+X-Upstream-Filename: ./debs/13631.deb
 
 Package: com.cydiabc.callassist17-rootless
-Version: 2.2.9
+Version: 2.3.1
 Priority: optional
 Section: Rootless
 Maintainer: xybp888
 Depends: firmware (>= 17.0), preferenceloader, com.opa334.libsandy
 Architecture: iphoneos-arm64
-Size: 3691322
+Size: 3675672
 Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
 Name: 电话助手iOS17-正式版-Rootless
 Author: xybp888
 Sponsor: Ai-小苹果™
-SileoDepiction: https://apt.cydiabc.top/sileo/13584
-Depiction: https://apt.cydiabc.top/view/13584
+SileoDepiction: https://apt.cydiabc.top/sileo/13630
+Depiction: https://apt.cydiabc.top/view/13630
 Icon: file:///Applications/Cydia.app/Sections/System.png
-MD5sum: bab34481313285c02836c024fab3fd2d
-SHA1: bb477f663ed6f63e7906ad8e4cab10b24973f531
-SHA256: 50d6c9b5ef2180914a990cc36fc97167830563fc01b0f7410525871eba06df5c
-Filename: https://repo.cydiabc.top/debs/13584.deb
+MD5sum: bf4ebc231eb00c86a85e9d38d25053ca
+SHA1: 9f27ca40ef6925f87adb37b6d9ecb3d0de34e18d
+SHA256: 405c065b2135904cc7d5e1ad0b08a419c8e6a0f9642ea50f6760ac23f92f77d4
+Filename: https://repo.cydiabc.top/debs/13630.deb
 X-Upstream-Source: https://repo.cydiabc.top/
-X-Upstream-Filename: ./debs/13584.deb
+X-Upstream-Filename: ./debs/13630.deb
 
 Package: com.cydiabc.CallAssistBar
 Version: 1.0-8
@@ -226462,25 +226468,25 @@ X-Upstream-Source: https://repo.cydiabc.top/
 X-Upstream-Filename: ./debs/13182.deb
 
 Package: com.cydiabc.trollstore-lite-roothide
-Version: 2.1.1-1
+Version: 2.1.1-2
 Section: Roothide
 Maintainer: opa334
 Architecture: iphoneos-arm64e
-Size: 1767748
+Size: 1771098
 Installed-Size: 3948
 Description: TrollStore Lite 新增对 arm64e RootHide 环境的完整支持，修复 iOS 17.2 及更高版本上的 App 崩溃问题
 Name: TrollStore Lite白巨魔-Roothide
 Author: opa334
 Sponsor: Ai-小苹果™
-SileoDepiction: https://apt.cydiabc.top/sileo.php?pid=13179
-Depiction: https://apt.cydiabc.top/index.php?pid=13179
+SileoDepiction: https://apt.cydiabc.top/sileo/13623
+Depiction: https://apt.cydiabc.top/view/13623
 Icon: file:///Applications/Cydia.app/Sections/System.png
-MD5sum: 897a4ec179c0ab352afdf3ec0991aac5
-SHA1: 23f06a2f3c5ae6f7450f72dd41814f3516b699f4
-SHA256: 76511882bedaad5fcd8b415e7536c2c33721e0e37e7dc29349dca77a38f4b4c9
-Filename: https://repo.cydiabc.top/debs/13179.deb
+MD5sum: 64d6bccba0fe1c5d469fb13cf1f9fd80
+SHA1: c3fbbe47832f4ebfcd9c7fdda2cd93f1aeeca5a6
+SHA256: f83750eac1e4956691e5c4567f1d72bcb31c7748de6d3c5bd4402c1629c42bba
+Filename: https://repo.cydiabc.top/debs/13623.deb
 X-Upstream-Source: https://repo.cydiabc.top/
-X-Upstream-Filename: ./debs/13179.deb
+X-Upstream-Filename: ./debs/13623.deb
 
 Package: com.cydiabc.trollstorelite-roothide
 Version: 1.0.4
@@ -226505,25 +226511,25 @@ X-Upstream-Source: https://repo.cydiabc.top/
 X-Upstream-Filename: ./debs/12900.deb
 
 Package: com.cydiabc.trollstorelite-rootless
-Version: 2.1.1-1
+Version: 2.1.1-2
 Section: Rootless
 Maintainer: opa334
 Architecture: iphoneos-arm64
-Size: 1772264
+Size: 1771190
 Installed-Size: 3948
 Description: TrollStore Lite修复 iOS 17.2 及更高版本上的 App 崩溃问题
 Name: TrollStore Lite白巨魔-Rootless
 Author: opa334
 Sponsor: Ai-小苹果™
-SileoDepiction: https://apt.cydiabc.top/sileo.php?pid=13180
-Depiction: https://apt.cydiabc.top/index.php?pid=13180
+SileoDepiction: https://apt.cydiabc.top/sileo/13624
+Depiction: https://apt.cydiabc.top/view/13624
 Icon: file:///Applications/Cydia.app/Sections/System.png
-MD5sum: 9c964327e08409d1d34232a3e1920302
-SHA1: 16b6449f5443c1fc9f1f3642c6985d20b8fb1c32
-SHA256: baaf9879dd315eedb41fccc4ef4429ffc135a5b07edaa867437a780ec1deaa3a
-Filename: https://repo.cydiabc.top/debs/13180.deb
+MD5sum: 0a986ab70987e2c8ed3290bcf4f5e387
+SHA1: f3e87e33c2c02616b488be670c2a8b93169ac700
+SHA256: 41a4103e0bbf808c656e3b17c42247c1aa35a82768c05aaeeb8345f12dd77dc7
+Filename: https://repo.cydiabc.top/debs/13624.deb
 X-Upstream-Source: https://repo.cydiabc.top/
-X-Upstream-Filename: ./debs/13180.deb
+X-Upstream-Filename: ./debs/13624.deb
 
 Package: com.cydiabc.truehtzyw1004
 Version: 4.0
@@ -229558,48 +229564,48 @@ X-Upstream-Source: https://repo.cydiabc.top/
 X-Upstream-Filename: ./debs/11741.deb
 
 Package: com.cydiabc.wcallrecorder-roothide
-Version: 1.1-2
+Version: 1.1-3
 Section: Roothide
 Maintainer: huami
 Depends: mobilesubstrate (>= 0.9.5000)
 Architecture: iphoneos-arm64e
-Size: 3294168
-Installed-Size: 12012
+Size: 3429094
+Installed-Size: 12348
 Description: 微信通话录音插件，基础功能功能全部免费，(云)备份功能仅授权用户可用
 Name: WCallRecorder微信通话录音-Roothide
 Author: huami
 Sponsor: Ai-小苹果™
-SileoDepiction: https://apt.cydiabc.top/sileo.php?pid=13590
-Depiction: https://apt.cydiabc.top/index.php?pid=13590
+SileoDepiction: https://apt.cydiabc.top/sileo.php?pid=13627
+Depiction: https://apt.cydiabc.top/index.php?pid=13627
 Icon: file:///Applications/Cydia.app/Sections/Messaging.png
-MD5sum: 274d4996324b7906791e53d6aeb9cdeb
-SHA1: 5b4224c3d182c096b23641db4b20989973917643
-SHA256: 4ef16fd77ef3b868bf2e75befa780b89f5e2bec7b4affd60f2c7cec5830fe234
-Filename: https://repo.cydiabc.top/debs/13590.deb
+MD5sum: 795c49a9f73ce4a9b92116f229f61e9c
+SHA1: 5af0276ed46a5eec658269bd4d8e7c0fe44f93e7
+SHA256: 2d01329cc854e946020708315789b3c840cd59e45c34b50826539792d3fc3d0b
+Filename: https://repo.cydiabc.top/debs/13627.deb
 X-Upstream-Source: https://repo.cydiabc.top/
-X-Upstream-Filename: ./debs/13590.deb
+X-Upstream-Filename: ./debs/13627.deb
 
 Package: com.cydiabc.wcallrecorder-rootless
-Version: 1.1-2
+Version: 1.1-3
 Section: 微信
 Maintainer: huami
 Depends: mobilesubstrate (>= 0.9.5000)
 Architecture: iphoneos-arm64
-Size: 3280580
-Installed-Size: 11964
+Size: 3440254
+Installed-Size: 12444
 Description: 微信通话录音插件，基础功能功能全部免费，(云)备份功能仅授权用户可用
 Name: WCallRecorder微信通话录音-Rootless
 Author: huami
 Sponsor: Ai-小苹果™
-SileoDepiction: https://apt.cydiabc.top/sileo.php?pid=13589
-Depiction: https://apt.cydiabc.top/index.php?pid=13589
+SileoDepiction: https://apt.cydiabc.top/sileo.php?pid=13626
+Depiction: https://apt.cydiabc.top/index.php?pid=13626
 Icon: file:///Applications/Cydia.app/Sections/Messaging.png
-MD5sum: faab27a98ae0f1c4fc9f909a98496844
-SHA1: 2e7533bd2243c6cbe8b8ef2fb900c9af46dba0dd
-SHA256: d3536319cadbdfd72eb2bb781937cd77199f02eb36bd9fe2237f89fc565ca10d
-Filename: https://repo.cydiabc.top/debs/13589.deb
+MD5sum: ed09ce481ccea70cfbb561bf2bf9c2a7
+SHA1: e257aa57fa1325073ae3b50dccf939ce29fc661d
+SHA256: 7397f66aa32139d9cd934dc143ea5d0d99a1d7a2a0730f7730480b851b5346dd
+Filename: https://repo.cydiabc.top/debs/13626.deb
 X-Upstream-Source: https://repo.cydiabc.top/
-X-Upstream-Filename: ./debs/13589.deb
+X-Upstream-Filename: ./debs/13626.deb
 
 Package: com.cydiabc.wcdisablehotupdates
 Version: 1.1-2
@@ -242573,26 +242579,26 @@ X-Upstream-Source: https://repo.cydiabc.top/
 X-Upstream-Filename: ./debs/4483.deb
 
 Package: com.ydiabc.wcallrecorder
-Version: 1.1-2
+Version: 1.1-3
 Section: 微信
 Maintainer: huami
 Depends: mobilesubstrate (>= 0.9.5000)
 Architecture: iphoneos-arm
-Size: 3253674
-Installed-Size: 11964
+Size: 3431494
+Installed-Size: 12380
 Description: 微信通话录音插件，基础功能功能全部免费，(云)备份功能仅授权用户可用
 Name: WCallRecorder微信通话录音
 Author: huami
 Sponsor: Ai-小苹果™
-SileoDepiction: https://apt.cydiabc.top/sileo.php?pid=13588
-Depiction: https://apt.cydiabc.top/index.php?pid=13588
+SileoDepiction: https://apt.cydiabc.top/sileo.php?pid=13625
+Depiction: https://apt.cydiabc.top/index.php?pid=13625
 Icon: file:///Applications/Cydia.app/Sections/Messaging.png
-MD5sum: 9bc5414362c295580b126c0ce25def5c
-SHA1: 74faed7aab9035a576d73e94dab6f4163dd5a3e9
-SHA256: 456d585f400224a10420e43c85c43f028bb31e4540e11f8e917dc73a9957d1cb
-Filename: https://repo.cydiabc.top/debs/13588.deb
+MD5sum: 6215afff936599fc5dda5913531c9303
+SHA1: 2656bad8b11b56e168ae6bcf049e6dc046c9f6a0
+SHA256: 59efba93e0cd5131ac736cde2574f4b8d18c9d692f896a55f358a9491d35b1a1
+Filename: https://repo.cydiabc.top/debs/13625.deb
 X-Upstream-Source: https://repo.cydiabc.top/
-X-Upstream-Filename: ./debs/13588.deb
+X-Upstream-Filename: ./debs/13625.deb
 
 Package: me.cydiabc.nofolderbadge
 Version: 0.0.2
@@ -257639,7 +257645,7 @@ X-Upstream-Filename: debs/com.jzksnsjswkw.feemcrack_0.0.1_iphoneos-arm64e.deb
 Package: com.kanuo.screencore
 Name: screencore-窗口调度版
 Description: 浮窗管理、收藏切换、单窗口替换和独立 App 跳转小窗。
- 作者：kanuo；版本：windowscheduler.12-1。
+ 作者：kanuo；版本：windowscheduler.12-12。
  基于 windowscheduler.11.pulloverjump，保留原有切换响应、启动失败保护、键盘避让和悬浮球适配。
  修复作者改名后与主模块预期信息不一致、导致分屏及触发区域调试无法启用的问题。
  .
@@ -257656,14 +257662,39 @@ Description: 浮窗管理、收藏切换、单窗口替换和独立 App 跳转�
  设置：系统设置 → screencore-窗口调度版 → 分屏设置 → 窗口调度与收藏栏。
  完整功能与快捷操作说明已加入本插件设置首页下方和包内使用说明书。
  安装后重启桌面。
+ 修复小窗退出后同一 App 全屏偶尔遗留 16:9 尺寸、底部出现黑边的问题。
+ 尺寸恢复通过原版队列补发，不延迟切换；重新打开小窗时取消旧恢复，不修改键盘避让。
+ App 跳转小窗使用原始尺寸和完整画面比例，不套用普通分屏的 16:9 预设。
+ 复用已有窗口时同步原始比例；普通分屏、收藏切换和键盘避让保持原方案。
+ 补全巨魔安装应用等特殊接收端的键盘场景归属，并为缺少可用宿主的真实键盘层提供显示接入。
+ 复用原版键盘窗口及输入框避让，不改普通或跳转小窗比例、动画、启动保护、悬浮球及应用注入。
+ 修复左上角放大后底部点击及上划无法退出：手势区保留在屏幕内，关闭前释放强制铺满。
+ 沿用原版退出流程及上划开关和阈值；取消旧放大回调，不改变键盘避让、快捷切换和悬浮球适配。
+ 长按收藏 App 原地松手打开自由独立窗口，不受普通浮窗数量、单窗口替换或自动边缘停靠限制。
+ 独立窗口沿用分屏比例，不依赖 App 跳转弹窗开关；普通切换保留它，同 App 复用原窗口。
+ 保留放大退出修复、原生切换响应、启动失败保护、键盘避让及悬浮球适配。
+ 设置新增移除底部系统 Dock 开关，默认关闭，更改立即生效；不影响键盘或应用内底栏。
+ 保留长按独立窗口、原生切换响应、启动失败保护、键盘避让及悬浮球适配。
+ 左上角通过原版流程转系统全屏，保留同一 App 返回图标；点击恢复小窗位置、收藏栏与独立属性。
+ 返回图标不抢焦点，只接收图标区域触摸；其他应用、桌面及锁屏隐藏，全屏输入由正常应用处理。
+ 保留原版交接失败恢复、键盘避让、快捷切换、悬浮球、独立窗口和 Dock 开关。
+ 左上角通过原版流程转系统全屏，保留同一 App 返回图标；点击恢复小窗位置、收藏栏与独立属性。
+ 返回图标不抢焦点，只接收图标区域触摸；其他应用、桌面及锁屏隐藏，全屏输入由正常应用处理。
+ 保留原版交接失败恢复、键盘避让、快捷切换、悬浮球、独立窗口和 Dock 开关。
+ 左上角通过原版流程转系统全屏，保留同一 App 返回图标；点击恢复小窗位置、收藏栏与独立属性。
+ 返回图标不抢焦点，只接收图标区域触摸；其他应用、桌面及锁屏隐藏，全屏输入由正常应用处理。
+ 保留原版交接失败恢复、键盘避让、快捷切换、悬浮球、独立窗口和 Dock 开关。
+ 左上角通过原版流程转系统全屏，保留同一 App 返回图标；点击恢复小窗位置、收藏栏与独立属性。
+ 返回图标不抢焦点，只接收图标区域触摸；其他应用、桌面及锁屏隐藏，全屏输入由正常应用处理。
+ 保留原版交接失败恢复、键盘避让、快捷切换、悬浮球、独立窗口和 Dock 开关。
 Maintainer: kanuo
 Author: kanuo
 Icon: https://repo.susubaby.cn/icons/ScreenCore.png
 Section: Tweaks
 Depends: mobilesubstrate, preferenceloader, com.opa334.altlist
 Architecture: iphoneos-arm64e
-Version: 2.0.3+windowscheduler.12-1
-Installed-Size: 3207
+Version: 2.0.3+windowscheduler.12-12
+Installed-Size: 3475
 Conflicts: com.qianuo.screencore.windowscheduler, com.qianuo.screencore.ballcompat
 Replaces: com.qianuo.screencore.windowscheduler, com.qianuo.screencore.ballcompat
 X-Window-Scheduler-Version: 0.1.6
@@ -257675,14 +257706,33 @@ X-Window-Scheduler-Revision: rollback7-native6-pulloverjump.1
 X-Release-Base-Version: 2.0.3+windowscheduler.11.pulloverjump
 X-Release-Base-SHA256: c063fab8acfed990afd7bb91e12947553b7fe593d026687c8afba4f99bac1457
 X-Core-Identity-Revision: expected-author-kanuo.1
+X-Scene-Geometry-Recovery: native-close-16x9.1
+X-Geometry-Base-SHA256: 619767fdd4d744203cef45ca1d5cd370b5f9a5521850034a21ddf3523a7c2701
+X-Native-Jump-Geometry: popup-only-native-size.1
+X-Native-Jump-Base-SHA256: 2bc5d7e4c7c8ab8b0fe6117bc5fbd98a784701d429016984ce6a570ac54b131e
+X-Keyboard-Compatibility: scene-identity-and-missing-host.1
+X-Keyboard-Base-SHA256: 977060949ce7844f48841d26af651704bfee38b84b6a72840753452e9f9d0c66
+X-Fullscreen-Exit: onscreen-native-region-and-dismissal-release.1
+X-Fullscreen-Exit-Base-SHA256: 2dbe5dde47fdac2b813d9cb27434286885af7e29ee8b6f783a5ea86557fe9a58
+X-Favorite-Standalone: independent-policy-normal-split-geometry.1
+X-Favorite-Standalone-Base-SHA256: c09cf505d87431c352c80b52dfdf435801a3422b77cd0ee875ab481e35e55b34
+X-Fullscreen-Native-Canvas: physical-screen-reversible-queued-geometry.1
+X-Fullscreen-Base-SHA256: 60dcbb8f1b3dd67d1b0e8e6ba861883515b9dc279ba1fe805acc156d7bba5270
+X-Fullscreen-Rendered-Canvas: instance-settings-hosted-resize-ack-validation.1
+X-Fullscreen-Rendered-Base-SHA256: e68c9aa0f0da74a9601ef610ef3db3e9ef6a29042b7a60ea3c7ae24235bd45ba
+X-Native-Fullscreen-Return: native-promotion-scoped-nonkey-icon.1
+X-Native-Fullscreen-Base-SHA256: 52c3ba9af8bb6d2b7dd5c42428ff7f73b3ab48518d2d56448a732f0804c5ead3
+X-Native-Fullscreen-Return-Animation: reverse-native-presentation.1
+X-Native-Fullscreen-Canvas-Handoff: atomic-hosted-resize.1
+X-Native-Fullscreen-Scene-State: scoped-input-layout.1
 SileoDepiction: https://jimkanuo.github.io/apt-repo/depiction/com.susudear.screencore.json
-Size: 521972
-MD5sum: cf7b3cdc47ea219ec6dcc107cf874124
+Size: 566368
+MD5sum: 0c2d8a79fcd75719ba2cb56286bc4673
 SHA1: 
-SHA256: b1c93e3ea7d792db03d3f7c4986e98e875a1b729cbc5ccce77146455d0496f0e
-Filename: https://huayuarc.github.io/debs/com.kanuo.screencore-2.0.3+windowscheduler.12-1-roothide.deb
+SHA256: 8e3d93994c37c2e01659df942ce7621b984768f9a47e93e81a782b37a96335f7
+Filename: https://huayuarc.github.io/debs/com.kanuo.screencore-2.0.3+windowscheduler.12-12-roothide.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.kanuo.screencore-2.0.3+windowscheduler.12-1-roothide.deb
+X-Upstream-Filename: debs/com.kanuo.screencore-2.0.3+windowscheduler.12-12-roothide.deb
 
 Package: com.kanuo.screencore
 Name: screencore-窗口调度版
@@ -257771,10 +257821,10 @@ X-Native-Fullscreen-Return-Animation: reverse-native-presentation.1
 X-Native-Fullscreen-Canvas-Handoff: atomic-hosted-resize.1
 X-Native-Fullscreen-Scene-State: scoped-input-layout.1
 SileoDepiction: https://jimkanuo.github.io/apt-repo/depiction/com.susudear.screencore.json
-Size: 620908
-MD5sum: bf546252c7a43dbd42dba792224ad5fa
+Size: 619476
+MD5sum: db474d4aab7bf27a2018e4cd80638f3f
 SHA1: 
-SHA256: 2ee13b5ec6a3212781e92c12c0d358edf8c5a1832d55321f5f7d5af2fa05223a
+SHA256: 14e354f64fee08696d7c3b75de5f7c8a7669bd6aed3865f24cc33a52fabdc9d6
 Filename: https://huayuarc.github.io/debs/com.kanuo.screencore-2.0.3+windowscheduler.12-12-rootless.deb
 X-Upstream-Source: https://huayuarc.github.io/
 X-Upstream-Filename: debs/com.kanuo.screencore-2.0.3+windowscheduler.12-12-rootless.deb
