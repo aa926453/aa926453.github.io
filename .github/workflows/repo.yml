@@ -6,10 +6,14 @@ on:
     paths:
       - 'debs/**'
       - 'build_repo.py'
+      - 'build_appstore.py'
+      - 'appstore.json'
       - 'index.html'
       - 'CydiaIcon.png'
       - '.github/workflows/repo.yml'
   workflow_dispatch:
+  schedule:
+    - cron: '*/30 * * * *'
 
 permissions:
   contents: write
@@ -31,6 +35,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Aggregate appstore sources
+        run: python3 build_appstore.py
+
       - name: Build package index
         run: python3 build_repo.py
 
@@ -38,7 +45,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add Packages Packages.gz Packages.bz2 Release
+          git add Packages Packages.gz Packages.bz2 Release appstore.json
           if ! git diff --cached --quiet; then
             git commit -m "Update package index"
             git push
@@ -49,7 +56,7 @@ jobs:
       - name: Prepare public files (explicit allowlist)
         run: |
           mkdir -p _site/debs
-          cp index.html CydiaIcon.png Release Packages Packages.gz Packages.bz2 _site/
+          cp index.html CydiaIcon.png Release Packages Packages.gz Packages.bz2 appstore.json _site/
           if [ -d debs ]; then cp -r debs/. _site/debs/; fi
           touch _site/.nojekyll
 
