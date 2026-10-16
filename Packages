@@ -81,6 +81,45 @@ MD5sum: 988f1e9e5b18de1dc96297284afa1909
 SHA1: c19cb890eded6c3ebfac5b24d74361a9287d471b
 SHA256: f4bbf8d768688538b4cbf5029b2fc9f3d24f56f438863ba3a35abf3fc7ecf9c2
 
+Author: Nightwind
+Architecture: iphoneos-arm64e
+Description: 插件归类，已汉化。
+Maintainer: wkk
+Version: 2.2
+Depends: firmware (>= 14.0), mobilesubstrate (>= 0.9.5000), com.mrgcgamer.libgcuniversal, preferenceloader
+Name: 插件归类
+Section: Tweaks
+Conflicts: com.shepgoba.settingswidgets, com.creaturecoding.shuffle
+Sponsor: wkk
+Installed-Size: 1084
+Package: com.wkk.onesettings
+icon: https://sini921.github.io/repo/sileodepiction/icon/onesett.png
+Pre-Depends: rootless-compat(>= 0.9)
+Filename: debs/插件归类-2.2-roothide.deb
+Size: 255620
+MD5sum: 8e3e2724d71b0a34c3528f8442d5cadd
+SHA1: a8500929faad0859b0c3f8ce847f9cdbd0f6b96b
+SHA256: 78d63d5a3d058a6bcfe1040469f10737c066530e1293a70d4b2ae61f968bf406
+
+Package: com.mrgcgamer.libgcuniversal
+Name: 插件归类依赖库
+Depends: firmware (>= 14.0) | ws.hbang.alderis, firmware (>= 12.0)
+Provides: com.mrgcgamer.libgcimagepicker, com.mrgcgamer.libgccolorpicker
+Description: 开发通用库，部分插件需要此依赖，转换支持roothide。
+Maintainer: MrGcGamer
+Author: MrGcGamer
+Section: Tweaks
+Tag: role::developer
+Architecture: iphoneos-arm64e
+Version: 1.7.0
+Icon: https://s1.imagehub.cc/images/2025/12/26/29fda3e52ac78c6958ecf3b5dac18673.png
+Pre-Depends: rootless-compat(>= 0.9)
+Filename: debs/插件归类依赖库-1.7.0-roothide.deb
+Size: 60970
+MD5sum: 516ccac13afe7f8c2289ee505fda9922
+SHA1: 020a7216dbad3d54c0b8724986d289a17b9091a8
+SHA256: 4920dad958e10755e109874ba9059646bd25542bade967efda626cef759f8541
+
 Package: com.cydiabc.nopassafterrespringsafe-roothide
 Version: 1.0-1
 Description: iPhone已解锁或者未设置密码/Face ID的情况下，注销设备后无需再次输入密码或验证Face ID即可进入桌面，安装即可生效，无设置
