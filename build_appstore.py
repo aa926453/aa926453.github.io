@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
-"""全能签聚合源构建：实时抓取上游源 → 过滤锁定/无效项 → 去重合并 → 输出 appstore.json"""
+"""全能签聚合源构建：实时抓取上游源 → 过滤锁定/无效项 → 去重合并 → 输出 appstore.json
+
+更新统计说明（GitHub Actions 无状态环境）：
+- 30 分钟更新数 = 与仓库中上次提交的 appstore.json 对比新增的应用
+- 今日更新数 = versionDate 为今天（北京时间）的应用数
+"""
 import json
 import os
 import sys
+import time
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
@@ -19,7 +25,9 @@ SOURCES = [
 
 UA = 'OmniSign/7.7'
 SOURCE_URL = 'https://aa926453.github.io/appstore.json'
-SOURCE_NAME = '聚合软件源'
+SOURCE_NAME = '不知道起什么名'
+SOURCE_ICON = 'https://aa926453.github.io/flag_cn.png'
+OWNER_QQ = '1505435445'
 KEEP_FIELDS = ('name', 'bundleIdentifier', 'version', 'versionDate', 'iconURL',
                'downloadURL', 'size', 'tintColor', 'type')
 MAX_STR = 300  # 超长字段截断，防止索引膨胀
@@ -49,6 +57,17 @@ def slim(app):
     if desc:
         out['versionDescription'] = desc[:MAX_STR]
     return out
+
+
+def load_prev_keys():
+    """读仓库中上次提交的 appstore.json，作为 30 分钟对比基线"""
+    try:
+        with open(OUT, encoding='utf-8') as f:
+            old = json.load(f)
+        return {f"{a.get('name', '')}|{a.get('version', '')}"
+                for a in old.get('apps', [])}
+    except Exception:
+        return set()
 
 
 def main():
@@ -93,13 +112,25 @@ def main():
             print(f'  {n}')
         return
 
+    # ---- 更新统计 ----
+    prev_keys = load_prev_keys()
+    updated_30min = len(seen - prev_keys) if prev_keys else 0
+    today = time.strftime('%Y-%m-%d', time.gmtime(time.time() + 8 * 3600))  # 北京时间
+    updated_today = sum(1 for a in apps
+                        if str(a.get('versionDate', '')).startswith(today))
+
     apps.sort(key=lambda a: str(a.get('versionDate') or ''), reverse=True)
+
+    message = (f'共 {len(apps)} 个应用\n'
+               f'最近 30 分钟更新 {updated_30min} 个 · 今日更新 {updated_today} 个\n'
+               f'源主 QQ：{OWNER_QQ}')
 
     doc = {
         'name': SOURCE_NAME,
         'identifier': 'io.github.aa926453.aggappstore',
         'sourceURL': SOURCE_URL,
-        'message': f'聚合 {len(ok_sources)}/{len(SOURCES)} 个上游源 · 共 {len(apps)} 个应用 · 每30分钟自动同步',
+        'sourceicon': SOURCE_ICON,
+        'message': message,
         'apps': apps,
     }
     with open(OUT, 'w', encoding='utf-8') as f:
@@ -108,6 +139,7 @@ def main():
     print(f'  上游: {" ".join(per_source)}')
     print(f'  合计: {len(apps)} 个应用 -> appstore.json '
           f'({os.path.getsize(OUT) / 1048576:.1f}MB)')
+    print(f'  统计: 30分钟更新 {updated_30min} | 今日更新 {updated_today}')
 
 
 if __name__ == '__main__':

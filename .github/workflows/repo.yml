@@ -10,6 +10,7 @@ on:
       - 'appstore.json'
       - 'index.html'
       - 'CydiaIcon.png'
+      - 'flag_cn.png'
       - '.github/workflows/repo.yml'
   workflow_dispatch:
   schedule:
@@ -56,7 +57,7 @@ jobs:
       - name: Prepare public files (explicit allowlist)
         run: |
           mkdir -p _site/debs
-          cp index.html CydiaIcon.png Release Packages Packages.gz Packages.bz2 appstore.json _site/
+          cp index.html CydiaIcon.png flag_cn.png Release Packages Packages.gz Packages.bz2 appstore.json _site/
           if [ -d debs ]; then cp -r debs/. _site/debs/; fi
           touch _site/.nojekyll
 
