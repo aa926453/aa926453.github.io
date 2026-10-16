@@ -98,6 +98,44 @@ MD5sum: 988f1e9e5b18de1dc96297284afa1909
 SHA1: c19cb890eded6c3ebfac5b24d74361a9287d471b
 SHA256: f4bbf8d768688538b4cbf5029b2fc9f3d24f56f438863ba3a35abf3fc7ecf9c2
 
+Package: com.iosdump.shellx
+Name: 截图插件
+Version: 10.1.0
+Architecture: iphoneos-arm64e
+Maintainer: iosdump
+Author: iosdump
+Section: 系统增强
+Depends: mobilesubstrate, preferenceloader, com.opa334.ccsupport
+Conflicts: com.jontelang.snapper3, byg.iosios.net.snapper3, com.jontelang.snapper, com.jontelang.snapper2.packix, xyz.cypwn.snapperfr33
+Installed-Size: 19540
+Description: 录屏/截图自动套壳（手机边框）、水印、区域截图、长截图、AI问答、快捷手势等，控制中心可添加截图模块（需要截图插件依赖库），兼容iOS14-17，已适配Roothide隐根越狱。
+Icon: https://chinesebuilding.club/pic/cydia.png
+Filename: debs/截图插件-10.1.0-roothide.deb
+Size: 4772492
+MD5sum: 2c650ad74741ea179bfaff96dfad90ff
+SHA1: 0221da883c0498b163227a3c85163682388ceb07
+SHA256: 19aad0f8660b6d10bd5338b67853f294e501d32ad3bbd3120c30565979db67c8
+
+Package: com.opa334.ccsupport
+Name: 截图插件依赖库
+Version: 1.3.13-2-15+debug
+Architecture: iphoneos-arm64e
+Maintainer: opa334
+Author: opa334
+Section: Tweaks
+Depends: mobilesubstrate, firmware (>=11.0)
+Provides: com.ioscreatix.silo
+Replaces: com.ioscreatix.silo
+Conflicts: com.ioscreatix.silo
+Installed-Size: 804
+Description: CCSupport 控制中心模块支持库（opa334出品），截图插件的控制中心模块需要它，安装截图插件时会自动安装。已适配Roothide隐根越狱。
+Icon: https://chinesebuilding.club/pic/cydia.png
+Filename: debs/截图插件依赖库-1.3.13-roothide.deb
+Size: 83602
+MD5sum: 546f144c4b9ecb2ad2ca51862edc529b
+SHA1: f64813eb610f3d2511e896c275cc8af41b6ea18e
+SHA256: f0ee459abb1426c40bacb9bd2f80f8fc7d02fd015efd7db31ba7408957b64b60
+
 Author: Nightwind
 Architecture: iphoneos-arm64e
 Description: 插件归类，已汉化。
