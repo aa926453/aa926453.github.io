@@ -6,16 +6,16 @@ Version: 1.0
 Architectures: iphoneos-arm64e
 Components: main
 Description: aa926453 的 Sileo 软件源
-Date: Fri, 16 Oct 2026 14:26:16 +0000
+Date: Fri, 16 Oct 2026 14:50:04 +0000
 MD5Sum:
- 89fac59d6f05baadfeb533886df15abf 8735 Packages
- b7390f0c043c2c5e565f7bc8d6e63827 4499 Packages.gz
- b1cebdff4234b2491926a3454060171a 4225 Packages.bz2
+ 32bdeeac51cc800bd60dbfcc978c27ff 9805 Packages
+ 469a41825a9990f6658863deccd04445 5045 Packages.gz
+ 0ed7abf7907d4737a21bfc95f8444f46 4697 Packages.bz2
 SHA1:
- 52b7728ba2e8a29a16438f39a9a9839726de2b98 8735 Packages
- c8787cd8c609ab0386e104a9799c595cfcd9ca4f 4499 Packages.gz
- 9c9df0076473ed6a1e5cb7cf6692a1dcf09aa2da 4225 Packages.bz2
+ a8d3c1c9f5ad34785e8fd3e222e55cd5062ad8b4 9805 Packages
+ f33f16b4cd020d76b64ce2b4a126eb91e94ebfa2 5045 Packages.gz
+ 439690d745ed5b425aa4597015411bcd22ccd2ec 4697 Packages.bz2
 SHA256:
- 6cf9d6c65c86fd407870c828e762872ead0dbb55bceb1a0c3e96ed3921b7331c 8735 Packages
- e914b702cda9894789bded3dfebc924548e12e8be6e44c2b54f1c83a7db8e2e3 4499 Packages.gz
- 7b48eaadd8f7140c74207e0665f37d4d6b47107cb0eeeaaad1e0b72812598967 4225 Packages.bz2
+ 30d978a1ab5d0c53480a87b6b3892ec8554156b3a3c81a75cce5da7de886794d 9805 Packages
+ dbdd853fa817341c941719832f5f88ef3c554339a0f65db9d2298ee7940c09c3 5045 Packages.gz
+ b4ff6cb5cc6dcacd0c3d209a2e79eac238a88acdd10d3f1a84b4801297f4f1c7 4697 Packages.bz2

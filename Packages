@@ -16,6 +16,23 @@ MD5sum: b3e509e9d682968fb3b4b72453a7d8f5
 SHA1: c84907b25143f9c6e05eeba033ccebca501fa307
 SHA256: 43f5a4cd2dcfa2a7da1fd65c20bc2f29b745ea4045c15434b81594798a582e9e
 
+Package: com.wkk.doubletapflipcamera
+Name: 双击翻转相机
+Description: 双击取景框翻转前后摄像头，带震动反馈。已内置 30 个常用应用的注入支持：系统相机、微信、QQ、QQ空间、微博、小红书、陌陌、探探、Soul、钉钉、企业微信、腾讯会议、飞书、知乎、闲鱼、得物、美团、大众点评、淘宝、京东、拼多多、抖音、快手、哔哩哔哩、WhatsApp、Telegram、Messenger、LINE、Signal、X。调用系统相机界面的应用即可双击翻转；应用自带相机界面的（如 Snapchat/Instagram）不适用。
+Maintainer: SquidForce
+Author: SquidForce
+Section: Tweaks
+Depends: mobilesubstrate (>= 1.1.5000)
+Architecture: iphoneos-arm64e
+Version: 1.2
+Icon: https://s1.imagehub.cc/images/2025/12/26/4eeb970bf2c4db32c7f60f54d61b2587.png
+Installed-Size: 180
+Filename: debs/双击翻转相机-1.2-roothide.deb
+Size: 5704
+MD5sum: a21ec4d19b88806cd03ae9b72b7d7655
+SHA1: 374ed93f3f1adb18677f485209383ba61dc2f011
+SHA256: e2df67630dcfc0c19539b8a1e6231a11a44b391aad11ac1d805b5eb49ce5c09d
+
 Package: com.axs.ipslog
 Name: 崩溃日志
 Description: 设置内一键查看与分析设备上的 .ips 崩溃日志，快速定位崩溃原因。
