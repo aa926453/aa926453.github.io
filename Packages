@@ -4414,24 +4414,24 @@ X-Upstream-Source: https://byg.iosios.net/
 X-Upstream-Filename: ./debs/2556.deb
 
 Package: com.xybp888.callassist16.dopamine
-Version: 3.2.2
+Version: 3.2.3
 Priority: optional
 Section: Tweaks
 Maintainer: xybp888
 Depends: firmware (>= 15.0), preferenceloader, com.opa334.libsandy
 Architecture: iphoneos-arm64
-Size: 3620838
+Size: 3610754
 Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
 Name: 电话助手iOS16-正式版(Rootless)
 Author: xybp888
-Depiction: https://apt.htv123.com/view/1076
-SileoDepiction: https://apt.htv123.com/sileo/1076
-MD5sum: caac5613618703894357896419a86a20
-SHA1: acf2bb9845652c53f632a90e3ad8328e2bd515ff
-SHA256: c2a094ae48ab3b34799a9a9a08189431273a36bef8736dd27350ca7d62544b75
-Filename: https://apt.htv123.com/debs/1076.deb
+Depiction: https://apt.htv123.com/view/1080
+SileoDepiction: https://apt.htv123.com/sileo/1080
+MD5sum: d1e1fff913573bb58bf63a339895c429
+SHA1: b2bc8ea760c17b83fb0f86a2728a22acd9c17c41
+SHA256: 2a56595eb2aa30d15491bc9436a5e9cc669f2b12857b3c3cc9e6d21eb5804bc7
+Filename: https://apt.htv123.com/debs/1080.deb
 X-Upstream-Source: https://apt.htv123.com/
-X-Upstream-Filename: ./debs/1076.deb
+X-Upstream-Filename: ./debs/1080.deb
 
 Package: byg.iosios.net.autoscroll
 Version: 1.0.5
@@ -37382,21 +37382,22 @@ X-Upstream-Filename: debs/bigshot_1.1_iphoneos-arm64.deb
 Package: com.yourepo.axs.bigtime
 Architecture: iphoneos-arm64
 Name: BigTime
-Version: 5.2.0-68
-Description: 液态锁屏时间
+Version: 5.2.0-74
+Description: 液态锁屏时间+五色渐变锁屏时间
 Author: Axs <qiaozhani000@163.com>
 Section: System (Axs-Tweaks)
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
-Size: 133266
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 15.0), preferenceloader
+Conflicts: com.axs.screenlocktime
+Size: 135322
 Maintainer: Axs <qiaozhani000@163.com>
-Md5sum: 66dec1e035fe428e4e7096bd8497aebe
-SHA256: 4a1ece25a96cb6d87bc7254b7471a24a58f69cbef76494fb1a661ed2dd17c211
+Md5sum: c16bf77fc48316269cdd329a255cbd67
+SHA256: 77fa7eb38fa22801445e577a291045b6c7e3787ca1a97a194c5a7ed542c8b39c
 Depiction: https://axs.yourepo.com/pack/bigtime
 SileoDepiction: https://axs.yourepo.com/sileo/depiction/bigtime
 Icon: https://axs66.github.io/pro/icon/bigtime.png
-Filename: https://axs.yourepo.com/debs/bigtime_5.2.0-68_iphoneos-arm64.deb
+Filename: https://axs.yourepo.com/debs/bigtime_5.2.0-74_iphoneos-arm64.deb
 X-Upstream-Source: https://axs.yourepo.com/
-X-Upstream-Filename: debs/bigtime_5.2.0-68_iphoneos-arm64.deb
+X-Upstream-Filename: debs/bigtime_5.2.0-74_iphoneos-arm64.deb
 
 Package: com.yourepo.axs.bizhi
 Architecture: iphoneos-arm64
@@ -70227,64 +70228,64 @@ X-Upstream-Source: https://apt.htv123.com/
 X-Upstream-Filename: ./debs/627.deb
 
 Package: com.xybp888.callassist16.dopamine.roothide
-Version: 3.2.2
+Version: 3.2.3
 Priority: optional
 Section: Tweaks
 Maintainer: xybp888
 Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
 Architecture: iphoneos-arm64e
-Size: 3623426
+Size: 3596388
 Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
 Name: 电话助手iOS16-正式版(Roothide)
 Author: xybp888
-Depiction: https://apt.htv123.com/view/1075
-SileoDepiction: https://apt.htv123.com/sileo/1075
-MD5sum: f0af4676168c204a4d0798c75482384a
-SHA1: 81f25860b971751f332f36fbc3d094496bb66ea4
-SHA256: 4a5a08a784dff4b3bebc9830531443d68c5041e54893c236f686f025f93ed4fc
-Filename: https://apt.htv123.com/debs/1075.deb
+Depiction: https://apt.htv123.com/view/1079
+SileoDepiction: https://apt.htv123.com/sileo/1079
+MD5sum: f38b99bcb1b4243b0eaa47f2cf4f7f0c
+SHA1: 7132b26c246921aa63d1fc63fceab0d3d7041468
+SHA256: 6f3045559ddd70ae284296d4fb27ccf6169b15cf635e0dc9e837a7f3898f1c65
+Filename: https://apt.htv123.com/debs/1079.deb
 X-Upstream-Source: https://apt.htv123.com/
-X-Upstream-Filename: ./debs/1075.deb
+X-Upstream-Filename: ./debs/1079.deb
 
 Package: com.xybp888.callassist17.dopamine
-Version: 2.3.1
+Version: 2.3.2
 Priority: optional
 Section: Tweaks
 Maintainer: xybp888
 Depends: firmware (>= 17.0), preferenceloader, com.opa334.libsandy
 Architecture: iphoneos-arm64
-Size: 3675648
+Size: 3644132
 Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
 Name: 电话助手iOS17-正式版(Rootless)
 Author: xybp888
-Depiction: https://apt.htv123.com/view/1077
-SileoDepiction: https://apt.htv123.com/sileo/1077
-MD5sum: 751cee671a284ab2b60fbc714742df95
-SHA1: 4b27ed3e7986be0adde7e563e9b21819536564c8
-SHA256: ece073395000dc703d3017e054d61cd62dd5d99b6e8812c3fd3f4aa796322e09
-Filename: https://apt.htv123.com/debs/1077.deb
+Depiction: https://apt.htv123.com/view/1081
+SileoDepiction: https://apt.htv123.com/sileo/1081
+MD5sum: d860398c1f58b4bd7bad5cf8a7cf9650
+SHA1: 234b71a5ae0bdd3ac015399a15984ea90f984b90
+SHA256: c5250892d0d5cd7551c085e598ec170b6df9c72dc30e47df08900080bb668e66
+Filename: https://apt.htv123.com/debs/1081.deb
 X-Upstream-Source: https://apt.htv123.com/
-X-Upstream-Filename: ./debs/1077.deb
+X-Upstream-Filename: ./debs/1081.deb
 
 Package: com.xybp888.callassist17.roothide
-Version: 2.3.1
+Version: 2.3.2
 Priority: optional
 Section: Tweaks
 Maintainer: xybp888
 Depends: firmware (>= 17.0), preferenceloader, com.opa334.libsandy
 Architecture: iphoneos-arm64e
-Size: 3641028
+Size: 3631434
 Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
 Name: 电话助手iOS17-正式版(Roothide)
 Author: xybp888
-Depiction: https://apt.htv123.com/view/1078
-SileoDepiction: https://apt.htv123.com/sileo/1078
-MD5sum: 823ccc9a95a7d52a1a05bc41929b0b8b
-SHA1: 93264e75ce3a8a6d258dcbf317ac5c015917aa9b
-SHA256: 5a57e0c05a2881dc322153e4562574d266d3542aeffbe337ef56a97dde6b9275
-Filename: https://apt.htv123.com/debs/1078.deb
+Depiction: https://apt.htv123.com/view/1082
+SileoDepiction: https://apt.htv123.com/sileo/1082
+MD5sum: 105cd09ae2d1237d8be1009e14e95fbe
+SHA1: 532cd8bc2b9823529e16d52e13b7f857ad32056a
+SHA256: 98d93ac85e7e190abb9833a00fea2d7cb905509ff77a46296be4019d489d3bee
+Filename: https://apt.htv123.com/debs/1082.deb
 X-Upstream-Source: https://apt.htv123.com/
-X-Upstream-Filename: ./debs/1078.deb
+X-Upstream-Filename: ./debs/1082.deb
 
 Package: com.xybp888.disabledgesture
 Version: 0.0.1-75
@@ -76457,46 +76458,46 @@ X-Upstream-Source: https://apt.25mao.com/
 X-Upstream-Filename: ./debs/267.deb
 
 Package: com.25mao.kuaipanel3
-Version: 3.0-1
+Version: 3.1-1
 Section: 系统插件
 Maintainer: admin@25mao.com
 Depends: firmware (>= 15.0), mobilesubstrate (>= 0.9.5000)
 Architecture: iphoneos-arm64e
-Size: 2463804
-Installed-Size: 8616
+Size: 2498848
+Installed-Size: 8760
 Description: 快捷面板重构版
 Name: 快捷面板
 Author: Mao
 Sponsor: admin@25mao.com
-Depiction: https://apt.25mao.com/index.php?pid=421
-SileoDepiction: https://apt.25mao.com/sileo/421
-MD5sum: 42349baf96c2066b7136fabc9279010a
-SHA1: a1effd5fcbc14d5348df37348fab3de142c45bdf
-SHA256: 3fbb4bef6fc3cb1e1532e0601c65bbf30c9b3f044ef06c5f840b13766d4550f2
-Filename: https://apt.25mao.com/debs/421.deb
+Depiction: https://apt.25mao.com/index.php?pid=426
+SileoDepiction: https://apt.25mao.com/sileo/426
+MD5sum: d7b2da42420db5bbd944aa415f62ef17
+SHA1: cea5693f715cfca975f5952b0378773d0c189375
+SHA256: c36494d45dcdea134720ee00bdc94231a17baedf2ae2c3016e9bb7d213c0c28a
+Filename: https://apt.25mao.com/debs/426.deb
 X-Upstream-Source: https://apt.25mao.com/
-X-Upstream-Filename: ./debs/421.deb
+X-Upstream-Filename: ./debs/426.deb
 
 Package: com.25mao.kuaipanel3
-Version: 3.0-1
+Version: 3.1-1
 Section: 系统插件
 Maintainer: admin@25mao.com
 Depends: firmware (>= 15.0), mobilesubstrate (>= 0.9.5000)
 Architecture: iphoneos-arm64
-Size: 2470264
-Installed-Size: 8600
+Size: 2500534
+Installed-Size: 8648
 Description: 快捷面板重构版
 Name: 快捷面板
 Author: Mao
 Sponsor: admin@25mao.com
-Depiction: https://apt.25mao.com/index.php?pid=420
-SileoDepiction: https://apt.25mao.com/sileo/420
-MD5sum: 24e6ee05f0a761085109a6623051c3c2
-SHA1: 768379fef277855bae775d1eed3b416ce47a0a0b
-SHA256: f3530ff5866b14e1d0245f71dde9754601a176b1b904bc3a957f3932404e3e98
-Filename: https://apt.25mao.com/debs/420.deb
+Depiction: https://apt.25mao.com/index.php?pid=425
+SileoDepiction: https://apt.25mao.com/sileo/425
+MD5sum: a0737b6707e35f5d777a276c5f5796ba
+SHA1: af02d442e325be9b6ce221affbc2a6b10ae56eac
+SHA256: bb10e1e53744a4a5be22c58193be4a83d9a285c014325b44cfbfaf783496f63b
+Filename: https://apt.25mao.com/debs/425.deb
 X-Upstream-Source: https://apt.25mao.com/
-X-Upstream-Filename: ./debs/420.deb
+X-Upstream-Filename: ./debs/425.deb
 
 Package: com.25mao.leftpan
 Version: 2.0-1
@@ -77790,6 +77791,7 @@ Depiction: https://MrSuuu.github.io/Sileo/depictions/culpritzh.html
 Sileodepiction: https://MrSuuu.github.io/Sileo/depictions/culpritzh.json
 Section: Tweaks
 Depends: mobilesubstrate, firmware (>= 14.0)
+Icon: https://MrSuuu.github.io/Sileo/depictions/icon-culpritzh.png
 Size: 12670
 MD5sum: c2d637928093bd414d8d80dab40675a1
 SHA256: 2ca0c6635d8d73db1baf07e798620323ded4deb2a7a4c91feccdc8f78f700d09
@@ -77934,6 +77936,7 @@ Depiction: https://MrSuuu.github.io/Sileo/depictions/floatingtabbar.html
 Sileodepiction: https://MrSuuu.github.io/Sileo/depictions/floatingtabbar.json
 Section: 美化
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 15.0)
+Icon: https://MrSuuu.github.io/Sileo/depictions/icon-floatingtabbar.png
 Size: 17452
 MD5sum: b5c1147a46a8e796b47601a4c67ee576
 SHA256: 7509495adbf5313e33785e9a5d5652fc8f308f83f9301987c177f5121200c624
@@ -77952,6 +77955,7 @@ Depiction: https://MrSuuu.github.io/Sileo/depictions/realcputwoline.html
 Sileodepiction: https://MrSuuu.github.io/Sileo/depictions/realcputwoline.json
 Section: ControlCenter
 Depends: com.opa334.ccsupport (>= 1.3), firmware (>= 15.0)
+Icon: https://MrSuuu.github.io/Sileo/depictions/icon-realcputwoline.png
 Size: 15704
 MD5sum: 235d2a29ce03e891e7aa47444d13e31c
 SHA256: 86e4564e9698c8029193fdef7004c58e38f5b474cc78c422725616d39ed841f3
@@ -77970,6 +77974,7 @@ Depiction: https://MrSuuu.github.io/Sileo/depictions/liquidalass.html
 Sileodepiction: https://MrSuuu.github.io/Sileo/depictions/liquidalass.json
 Section: Tweaks
 Depends: mobilesubstrate, firmware (>= 17.0)
+Icon: https://MrSuuu.github.io/Sileo/depictions/icon-liquidalass.png
 Size: 24760
 MD5sum: 3cc7699947a5b544d4ad49f13c30b47b
 SHA256: 3b04fc0f0b6c0c96d565b2b3d2faad604fe2e7b8b3f09953280471f0bebb270f
@@ -248974,54 +248979,82 @@ X-Upstream-Source: https://axs66.github.io/pro/
 X-Upstream-Filename: ./debs/com.axs.axswidget_5.2.0-15_iphoneos-arm64.deb
 
 Package: com.axs.bigtime
-Version: 5.2.0-68
+Version: 5.2.0-74
 Architecture: iphoneos-arm64
 Maintainer: Axs <qiaozhani000@163.com>
-Installed-Size: 948
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
-Size: 133678
-MD5sum: 98c70ec329bda5f129ea6f69cd4176ca
-SHA1: 89ca747b36aafd0d33f04f54e6d031c242ab67a6
-SHA256: c92e0cf782e8c865ed6f96f3400b29ca2d43bf957f5a11ab5fd340cdd852ff23
+Installed-Size: 980
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 15.0), preferenceloader
+Conflicts: com.axs.screenlocktime
+Size: 135688
+MD5sum: df1e59309a6165cb14b27f40ac9de9b9
+SHA1: ceb6f946049029899426e74529c6807026389557
+SHA256: e16fa5b5a56beaf199c4ed4e72ab626cb45f7ccb7e55c983529831cb5414cd86
 Section: Axs-Tweaks
 Description: 一个简单的锁屏时钟插件，需要在“/var/mobile/Axs/字体素材”文件夹里面放入“axs66.otf"字体素材，才能生效。
  * 1.锁屏大字时钟玻璃效果，隐藏系统时间（锁屏时）;
  * 2.支持锁屏时钟启用开关、帧率上限和垂直偏移调节;
- * 3.支持玻璃边缘、模糊、厚度、折射、高光和壁纸采样质量调节;
+ * 3.支持玻璃边缘、模糊、厚度和折射调节;
  * 4.支持浅色/深色染色强度与深浅模式覆盖;
  * 5.支持 iOS 16+ 可变字体粗细、大小、宽度、高度和柔和度调节。
 Author: Axs <qiaozhani000@163.com>
 Icon: https://axs66.github.io/pro/icon/bigtime.png
 Name: BigTime
 Sileodepiction: https://axs66.github.io/pro/sileodepiction/bigtime/js.json
-Filename: https://axs66.github.io/pro/debs/com.axs.bigtime_5.2.0-68_iphoneos-arm64.deb
+Filename: https://axs66.github.io/pro/debs/com.axs.bigtime_5.2.0-74_iphoneos-arm64.deb
 X-Upstream-Source: https://axs66.github.io/pro/
-X-Upstream-Filename: ./debs/com.axs.bigtime_5.2.0-68_iphoneos-arm64.deb
+X-Upstream-Filename: ./debs/com.axs.bigtime_5.2.0-74_iphoneos-arm64.deb
 
 Package: com.axs.bigtime
-Version: 5.2.0-68
+Version: 5.2.0-74
 Architecture: iphoneos-arm64e
 Maintainer: Axs <qiaozhani000@163.com>
-Installed-Size: 948
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0), preferenceloader
-Size: 132852
-MD5sum: 547290fece7e8fc83d7241626ef9e59c
-SHA1: 0d0a9ee5d40c4389b5f6af41b1fc8b20de65e8f7
-SHA256: 491927c7ec37304e2b9a119340e66d11e84485b8f806247a1f9772cc26318b78
+Installed-Size: 980
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 15.0), preferenceloader
+Conflicts: com.axs.screenlocktime
+Size: 135038
+MD5sum: 5625e187a59c06770932f1e0cfeddc18
+SHA1: 089be5d071c9bd0ea526f22aea1d742dd266c779
+SHA256: cb14c54f5fddac29d6b15193beb91ae1ad7acdbd1f0fe4feb829fdebde257ba9
 Section: Axs-Tweaks
 Description: 一个简单的锁屏时钟插件，需要在“/var/mobile/Axs/字体素材”文件夹里面放入“axs66.otf"字体素材，才能生效。
  * 1.锁屏大字时钟玻璃效果，隐藏系统时间（锁屏时）;
  * 2.支持锁屏时钟启用开关、帧率上限和垂直偏移调节;
- * 3.支持玻璃边缘、模糊、厚度、折射、高光和壁纸采样质量调节;
+ * 3.支持玻璃边缘、模糊、厚度和折射调节;
  * 4.支持浅色/深色染色强度与深浅模式覆盖;
  * 5.支持 iOS 16+ 可变字体粗细、大小、宽度、高度和柔和度调节。
 Author: Axs <qiaozhani000@163.com>
 Icon: https://axs66.github.io/pro/icon/bigtime.png
 Name: BigTime
 Sileodepiction: https://axs66.github.io/pro/sileodepiction/bigtime/js.json
-Filename: https://axs66.github.io/pro/debs/com.axs.bigtime_5.2.0-68_iphoneos-arm64e.deb
+Filename: https://axs66.github.io/pro/debs/com.axs.bigtime_5.2.0-74_iphoneos-arm64e.deb
 X-Upstream-Source: https://axs66.github.io/pro/
-X-Upstream-Filename: ./debs/com.axs.bigtime_5.2.0-68_iphoneos-arm64e.deb
+X-Upstream-Filename: ./debs/com.axs.bigtime_5.2.0-74_iphoneos-arm64e.deb
+
+Package: com.axs.bigtime
+Version: 5.2.0-74
+Architecture: iphoneos-arm
+Maintainer: Axs <qiaozhani000@163.com>
+Installed-Size: 980
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 15.0), preferenceloader
+Conflicts: com.axs.screenlocktime
+Size: 135464
+MD5sum: 49a9323c0e3ed8620ef4d1cf5bd9beda
+SHA1: f87aef374ba2fb93d4401835b280f7c8aef11911
+SHA256: 46870bf8274c1b64d9309a6de1a4ea71394e5e122ec3bee7838eac33627a358e
+Section: Axs-Tweaks
+Description: 一个简单的锁屏时钟插件，需要在“/var/mobile/Axs/字体素材”文件夹里面放入“axs66.otf"字体素材，才能生效。
+ * 1.锁屏大字时钟玻璃效果，隐藏系统时间（锁屏时）;
+ * 2.支持锁屏时钟启用开关、帧率上限和垂直偏移调节;
+ * 3.支持玻璃边缘、模糊、厚度和折射调节;
+ * 4.支持浅色/深色染色强度与深浅模式覆盖;
+ * 5.支持 iOS 16+ 可变字体粗细、大小、宽度、高度和柔和度调节。
+Author: Axs <qiaozhani000@163.com>
+Icon: https://axs66.github.io/pro/icon/bigtime.png
+Name: BigTime
+Sileodepiction: https://axs66.github.io/pro/sileodepiction/bigtime/js.json
+Filename: https://axs66.github.io/pro/debs/com.axs.bigtime_5.2.0-74_iphoneos-arm.deb
+X-Upstream-Source: https://axs66.github.io/pro/
+X-Upstream-Filename: ./debs/com.axs.bigtime_5.2.0-74_iphoneos-arm.deb
 
 Package: com.axs.clipboard
 Version: 5.2.0-179
@@ -255433,7 +255466,7 @@ X-Upstream-Source: https://huayuarc.github.io/
 X-Upstream-Filename: debs/com.hang.wechatnoads-1.1-rootless.deb
 
 Package: com.hierarch.dykiller
-Name: DYKiller 抖音 UI 增强
+Name: DYKiller
 Description: 抖音 UI 增强插件（模块化 hook 框架）
 Section: Tweaks
 Depends: firmware (>= 14.0), mobilesubstrate
@@ -255441,19 +255474,19 @@ Maintainer: hierarch
 Author: hierarch
 Priority: optional
 Architecture: iphoneos-arm64e
-Version: 0.5.8
-Installed-Size: 1216
-icon: https://huayuarc.github.io/icon/douyin.jpg
-Size: 292812
-MD5sum: 4167e7ce657c056c50d84c7ecd53d9d6
+Version: 0.6.1
+Installed-Size: 2244
+Icon: https://huayuarc.github.io/icon/douyin.jpg
+Size: 534312
+MD5sum: 8199b22aaf50815d1cbe4bf51756111e
 SHA1: 
-SHA256: e7131ee202ecf09689fc12eabebcdc26d5a39b408a9ab8a312109e4d53d8918b
-Filename: https://huayuarc.github.io/debs/com.hierarch.dykiller_0.5.8_iphoneos-arm64e.deb
+SHA256: e68bb3db61698a064b70144600fbce3293f7daff896bc514d7556c80a5a5ca4f
+Filename: https://huayuarc.github.io/debs/com.hierarch.dykiller-0.6.1-roothide.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.hierarch.dykiller_0.5.8_iphoneos-arm64e.deb
+X-Upstream-Filename: debs/com.hierarch.dykiller-0.6.1-roothide.deb
 
 Package: com.hierarch.dykiller
-Name: DYKiller 抖音 UI 增强
+Name: DYKiller
 Description: 抖音 UI 增强插件（模块化 hook 框架）
 Section: Tweaks
 Depends: firmware (>= 14.0), mobilesubstrate
@@ -255461,16 +255494,16 @@ Maintainer: hierarch
 Author: hierarch
 Priority: optional
 Architecture: iphoneos-arm64
-Version: 0.5.8
-Installed-Size: 1216
-icon: https://huayuarc.github.io/icon/douyin.jpg
-Size: 292012
-MD5sum: 679c7d3c36a0b3d47ee683a32804a592
+Version: 0.6.1
+Installed-Size: 2244
+Icon: https://huayuarc.github.io/icon/douyin.jpg
+Size: 535784
+MD5sum: 56ae55f41ed5b4096a276e06e46ac812
 SHA1: 
-SHA256: 5173cbd2dde2781158be8b4167fd7c1bc3cd32cf4485b53964303ae0763c42eb
-Filename: https://huayuarc.github.io/debs/com.hierarch.dykiller_0.5.8_iphoneos-arm64.deb
+SHA256: c1b2a6d4e381760082e051b72c33c3684373c9c182f72fdb52c4bc957bdf4bb2
+Filename: https://huayuarc.github.io/debs/com.hierarch.dykiller-0.6.1-rootless.deb
 X-Upstream-Source: https://huayuarc.github.io/
-X-Upstream-Filename: debs/com.hierarch.dykiller_0.5.8_iphoneos-arm64.deb
+X-Upstream-Filename: debs/com.hierarch.dykiller-0.6.1-rootless.deb
 
 Package: com.hitori.misaki
 Section: Tweaks
