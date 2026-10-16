@@ -1,3 +1,21 @@
+Package: byg.iosios.net.perfectgrabber-rootless
+Version: 1.1-7
+Section: 系统增强
+Maintainer: 搬运工
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm64e
+Installed-Size: 2116
+Name: 下拉时间电量
+Author: Netskao
+Sponsor: 搬运工
+Icon: https://chinesebuilding.club/pic/cydia.png
+Description: 在横屏游戏下拉一次时显示时间和电量｜某些游戏不规范会无法唤出｜支持自定义字体颜色｜背景颜色｜字体大小｜字体样式｜震动反馈等。
+Filename: debs/下拉时间电量-1.1-7-roothide.deb
+Size: 848918
+MD5sum: b3e509e9d682968fb3b4b72453a7d8f5
+SHA1: c84907b25143f9c6e05eeba033ccebca501fa307
+SHA256: 43f5a4cd2dcfa2a7da1fd65c20bc2f29b745ea4045c15434b81594798a582e9e
+
 Package: com.cydiabc.nopassafterrespringsafe-roothide
 Version: 1.0-1
 Description: iPhone已解锁或者未设置密码/Face ID的情况下，注销设备后无需再次输入密码或验证Face ID即可进入桌面，安装即可生效，无设置
