@@ -30,6 +30,7 @@ SOURCES = [
 UA = 'OmniSign/7.7'
 SOURCE_URL = 'https://aa926453.github.io/appstore.json'
 SOURCE_NAME = '不知道起什么名'
+WORKER_URL = 'https://iosipa.iosipa.workers.dev'
 SOURCE_ICON = 'https://aa926453.github.io/flag2.png'
 OWNER_QQ = '1505435445'
 KEEP_FIELDS = ('name', 'bundleIdentifier', 'version', 'versionDate', 'iconURL',
@@ -319,19 +320,40 @@ def main():
 
     apps.sort(key=lambda a: str(a.get('versionDate') or ''), reverse=True)
 
+    # ---- 改写所有下载链接走 Worker 鉴权代理 ----
+    for app in apps:
+        dl = app.get('downloadURL', '')
+        if isinstance(dl, str) and dl.startswith('http'):
+            app['downloadURL'] = f'{WORKER_URL}/dl?url={urllib.parse.quote(dl, safe="")}'
+
     message = (f'共 {len(apps)} 个应用\n'
                f'最近 30 分钟更新 {updated_30min} 个 · 今日更新 {updated_today} 个\n'
                f'源主 QQ：{OWNER_QQ}')
 
-    news = [{
-        'title': '源公告',
-        'identifier': 'io.github.aa926453.aggappstore.notice',
-        'caption': f'勿忘国耻，吾辈自强！\n\n源主 QQ：{OWNER_QQ}\n有问题加 QQ 联系',
-        'tintColor': '#DE2910',
-        'imageURL': 'https://aa926453.github.io/bg_news.jpg',
-        'date': today,
-        'notify': False,
-    }]
+    news = [
+        {
+            'title': '下载需先激活',
+            'identifier': 'io.github.aa926453.activate',
+            'caption': (
+                f'本源所有应用下载需先激活\n'
+                f'👉 激活链接:{WORKER_URL}/\n\n'
+                f'激活后返回全能签即可下载全部应用\n'
+                f'换网络后重新打开激活页可自动续期'
+            ),
+            'tintColor': '#FF8C00',
+            'date': today,
+            'notify': True,
+        },
+        {
+            'title': '源公告',
+            'identifier': 'io.github.aa926453.aggappstore.notice',
+            'caption': f'勿忘国耻，吾辈自强！\n\n源主 QQ：{OWNER_QQ}\n有问题加 QQ 联系',
+            'tintColor': '#DE2910',
+            'imageURL': 'https://aa926453.github.io/bg_news.jpg',
+            'date': today,
+            'notify': False,
+        },
+    ]
 
     doc = {
         'name': SOURCE_NAME,
