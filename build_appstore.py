@@ -33,6 +33,8 @@ UA = 'OmniSign/7.7'
 # 第三方 GitHub 反代镜像（国内提速）：内容经其转发 raw，源地址对外显示为镜像域名
 MIRROR = 'https://gh-proxy.com/'
 RAW = 'https://raw.githubusercontent.com/aa926453/aa926453.github.io/main/'
+# 备用镜像（ghfast.top，同一文件、不同运营商，主镜像失效时可换用）
+MIRROR2 = 'https://ghfast.top/github.com/aa926453/aa926453.github.io/raw/main/'
 SOURCE_URL = MIRROR + RAW + 'appstore.json'
 SOURCE_NAME = '不知道起什么名'
 SOURCE_ICON = MIRROR + RAW + 'flag2.png'
@@ -428,7 +430,8 @@ def main():
 
     message = (f'共 {len(apps)} 个应用\n'
                f'最近 30 分钟更新 {updated_30min} 个 · 今日更新 {updated_today} 个\n'
-               f'源主 QQ：{OWNER_QQ}')
+               f'源主 QQ：{OWNER_QQ}\n'
+               f'备用镜像：{MIRROR2}appstore.json')
 
     news = [
         {
