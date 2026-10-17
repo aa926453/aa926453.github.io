@@ -95,6 +95,16 @@ ALIST_DRIVES = [
     {'site': 'https://alist.jiejingfan.vip', 'label': '捷径范网盘',
      'roots': ['/自签', '/Trollstore', '/越狱工具', '/签名工具', '/IPCC'],
      'depth': 3},
+    # 以下取自云溪源下载后端中 guest 可访问的网盘
+    {'site': 'https://pan.xuxuyuan.top', 'label': '许愿源网盘',
+     'roots': ['/本地存储'],
+     'depth': 3},
+    {'site': 'https://pan.wkios.cn', 'label': '玩酷网盘',
+     'roots': ['/wx', '/天翼'],
+     'depth': 3},
+    {'site': 'https://wp.66s.lol', 'label': '66s网盘',
+     'roots': ['/工具', '/其他', '/社交', '/游戏'],
+     'depth': 3},
 ]
 # 网盘里这些目录与 iOS 应用无关，跳过
 EXCLUDE_DIR_KW = ('会员', '订阅', '安卓', 'Android', '电脑', 'PC', '壁纸',
