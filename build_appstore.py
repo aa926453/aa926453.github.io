@@ -121,6 +121,8 @@ TRUSTED_HOSTS = {
 
 def check_download(app):
     """检测下载链接是否能返回 IPA，返回 (app, ok)。失败重试 1 次。"""
+    if app.get('_trusted'):  # 云溪(hxys2)源整源信任，跳过检测
+        return app, True
     dl = app.get('downloadURL', '')
     if not isinstance(dl, str) or not dl.startswith('http'):
         return app, False
@@ -147,7 +149,11 @@ def verify_apps(apps):
     """并发检测所有应用下载链接，仅保留可下载的"""
     with ThreadPoolExecutor(max_workers=20) as ex:
         results = list(ex.map(check_download, apps))
-    alive = [a for a, ok in results if ok]
+    alive = []
+    for a, ok in results:
+        if ok:
+            a.pop('_trusted', None)  # 移除内部标记
+            alive.append(a)
     dead = len(apps) - len(alive)
     print(f'  下载检测: 保留 {len(alive)} 个，剔除 {dead} 个死链',
           file=sys.stderr)
@@ -307,8 +313,9 @@ def main():
 
     apps, seen, per_source = [], set(), []
     for url, d in ok_sources:
-        # ipa.hxys2.xyz 内容最全，仅跳过超期过滤；死域名仍过滤
+        # ipa.hxys2.xyz 内容最全：跳过超期过滤，且整源信任不做下载检测
         bypass_age = 'hxys2.xyz' in url
+        trust_src = 'hxys2.xyz' in url
         cnt = 0
         for app in d.get('apps', []):
             # lock 字段不影响下载，不过滤
@@ -320,7 +327,10 @@ def main():
             if key in seen:
                 continue
             seen.add(key)
-            apps.append(slim(app))
+            item = slim(app)
+            if trust_src:
+                item['_trusted'] = 1
+            apps.append(item)
             cnt += 1
         per_source.append(f"{d.get('name', '?')}:{cnt}")
 
