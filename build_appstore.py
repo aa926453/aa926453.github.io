@@ -60,7 +60,7 @@ ALIST_DRIVES = [
      'depth': 3},
     {'site': 'https://pan.iosxn.cn', 'label': 'iosxn网盘',
      'roots': ['/ipa资源', '/巨魔专区', '/微信专区'],
-     'depth': 4},
+     'depth': 3},
 ]
 # 网盘里这些目录与 iOS 应用无关，跳过
 EXCLUDE_DIR_KW = ('会员', '订阅', '安卓', 'Android', '电脑', 'PC', '壁纸',
@@ -78,7 +78,7 @@ def truthy(v):
 def fetch(url):
     req = urllib.request.Request(url, headers={
         'User-Agent': UA, 'Accept-Encoding': 'identity'})
-    with urllib.request.urlopen(req, timeout=90) as r:
+    with urllib.request.urlopen(req, timeout=15) as r:
         return json.loads(r.read().decode('utf-8'))
 
 
@@ -118,7 +118,7 @@ def alist_list(site, path):
             headers={'Content-Type': 'application/json', 'User-Agent': UA})
         for attempt in range(3):
             try:
-                with urllib.request.urlopen(req, timeout=30) as r:
+                with urllib.request.urlopen(req, timeout=10) as r:
                     d = json.loads(r.read().decode('utf-8'))
                 break
             except urllib.error.HTTPError as e:
@@ -146,7 +146,7 @@ def alist_walk(drive):
         if not frontier or len(files) >= ALIST_MAX_FILES:
             break
         next_frontier = []
-        with ThreadPoolExecutor(max_workers=4) as ex:
+        with ThreadPoolExecutor(max_workers=8) as ex:
             futs = {ex.submit(alist_list, site, p): p for p in frontier}
             for fut, path in futs.items():
                 try:
@@ -232,7 +232,12 @@ def main():
         for fut, drv in futs.items():
             label, host = drv['label'], drv['site'].split('//')[1]
             try:
-                pan_apps = fut.result()
+                # 单盘 hard timeout 180s，超过立即放弃改用缓存
+                pan_apps = fut.result(timeout=180)
+            except TimeoutError:
+                print(f'  [warn] 网盘 {label} 超过 180s，放弃改用缓存',
+                      file=sys.stderr)
+                pan_apps = []
             except Exception as e:
                 print(f'  [warn] 网盘 {label} 失败: {e}', file=sys.stderr)
                 pan_apps = []
