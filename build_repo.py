@@ -17,7 +17,7 @@ data=''.join(entries).encode()
 (root/'Packages').write_bytes(data)
 (root/'Packages.gz').write_bytes(gzip.compress(data,mtime=0))
 (root/'Packages.bz2').write_bytes(bz2.compress(data))
-release='Origin: 不知道起什么名\nLabel: 不知道起什么名\nSuite: stable\nCodename: stable\nVersion: 1.0\nArchitectures: '+ ' '.join(sorted(architectures or {'iphoneos-arm','iphoneos-arm64','iphoneos-arm64e'}))+'\nComponents: main\nDescription: aa926453 的 Sileo 软件源\nDate: '+datetime.now(timezone.utc).strftime('%a, %d %b %Y %H:%M:%S +0000')+'\n'
+release='Origin: 不知道起什么名\nLabel: 不知道起什么名\nSuite: stable\nCodename: stable\nVersion: 1.0\nArchitectures: '+ ' '.join(sorted(architectures or {'iphoneos-arm','iphoneos-arm64','iphoneos-arm64e'}))+'\nComponents: main\nDescription: vipios 的 Sileo 软件源\nDate: '+datetime.now(timezone.utc).strftime('%a, %d %b %Y %H:%M:%S +0000')+'\n'
 for heading,alg in [('MD5Sum','md5'),('SHA1','sha1'),('SHA256','sha256')]:
     release+=heading+':\n'
     for name in ('Packages','Packages.gz','Packages.bz2'):

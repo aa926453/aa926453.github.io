@@ -433,7 +433,7 @@ def main():
     news = [
         {
             'title': '源公告',
-            'identifier': 'io.github.aa926453.aggappstore.notice',
+            'identifier': 'io.github.vipios.aggappstore.notice',
             'caption': f'勿忘国耻，吾辈自强！\n\n源主 QQ：{OWNER_QQ}\n有问题加 QQ 联系',
             'tintColor': '#DE2910',
             'imageURL': MIRROR + RAW + 'bg_news.jpg',
@@ -444,7 +444,7 @@ def main():
 
     doc = {
         'name': SOURCE_NAME,
-        'identifier': 'io.github.aa926453.aggappstore',
+        'identifier': 'io.github.vipios.aggappstore',
         'sourceURL': SOURCE_URL,
         'sourceicon': SOURCE_ICON,
         'message': message,
