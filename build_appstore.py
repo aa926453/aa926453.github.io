@@ -29,7 +29,7 @@ SOURCES = [
 ]
 
 UA = 'OmniSign/7.7'
-SOURCE_URL = 'https://iosipa.iosipa.workers.dev/appstore.json'
+SOURCE_URL = 'https://aa926453.github.io/appstore.json'
 SOURCE_NAME = '不知道起什么名'
 WORKER_URL = 'https://iosipa.iosipa.workers.dev'
 SOURCE_ICON = ''
