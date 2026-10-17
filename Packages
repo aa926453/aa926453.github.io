@@ -16,6 +16,25 @@ MD5sum: b3e509e9d682968fb3b4b72453a7d8f5
 SHA1: c84907b25143f9c6e05eeba033ccebca501fa307
 SHA256: 43f5a4cd2dcfa2a7da1fd65c20bc2f29b745ea4045c15434b81594798a582e9e
 
+Package: com.p2kdev.sugarcane
+Version: 1.3.1
+Description: SugarCane 是一款控制中心亮度和音量添加百分比显示的插件。
+Section: Tweaks
+Maintainer: p2kdev
+Depends: mobilesubstrate,firmware (>= 13.0)
+Architecture: iphoneos-arm64e
+Installed-Size: 172
+Name: 亮度音量百分比
+Author: iOS Creatix, kasiimh1, p2kdev
+Sponsor: p2kdev
+Pre-Depends: rootless-compat(>= 0.9)
+icon: https://huayuarc.github.io/icon/sugarcane.jpg
+Filename: debs/亮度音量百分比-1.3.1-roothide.deb
+Size: 8694
+MD5sum: a2db5101feee1f4606b15cffa7e238b7
+SHA1: a4cc6e8a4d5cfc5f0f397740e1377c69c46671f4
+SHA256: 359d4f1b240d49e3b8b05224e479f0aeec0d0b0a30d5be5eb6f881a576f2e1b8
+
 Package: com.wkk.doubletapflipcamera
 Name: 双击翻转相机
 Description: 双击取景框翻转前后摄像头，带震动反馈。已内置 30 个常用应用的注入支持：系统相机、微信、QQ、QQ空间、微博、小红书、陌陌、探探、Soul、钉钉、企业微信、腾讯会议、飞书、知乎、闲鱼、得物、美团、大众点评、淘宝、京东、拼多多、抖音、快手、哔哩哔哩、WhatsApp、Telegram、Messenger、LINE、Signal、X。调用系统相机界面的应用即可双击翻转；应用自带相机界面的（如 Snapchat/Instagram）不适用。
@@ -52,6 +71,41 @@ Size: 113234
 MD5sum: 6ddda262f44729c2bbfe341fb7a1814d
 SHA1: 9839b4583f50ff0f379973e2e0c2d2ea60e21ab1
 SHA256: 1a36efb838e538f2e25f1d3b2dee257be56a8b14efdf4ac52e8868085e258886
+
+Package: com.25mao.leftpan
+Version: 2.0-1
+Section: Tweaks
+Maintainer: admin@25mao.com
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, com.opa334.altlist (>=1.0.4)
+Architecture: iphoneos-arm64e
+Installed-Size: 376
+Name: 左滑返回
+Author: Mao
+Sponsor: admin@25mao.com
+icon: https://huayuarc.github.io/icon/leftPan.png
+Description: 左滑返回
+Filename: debs/左滑返回-2.0-1-roothide.deb
+Size: 34848
+MD5sum: b5f765342225e7c535f9304e313540ee
+SHA1: 5876c94b0ce244c4aeb1483297186dbdba76f8b9
+SHA256: 25bca405b4ef77b53a2b80154d5a04a051e794fd79d8ac88ba55ef56e650fe92
+
+Package: com.iosdump.trollcmtweak
+Name: 录屏轨迹
+Depends: mobilesubstrate, preferenceloader
+Description: 显示屏幕触摸轨迹，支持iOS14-17所有越狱
+Maintainer: iosdump
+Author: iosdump
+Section: Tweaks
+Architecture: iphoneos-arm64e
+Version: 1.1.7
+Installed-Size: 476
+icon: https://huayuarc.github.io/icon/TrollCM.png
+Filename: debs/录屏轨迹-1.1.7-roothide.deb
+Size: 61446
+MD5sum: cffb9f45aa3962e61a898f4529f882ed
+SHA1: bc021de7cfade49b6176729b25aa7a27d6fa3113
+SHA256: d01a519ae5ca0fc92591768c5c25cf643a956aba1c6f8723ecc5106a79ba2d18
 
 Package: com.minis.rainbowkeyboard
 Name: 彩虹键盘
@@ -98,23 +152,40 @@ MD5sum: 988f1e9e5b18de1dc96297284afa1909
 SHA1: c19cb890eded6c3ebfac5b24d74361a9287d471b
 SHA256: f4bbf8d768688538b4cbf5029b2fc9f3d24f56f438863ba3a35abf3fc7ecf9c2
 
+Package: iya.banana.billie.ambientbadge
+Name: 微光角标
+Description: 为桌面通知角标加入玻璃质感与柔和光晕。Custom notification badge styles with adaptive ambient glow. For Billie.
+Maintainer: Banana
+Author: Banana
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
+Architecture: iphoneos-arm64e
+Version: 0.1.16
+Installed-Size: 748
+icon: https://huayuarc.github.io/icon/AmbientBadge.png
+Filename: debs/微光角标-0.1.16-roothide.deb
+Size: 128502
+MD5sum: 878fe44ec1f4933a8fd700ea4a447521
+SHA1: 323e0e5ca26415b1c2e9b1c56522a625ceb963fe
+SHA256: 04fb29d9ab563da7bbf6281e77dbed94ce0aa9ff58ccd98efda13b4e9f385d84
+
 Package: com.iosdump.shellx
 Name: 截图插件
-Version: 10.1.0
-Architecture: iphoneos-arm64e
-Maintainer: iosdump
-Author: iosdump
-Section: 系统增强
 Depends: mobilesubstrate, preferenceloader, com.opa334.ccsupport
 Conflicts: com.jontelang.snapper3, byg.iosios.net.snapper3, com.jontelang.snapper, com.jontelang.snapper2.packix, xyz.cypwn.snapperfr33
-Installed-Size: 19540
-Description: 录屏/截图自动套壳（手机边框）、水印、区域截图、长截图、AI问答、快捷手势等，控制中心可添加截图模块（需要截图插件依赖库），兼容iOS14-17，已适配Roothide隐根越狱。
-Icon: https://chinesebuilding.club/pic/cydia.png
-Filename: debs/截图插件-10.1.0-roothide.deb
-Size: 4772492
-MD5sum: 2c650ad74741ea179bfaff96dfad90ff
-SHA1: 0221da883c0498b163227a3c85163682388ceb07
-SHA256: 19aad0f8660b6d10bd5338b67853f294e501d32ad3bbd3120c30565979db67c8
+Description: 支持录屏/截图套壳，水印以及区域截图、长截图、Ai问答、快捷手势等，兼容iOS14-17所有越狱
+Maintainer: iosdump
+Author: iosdump
+Section: Tweaks
+Architecture: iphoneos-arm64e
+Version: 10.2.0
+Installed-Size: 19916
+icon: https://huayuarc.github.io/icon/ScreenshotShell.png
+Filename: debs/截图插件-10.2.0-roothide.deb
+Size: 4898888
+MD5sum: 2278b62df9c320aa724cc26a00791ce6
+SHA1: 9a4e29b99c15bda0a456504591d1d826ca3ffdc6
+SHA256: bb5b789db13636c1fda965e24593528fd133321ea4062db0cb37ea579b1325eb
 
 Package: com.opa334.ccsupport
 Name: 截图插件依赖库
@@ -194,6 +265,42 @@ Size: 5644
 MD5sum: b61d49eda4368a7fe8cc7b098de0143b
 SHA1: 880544b8d0f07504ac6602b411dbc7941f8b38d5
 SHA256: bb9b8a23a070ba2f4788d152168ca71a6683a93b8fb3fc57820d28309d3fc5af
+
+Package: com.spark.snowboard
+Name: 滑雪板主程序
+Depends: mobilesubstrate, preferenceloader
+Description: 滑雪板主题引擎
+icon: https://sini921.github.io/repo/sileodepiction/icon/snowboard.png
+Sileodepiction: https://sini921.github.io/repo/sileodepiction/snowboard/js.json
+Maintainer: Spark
+Author: Spark & Dennis D. Bednarz
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.5.37-Beta4-rootless
+Installed-Size: 3268
+Filename: debs/滑雪板主程序-1.5.37-Beta4-rootless.deb
+Size: 1192084
+MD5sum: acfc321106d753de1d0a6d9501cf9275
+SHA1: f0bb8ab8142c0408e2c7096dc276bbc3546f3a69
+SHA256: a289ff002c0cd5d9443446579377cc4a96a7ac8669164e1d85212e81ec7e7aec
+
+Package: com.spark.snowboardapplication
+Name: 滑雪板桌面图标
+Depends: com.spark.snowboard
+Description: 桌面上添加滑雪板
+icon: https://sini921.github.io/repo/sileodepiction/icon/snowboard.png
+Sileodepiction: https://sini921.github.io/repo/sileodepiction/snowboardapplication/js.json
+Maintainer: Spark
+Author: Spark
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.1.0~Beta4-rootless
+Installed-Size: 992
+Filename: debs/滑雪板桌面图标-1.1.0~Beta4-rootless.deb
+Size: 609784
+MD5sum: 65b7659d1d02d04ae45cc640f368f872
+SHA1: 017b84ee76fd939d25763e56998950c625726c6e
+SHA256: 0c5691a55157cd298a7b12e4fac003316f8cf30d1ce4b3cf64dcd5d57d5f62f9
 
 Package: com.cydiabc.trollstore-lite-roothide
 Version: 2.1.1-2
