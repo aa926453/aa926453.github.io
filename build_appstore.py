@@ -175,7 +175,9 @@ def slim(app):
         v = app.get(k)
         if v in (None, ''):
             continue
-        if isinstance(v, str) and len(v) > MAX_STR:
+        # 链接类字段绝不截断（截断即成死链/坏图），仅截断文本字段
+        if k not in ('downloadURL', 'iconURL') and isinstance(v, str) \
+                and len(v) > MAX_STR:
             v = v[:MAX_STR]
         out[k] = v
     # 应用简介（更新说明），保留但限制长度
