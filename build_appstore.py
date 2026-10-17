@@ -18,8 +18,10 @@ from concurrent.futures import ThreadPoolExecutor
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, 'appstore.json')
+CACHE = os.path.join(ROOT, 'source_cache.json')
 
 SOURCES = [
+    'https://ipa.hxys2.xyz/appstore',
     'https://app.dumpapps.com/appstore',
     'https://ipa.312752.cn/appstore',
     'https://qnq.nuosike.cn/appstore',
@@ -95,16 +97,6 @@ ALIST_DRIVES = [
     {'site': 'https://alist.jiejingfan.vip', 'label': '捷径范网盘',
      'roots': ['/自签', '/Trollstore', '/越狱工具', '/签名工具', '/IPCC'],
      'depth': 3},
-    # 以下取自云溪源下载后端中 guest 可访问的网盘
-    {'site': 'https://pan.xuxuyuan.top', 'label': '许愿源网盘',
-     'roots': ['/本地存储'],
-     'depth': 3},
-    {'site': 'https://pan.wkios.cn', 'label': '玩酷网盘',
-     'roots': ['/wx', '/天翼'],
-     'depth': 3},
-    {'site': 'https://wp.66s.lol', 'label': '66s网盘',
-     'roots': ['/工具', '/其他', '/社交', '/游戏'],
-     'depth': 3},
 ]
 # 网盘里这些目录与 iOS 应用无关，跳过
 EXCLUDE_DIR_KW = ('会员', '订阅', '安卓', 'Android', '电脑', 'PC', '壁纸',
@@ -125,6 +117,10 @@ TRUSTED_HOSTS = {
     'pan.iosru.com', 'c.iosxrr.com', 'pan.iosfls.cn', 'pan.wkios.cn',
     'gfm.zgios.cn', 'alist.jiejingfan.vip', 'pan.iosku.top',
     'pan.appleipa.cn', '154.219.116.5:5244',
+    # 云溪源(ipa.hxys2.xyz)的下载后端：多为游客受限网盘，
+    # 跳过逐链接检测，避免 verify_apps 误判死链而剔除整批应用
+    'pan.iosxrr.com', 'alist.htl123.com', 'bq.iosxin.top',
+    'pan.xuxuyuan.top', 'wp.66s.lol', 'ipa.hxys2.xyz',
 }
 
 
@@ -227,6 +223,36 @@ def load_prev_keys():
         return set()
 
 
+def source_apps(d):
+    """把某个上游源的原始数据转成可用应用列表（过滤锁定/失效并精简）"""
+    out = []
+    for app in d.get('apps', []):
+        # lock 字段不影响下载，不过滤
+        if truthy(app.get('isLanZouCloud', 0)):
+            continue  # 蓝奏云链接非直链，跳过
+        if not is_app_valid(app):
+            continue
+        out.append(slim(app))
+    return out
+
+
+def load_cache():
+    """读取各源上次成功抓取的数据（抓取失败时兜底）"""
+    try:
+        with open(CACHE, encoding='utf-8') as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def save_cache(cache):
+    try:
+        with open(CACHE, 'w', encoding='utf-8') as f:
+            json.dump(cache, f, ensure_ascii=False, separators=(',', ':'))
+    except Exception as e:
+        print(f'  [warn] 源缓存写入失败: {e}', file=sys.stderr)
+
+
 def alist_list(site, path):
     """AList V3 API：列出目录内容（自动翻页，456 限流自动重试）"""
     items, page = [], 1
@@ -308,31 +334,47 @@ def alist_apps(drive):
 
 
 def main():
-    ok_sources = []  # [(url, data), ...]
+    fetched = {}  # url -> data 或 None（抓取失败）
     with ThreadPoolExecutor(max_workers=len(SOURCES)) as ex:
         futs = {ex.submit(fetch, u): u for u in SOURCES}
         for fut, url in futs.items():
             try:
-                ok_sources.append((url, fut.result()))
+                fetched[url] = fut.result()
             except Exception as e:
-                print(f'  [warn] 源失败: {e}', file=sys.stderr)
+                print(f'  [warn] 源失败 {url}: {e}', file=sys.stderr)
+                fetched[url] = None
 
+    cache = load_cache()
     apps, seen, per_source = [], set(), []
-    for url, d in ok_sources:
+    for url in SOURCES:
+        d = fetched.get(url)
+        c = cache.get(url) or {}
+        cached_apps = c.get('apps') or []
+        if d is not None:
+            fresh = source_apps(d)
+            name = d.get('name') or c.get('name') or url
+            # 抓取量骤降一半以上 → 源不稳，沿用缓存，避免索引暴跌
+            if cached_apps and len(fresh) < len(cached_apps) * 0.5:
+                print(f'  [warn] 源 {name} 本次仅 {len(fresh)} 个（上次 '
+                      f'{len(cached_apps)}），沿用缓存')
+                fresh = cached_apps
+            else:
+                cache[url] = {'name': name, 'apps': fresh}
+        else:
+            fresh = cached_apps
+            name = c.get('name') or url
+            if fresh:
+                print(f'  [warn] 源 {name} 抓取失败，沿用缓存 {len(fresh)} 个')
         cnt = 0
-        for app in d.get('apps', []):
-            # lock 字段不影响下载，不过滤
-            if truthy(app.get('isLanZouCloud', 0)):
-                continue  # 蓝奏云链接非直链，跳过
-            if not is_app_valid(app):
-                continue
+        for app in fresh:
             key = f"{app.get('name', '')}|{app.get('version', '')}"
             if key in seen:
                 continue
             seen.add(key)
-            apps.append(slim(app))
+            apps.append(app)
             cnt += 1
-        per_source.append(f"{d.get('name', '?')}:{cnt}")
+        per_source.append(f'{name}:{cnt}')
+    save_cache(cache)
 
     # ---- AList 网盘应用合入 ----
     old_doc = None
