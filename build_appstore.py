@@ -25,22 +25,25 @@ SOURCES = [
     'https://ipa.312752.cn/appstore',
     'https://qnq.nuosike.cn/appstore',
     'https://yuan.iosyuan.cn/appstore',
+    'https://l060122jun-dotcom.github.io/ipa-source/appstore.json',
 ]
 
 UA = 'OmniSign/7.7'
-SOURCE_URL = 'https://aa926453.github.io/appstore.json'
+SOURCE_URL = 'https://iosipa.iosipa.workers.dev/appstore.json'
 SOURCE_NAME = '不知道起什么名'
-WORKER_URL = 'https://iosipa-iosapp.vercel.app'
-SOURCE_ICON = 'https://aa926453.github.io/flag2.png'
+WORKER_URL = 'https://iosipa.iosipa.workers.dev'
+SOURCE_ICON = ''
 OWNER_QQ = '1505435445'
 KEEP_FIELDS = ('name', 'bundleIdentifier', 'version', 'versionDate', 'iconURL',
                'downloadURL', 'size', 'type')
 MAX_STR = 120  # 超长字段截断，防止索引膨胀
 
-# 是否给下载链接套鉴权代理（激活功能暂停时设为 False，用直链减小体积）
-USE_PROXY = False
+# 是否给下载链接套鉴权代理（去掉下载链接里的源域名/githhub 字样）
+USE_PROXY = True
 
-# 方案A：不活跃/失效域名黑名单，直接过滤这些域名的应用
+# 方案A：失效域名黑名单——仅保留确认为网盘分享页/非直链的域名
+# 注意：不要因为个别文件失效就拉黑整个域名（会误删大量可用应用）！
+# 死链由 verify_apps() 逐个 URL 检测剔除。
 INACTIVE_HOSTS = {
     'pan.mxwlcm.cn', 'pan.pkq7.cn', 'dumppan.iosr.cn', 'pan.113tech.com',
     'pan.iosi.vip', 'pan.52xv.com', 'pan.wxazf.com',
@@ -49,10 +52,7 @@ INACTIVE_HOSTS = {
     'pan.dzapps.cn', 'wp.iosdzapp.cn', 'pan.xyyh.xyz', 'd41.dwnserver.com',
     'sign.drnrt8.cn', 'multimedia.qfile.qq.com', 'panapi.0210.net:4399',
     'pan.quark.cn', 'vfiles.gtimg.cn', 'jianying.kaluo.xyz', 'dl.iosdzapp.cn',
-    # 2026-10-17 实测失效：返回400或JSON非IPA
-    'pan.iosxrr.com', 'alist.htl123.com', 'pan.appleipa.cn',
-    'pan.xuxuyuan.top', 'pan.yeziku.cn', '154.219.116.5:5244',
-    # 蓝奏云非直链，返回HTML
+    # 蓝奏云非直链，返回HTML（其余域名均由 verify_apps 逐链接检测）
     'dumpapp.lanzouw.com', 'qiyou8.lanzouw.com',
 }
 
@@ -114,31 +114,37 @@ def truthy(v):
     return str(v).strip().lower() in ('1', 'true', 'yes')
 
 
-# 已验证可靠的域名，跳过下载检测以加快构建
+# 已验证可靠的域名，跳过下载检测以加快构建、避免误删
 TRUSTED_HOSTS = {
     'ipa.hxys2.xyz', 'pan.ipaxxs.cn', 'pan.586226.xyz', 'pan.iosxn.cn',
     'pan.iosru.com', 'c.iosxrr.com', 'pan.iosfls.cn', 'pan.wkios.cn',
     'gfm.zgios.cn', 'alist.jiejingfan.vip', 'pan.iosku.top',
+    'pan.appleipa.cn', '154.219.116.5:5244',
 }
 
 
 def check_download(app):
-    """检测下载链接是否能返回 IPA，返回 (app, ok)"""
+    """检测下载链接是否能返回 IPA，返回 (app, ok)。失败重试 1 次。"""
     dl = app.get('downloadURL', '')
     if not isinstance(dl, str) or not dl.startswith('http'):
         return app, False
     host = urllib.parse.urlparse(dl).netloc
     if host in TRUSTED_HOSTS:
         return app, True
-    try:
-        req = urllib.request.Request(dl, headers={'User-Agent': UA})
-        with urllib.request.urlopen(req, timeout=5) as r:
-            ct = (r.headers.get('content-type') or '').lower()
-            ok = any(x in ct for x in ('ipa', 'octet', 'binary', 'zip',
-                                       'application/zip', 'x-tar'))
-            return app, ok
-    except Exception:
-        return app, False
+    for attempt in range(2):  # 失败重试 1 次，避免偶发超时误删
+        try:
+            req = urllib.request.Request(dl, headers={'User-Agent': UA})
+            with urllib.request.urlopen(req, timeout=10) as r:
+                ct = (r.headers.get('content-type') or '').lower()
+                ok = any(x in ct for x in ('ipa', 'octet', 'binary', 'zip',
+                                           'application/zip', 'x-tar'))
+                return app, ok
+        except Exception:
+            if attempt == 0:
+                time.sleep(0.5)
+                continue
+            return app, False
+    return app, False
 
 
 def verify_apps(apps):
@@ -168,10 +174,16 @@ def slim(app):
         if isinstance(v, str) and len(v) > MAX_STR:
             v = v[:MAX_STR]
         out[k] = v
-    # 应用简介（更新说明），保留但限制长度
+    # 应用简介（更新说明），保留但限制长度，去掉 github/aa926453 相关字样
     desc = app.get('versionDescription') or app.get('localizedDescription') or ''
     if desc:
-        out['versionDescription'] = desc[:MAX_STR]
+        # 去掉包含 github 的链接/文字
+        desc = re.sub(r'https?://[^\s]*github[^\s]*', '', desc, flags=re.I)
+        desc = re.sub(r'github[a-z.]*\.(com|io|me)[^\s]*', '', desc, flags=re.I)
+        desc = desc.replace('aa926453', '')
+        desc = desc.strip()
+        if desc:
+            out['versionDescription'] = desc[:MAX_STR]
     return out
 
 
@@ -400,10 +412,9 @@ def main():
     news = [
         {
             'title': '源公告',
-            'identifier': 'io.github.aa926453.aggappstore.notice',
+            'identifier': 'com.iosipa.aggappstore.notice',
             'caption': f'勿忘国耻，吾辈自强！\n\n源主 QQ：{OWNER_QQ}\n有问题加 QQ 联系',
             'tintColor': '#DE2910',
-            'imageURL': 'https://aa926453.github.io/bg_news.jpg',
             'date': today,
             'notify': False,
         },
@@ -411,9 +422,8 @@ def main():
 
     doc = {
         'name': SOURCE_NAME,
-        'identifier': 'io.github.aa926453.aggappstore',
+        'identifier': 'com.iosipa.aggappstore',
         'sourceURL': SOURCE_URL,
-        'sourceicon': SOURCE_ICON,
         'message': message,
         'news': news,
         'apps': apps,
