@@ -32,7 +32,7 @@ SOURCES = [
 UA = 'OmniSign/7.7'
 # 第三方 GitHub 反代镜像（国内提速）：内容经其转发 raw，源地址对外显示为镜像域名
 MIRROR = 'https://gh-proxy.com/'
-RAW = 'https://raw.githubusercontent.com/aa926453/aa926453.github.io/main/'
+RAW = 'https://raw.githubusercontent.com/vipios/vipios.github.io/main/'
 SOURCE_URL = MIRROR + RAW + 'appstore.json'
 SOURCE_NAME = '不知道起什么名'
 SOURCE_ICON = MIRROR + RAW + 'flag2.png'
