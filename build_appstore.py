@@ -31,15 +31,11 @@ SOURCES = [
 UA = 'OmniSign/7.7'
 SOURCE_URL = 'https://aa926453.github.io/appstore.json'
 SOURCE_NAME = '不知道起什么名'
-WORKER_URL = 'https://iosipa.iosipa.workers.dev'
-SOURCE_ICON = ''
+SOURCE_ICON = 'https://aa926453.github.io/flag2.png'
 OWNER_QQ = '1505435445'
 KEEP_FIELDS = ('name', 'bundleIdentifier', 'version', 'versionDate', 'iconURL',
                'downloadURL', 'size', 'type')
 MAX_STR = 120  # 超长字段截断，防止索引膨胀
-
-# 是否给下载链接套鉴权代理（去掉下载链接里的源域名/githhub 字样）
-USE_PROXY = True
 
 # 方案A：失效域名黑名单——仅保留确认为网盘分享页/非直链的域名
 # 注意：不要因为个别文件失效就拉黑整个域名（会误删大量可用应用）！
@@ -174,16 +170,10 @@ def slim(app):
         if isinstance(v, str) and len(v) > MAX_STR:
             v = v[:MAX_STR]
         out[k] = v
-    # 应用简介（更新说明），保留但限制长度，去掉 github/aa926453 相关字样
+    # 应用简介（更新说明），保留但限制长度
     desc = app.get('versionDescription') or app.get('localizedDescription') or ''
     if desc:
-        # 去掉包含 github 的链接/文字
-        desc = re.sub(r'https?://[^\s]*github[^\s]*', '', desc, flags=re.I)
-        desc = re.sub(r'github[a-z.]*\.(com|io|me)[^\s]*', '', desc, flags=re.I)
-        desc = desc.replace('aa926453', '')
-        desc = desc.strip()
-        if desc:
-            out['versionDescription'] = desc[:MAX_STR]
+        out['versionDescription'] = desc[:MAX_STR]
     return out
 
 
@@ -398,13 +388,6 @@ def main():
 
     apps.sort(key=lambda a: str(a.get('versionDate') or ''), reverse=True)
 
-    # ---- 下载链接：激活开启时套代理，否则直链（减小体积加快刷新）----
-    if USE_PROXY:
-        for app in apps:
-            dl = app.get('downloadURL', '')
-            if isinstance(dl, str) and dl.startswith('http'):
-                app['downloadURL'] = f'{WORKER_URL}/dl?url={urllib.parse.quote(dl, safe="")}'
-
     message = (f'共 {len(apps)} 个应用\n'
                f'最近 30 分钟更新 {updated_30min} 个 · 今日更新 {updated_today} 个\n'
                f'源主 QQ：{OWNER_QQ}')
@@ -412,9 +395,10 @@ def main():
     news = [
         {
             'title': '源公告',
-            'identifier': 'com.iosipa.aggappstore.notice',
+            'identifier': 'io.github.aa926453.aggappstore.notice',
             'caption': f'勿忘国耻，吾辈自强！\n\n源主 QQ：{OWNER_QQ}\n有问题加 QQ 联系',
             'tintColor': '#DE2910',
+            'imageURL': 'https://aa926453.github.io/bg_news.jpg',
             'date': today,
             'notify': False,
         },
@@ -422,8 +406,9 @@ def main():
 
     doc = {
         'name': SOURCE_NAME,
-        'identifier': 'com.iosipa.aggappstore',
+        'identifier': 'io.github.aa926453.aggappstore',
         'sourceURL': SOURCE_URL,
+        'sourceicon': SOURCE_ICON,
         'message': message,
         'news': news,
         'apps': apps,
