@@ -30,14 +30,16 @@ SOURCES = [
 ]
 
 UA = 'OmniSign/7.7'
-# 第三方 GitHub 反代镜像（国内提速）：内容经其转发 raw，源地址对外显示为镜像域名
+# 第三方 GitHub 反代镜像（国内提速）
+# 短格式：镜像站会把 github.com/<仓库>/raw/<分支>/ 自动补全为 GitHub 直链，
+# 因此地址里不含 raw.githubusercontent.com，更短
 MIRROR = 'https://gh-proxy.com/'
 MIRROR_BACKUP = 'https://ghfast.top/'
-RAW = 'https://raw.githubusercontent.com/vipios/vipios.github.io/main/'
-SOURCE_URL = MIRROR + RAW + 'appstore'
-SOURCE_URL_BACKUP = MIRROR_BACKUP + RAW + 'appstore'
+REPO_PATH = 'github.com/vipios/vipios.github.io/raw/main/'
+SOURCE_URL = MIRROR + REPO_PATH + 'appstore'
+SOURCE_URL_BACKUP = MIRROR_BACKUP + REPO_PATH + 'appstore'
 SOURCE_NAME = '不知道起什么名'
-SOURCE_ICON = MIRROR + RAW + 'flag2.png'
+SOURCE_ICON = MIRROR + REPO_PATH + 'flag2.png'
 OWNER_QQ = '1505435445'
 KEEP_FIELDS = ('name', 'bundleIdentifier', 'version', 'versionDate', 'iconURL',
                'downloadURL', 'size', 'type')
@@ -439,7 +441,7 @@ def main():
             'identifier': 'io.github.vipios.aggappstore.notice',
             'caption': f'勿忘国耻，吾辈自强！\n\n源主 QQ：{OWNER_QQ}\n有问题加 QQ 联系',
             'tintColor': '#DE2910',
-            'imageURL': MIRROR + RAW + 'bg_news.jpg',
+            'imageURL': MIRROR + REPO_PATH + 'bg_news.jpg',
             'date': today,
             'notify': False,
         },
