@@ -24,6 +24,7 @@ SOURCES = [
     'https://app.dumpapps.com/appstore',
     'https://ipa.312752.cn/appstore',
     'https://qnq.nuosike.cn/appstore',
+    'https://yuan.iosyuan.cn/appstore',
 ]
 
 UA = 'OmniSign/7.7'
@@ -39,15 +40,20 @@ MAX_STR = 120  # 超长字段截断，防止索引膨胀
 # 是否给下载链接套鉴权代理（激活功能暂停时设为 False，用直链减小体积）
 USE_PROXY = False
 
-# 方案A：不活跃域名黑名单（30天内零更新），直接过滤这些域名的应用
+# 方案A：不活跃/失效域名黑名单，直接过滤这些域名的应用
 INACTIVE_HOSTS = {
     'pan.mxwlcm.cn', 'pan.pkq7.cn', 'dumppan.iosr.cn', 'pan.113tech.com',
-    'pan.iosi.vip', 'pan.wkios.cn', 'pan.52xv.com', 'pan.wxazf.com',
-    'pan.drophere.info', 'pan.ioszc.com', 'gfm.zgios.cn', 'pan.appzy.cn',
+    'pan.iosi.vip', 'pan.52xv.com', 'pan.wxazf.com',
+    'pan.drophere.info', 'pan.ioszc.com', 'pan.appzy.cn',
     'ipawj.nuosike.cn', 'pan.iosrxwy.com', 'pan.iosdz.cn', 'alist.tooios.com',
     'pan.dzapps.cn', 'wp.iosdzapp.cn', 'pan.xyyh.xyz', 'd41.dwnserver.com',
     'sign.drnrt8.cn', 'multimedia.qfile.qq.com', 'panapi.0210.net:4399',
     'pan.quark.cn', 'vfiles.gtimg.cn', 'jianying.kaluo.xyz', 'dl.iosdzapp.cn',
+    # 2026-10-17 实测失效：返回400或JSON非IPA
+    'pan.iosxrr.com', 'alist.htl123.com', 'pan.appleipa.cn',
+    'pan.xuxuyuan.top', 'pan.yeziku.cn', '154.219.116.5:5244',
+    # 蓝奏云非直链，返回HTML
+    'dumpapp.lanzouw.com', 'qiyou8.lanzouw.com',
 }
 
 # 方案B：超过此天数未更新的应用直接过滤掉
@@ -108,6 +114,44 @@ def truthy(v):
     return str(v).strip().lower() in ('1', 'true', 'yes')
 
 
+# 已验证可靠的域名，跳过下载检测以加快构建
+TRUSTED_HOSTS = {
+    'ipa.hxys2.xyz', 'pan.ipaxxs.cn', 'pan.586226.xyz', 'pan.iosxn.cn',
+    'pan.iosru.com', 'c.iosxrr.com', 'pan.iosfls.cn', 'pan.wkios.cn',
+    'gfm.zgios.cn', 'alist.jiejingfan.vip', 'pan.iosku.top',
+}
+
+
+def check_download(app):
+    """检测下载链接是否能返回 IPA，返回 (app, ok)"""
+    dl = app.get('downloadURL', '')
+    if not isinstance(dl, str) or not dl.startswith('http'):
+        return app, False
+    host = urllib.parse.urlparse(dl).netloc
+    if host in TRUSTED_HOSTS:
+        return app, True
+    try:
+        req = urllib.request.Request(dl, headers={'User-Agent': UA})
+        with urllib.request.urlopen(req, timeout=5) as r:
+            ct = (r.headers.get('content-type') or '').lower()
+            ok = any(x in ct for x in ('ipa', 'octet', 'binary', 'zip',
+                                       'application/zip', 'x-tar'))
+            return app, ok
+    except Exception:
+        return app, False
+
+
+def verify_apps(apps):
+    """并发检测所有应用下载链接，仅保留可下载的"""
+    with ThreadPoolExecutor(max_workers=20) as ex:
+        results = list(ex.map(check_download, apps))
+    alive = [a for a, ok in results if ok]
+    dead = len(apps) - len(alive)
+    print(f'  下载检测: 保留 {len(alive)} 个，剔除 {dead} 个死链',
+          file=sys.stderr)
+    return alive
+
+
 def fetch(url):
     req = urllib.request.Request(url, headers={
         'User-Agent': UA, 'Accept-Encoding': 'identity'})
@@ -143,17 +187,17 @@ def app_age_days(app):
     return 9999
 
 
-def is_app_valid(app):
-    """方案A+B：过滤不活跃域名 + 超期未更新应用"""
+def is_app_valid(app, bypass_age=False):
+    """过滤失效域名 + 超期未更新应用；bypass_age=True 时仅跳过超期检查"""
     url = str(app.get('downloadURL', ''))
     if not url.startswith('http'):
         return False
-    # 方案A：不活跃域名黑名单
+    # 失效域名黑名单（始终过滤）
     host = urllib.parse.urlparse(url).netloc
     if host in INACTIVE_HOSTS:
         return False
-    # 方案B：超过 MAX_APP_AGE_DAYS 未更新
-    if app_age_days(app) > MAX_APP_AGE_DAYS:
+    # 超过 MAX_APP_AGE_DAYS 未更新（hxys2 源可跳过）
+    if not bypass_age and app_age_days(app) > MAX_APP_AGE_DAYS:
         return False
     return True
 
@@ -261,15 +305,14 @@ def main():
 
     apps, seen, per_source = [], set(), []
     for url, d in ok_sources:
-        # ipa.hxys2.xyz 内容最全，不过滤不活跃域名和超期应用，全部保留
-        bypass_filter = 'hxys2.xyz' in url
+        # ipa.hxys2.xyz 内容最全，仅跳过超期过滤；死域名仍过滤
+        bypass_age = 'hxys2.xyz' in url
         cnt = 0
         for app in d.get('apps', []):
-            if truthy(app.get('lock', 0)):
-                continue
+            # lock 字段不影响下载，不过滤
             if truthy(app.get('isLanZouCloud', 0)):
-                continue
-            if not bypass_filter and not is_app_valid(app):
+                continue  # 蓝奏云链接非直链，跳过
+            if not is_app_valid(app, bypass_age=bypass_age):
                 continue
             key = f"{app.get('name', '')}|{app.get('version', '')}"
             if key in seen:
@@ -322,6 +365,9 @@ def main():
                 apps.append(app)
                 cnt += 1
             per_source.append(f'{label}:{cnt}')
+
+    # ---- 下载链接存活检测：剔除无法下载的应用 ----
+    apps = verify_apps(apps)
 
     # 上游大面积故障保护：结果异常少时保留旧索引
     if len(apps) < 100 and old_doc and len(old_doc.get('apps', [])) > len(apps):
