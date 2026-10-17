@@ -7,7 +7,7 @@ on:
       - 'debs/**'
       - 'build_repo.py'
       - 'build_appstore.py'
-      - 'appstore.json'
+      - 'appstore'
       - 'index.html'
       - 'CydiaIcon.png'
       - 'flag2.png'
@@ -47,7 +47,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add Packages Packages.gz Packages.bz2 Release appstore.json
+          git add Packages Packages.gz Packages.bz2 Release appstore
           if ! git diff --cached --quiet; then
             git commit -m "Update package index"
             git push
@@ -58,7 +58,7 @@ jobs:
       - name: Prepare public files (explicit allowlist)
         run: |
           mkdir -p _site/debs
-          cp index.html CydiaIcon.png flag2.png bg_news.jpg Release Packages Packages.gz Packages.bz2 appstore.json _site/
+          cp index.html CydiaIcon.png flag2.png bg_news.jpg Release Packages Packages.gz Packages.bz2 appstore _site/
           if [ -d debs ]; then cp -r debs/. _site/debs/; fi
           touch _site/.nojekyll
 

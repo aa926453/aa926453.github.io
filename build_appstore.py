@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""全能签聚合源构建：实时抓取上游源 → 过滤锁定/无效项 → 去重合并 → 输出 appstore.json
+"""全能签聚合源构建：实时抓取上游源 → 过滤锁定/无效项 → 去重合并 → 输出 appstore
 
 更新统计说明（GitHub Actions 无状态环境）：
-- 30 分钟更新数 = 与仓库中上次提交的 appstore.json 对比新增的应用
+- 30 分钟更新数 = 与仓库中上次提交的 appstore 对比新增的应用
 - 今日更新数 = versionDate 为今天（北京时间）的应用数
 """
 import hashlib
@@ -17,7 +17,7 @@ import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(ROOT, 'appstore.json')
+OUT = os.path.join(ROOT, 'appstore')
 CACHE = os.path.join(ROOT, 'source_cache.json')
 
 SOURCES = [
@@ -33,7 +33,7 @@ UA = 'OmniSign/7.7'
 # 第三方 GitHub 反代镜像（国内提速）：内容经其转发 raw，源地址对外显示为镜像域名
 MIRROR = 'https://gh-proxy.com/'
 RAW = 'https://raw.githubusercontent.com/vipios/vipios.github.io/main/'
-SOURCE_URL = MIRROR + RAW + 'appstore.json'
+SOURCE_URL = MIRROR + RAW + 'appstore'
 SOURCE_NAME = '不知道起什么名'
 SOURCE_ICON = MIRROR + RAW + 'flag2.png'
 OWNER_QQ = '1505435445'
@@ -199,7 +199,7 @@ def is_app_valid(app):
 
 
 def load_prev_keys():
-    """读仓库中上次提交的 appstore.json，作为 30 分钟对比基线"""
+    """读仓库中上次提交的 appstore，作为 30 分钟对比基线"""
     try:
         with open(OUT, encoding='utf-8') as f:
             old = json.load(f)
@@ -455,7 +455,7 @@ def main():
         json.dump(doc, f, ensure_ascii=False, separators=(',', ':'))
 
     print(f'  上游: {" ".join(per_source)}')
-    print(f'  合计: {len(apps)} 个应用 -> appstore.json '
+    print(f'  合计: {len(apps)} 个应用 -> appstore '
           f'({os.path.getsize(OUT) / 1048576:.1f}MB)')
     print(f'  统计: 30分钟更新 {updated_30min} | 今日更新 {updated_today}')
 
