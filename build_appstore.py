@@ -20,7 +20,6 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, 'appstore.json')
 
 SOURCES = [
-    'https://ipa.hxys2.xyz/appstore/',
     'https://app.dumpapps.com/appstore',
     'https://ipa.312752.cn/appstore',
     'https://qnq.nuosike.cn/appstore',
@@ -112,7 +111,7 @@ def truthy(v):
 
 # 已验证可靠的域名，跳过下载检测以加快构建、避免误删
 TRUSTED_HOSTS = {
-    'ipa.hxys2.xyz', 'pan.ipaxxs.cn', 'pan.586226.xyz', 'pan.iosxn.cn',
+    'pan.ipaxxs.cn', 'pan.586226.xyz', 'pan.iosxn.cn',
     'pan.iosru.com', 'c.iosxrr.com', 'pan.iosfls.cn', 'pan.wkios.cn',
     'gfm.zgios.cn', 'alist.jiejingfan.vip', 'pan.iosku.top',
     'pan.appleipa.cn', '154.219.116.5:5244',
@@ -121,8 +120,6 @@ TRUSTED_HOSTS = {
 
 def check_download(app):
     """检测下载链接是否能返回 IPA，返回 (app, ok)。失败重试 1 次。"""
-    if app.get('_trusted'):  # 云溪(hxys2)源整源信任，跳过检测
-        return app, True
     dl = app.get('downloadURL', '')
     if not isinstance(dl, str) or not dl.startswith('http'):
         return app, False
@@ -152,7 +149,6 @@ def verify_apps(apps):
     alive = []
     for a, ok in results:
         if ok:
-            a.pop('_trusted', None)  # 移除内部标记
             alive.append(a)
     dead = len(apps) - len(alive)
     print(f'  下载检测: 保留 {len(alive)} 个，剔除 {dead} 个死链',
@@ -195,8 +191,8 @@ def app_age_days(app):
     return 9999
 
 
-def is_app_valid(app, bypass_age=False):
-    """过滤失效域名 + 超期未更新应用；bypass_age=True 时仅跳过超期检查"""
+def is_app_valid(app):
+    """过滤失效域名 + 超期未更新应用"""
     url = str(app.get('downloadURL', ''))
     if not url.startswith('http'):
         return False
@@ -204,8 +200,8 @@ def is_app_valid(app, bypass_age=False):
     host = urllib.parse.urlparse(url).netloc
     if host in INACTIVE_HOSTS:
         return False
-    # 超过 MAX_APP_AGE_DAYS 未更新（hxys2 源可跳过）
-    if not bypass_age and app_age_days(app) > MAX_APP_AGE_DAYS:
+    # 超过 MAX_APP_AGE_DAYS 未更新
+    if app_age_days(app) > MAX_APP_AGE_DAYS:
         return False
     return True
 
@@ -313,24 +309,18 @@ def main():
 
     apps, seen, per_source = [], set(), []
     for url, d in ok_sources:
-        # ipa.hxys2.xyz 内容最全：跳过超期过滤，且整源信任不做下载检测
-        bypass_age = 'hxys2.xyz' in url
-        trust_src = 'hxys2.xyz' in url
         cnt = 0
         for app in d.get('apps', []):
             # lock 字段不影响下载，不过滤
             if truthy(app.get('isLanZouCloud', 0)):
                 continue  # 蓝奏云链接非直链，跳过
-            if not is_app_valid(app, bypass_age=bypass_age):
+            if not is_app_valid(app):
                 continue
             key = f"{app.get('name', '')}|{app.get('version', '')}"
             if key in seen:
                 continue
             seen.add(key)
-            item = slim(app)
-            if trust_src:
-                item['_trusted'] = 1
-            apps.append(item)
+            apps.append(slim(app))
             cnt += 1
         per_source.append(f"{d.get('name', '?')}:{cnt}")
 
