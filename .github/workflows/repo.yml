@@ -50,6 +50,7 @@ jobs:
           git add Packages Packages.gz Packages.bz2 Release appstore
           if ! git diff --cached --quiet; then
             git commit -m "Update package index"
+            git pull --rebase origin main
             git push
           fi
 

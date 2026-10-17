@@ -32,8 +32,10 @@ SOURCES = [
 UA = 'OmniSign/7.7'
 # 第三方 GitHub 反代镜像（国内提速）：内容经其转发 raw，源地址对外显示为镜像域名
 MIRROR = 'https://gh-proxy.com/'
+MIRROR_BACKUP = 'https://ghfast.top/'
 RAW = 'https://raw.githubusercontent.com/vipios/vipios.github.io/main/'
 SOURCE_URL = MIRROR + RAW + 'appstore'
+SOURCE_URL_BACKUP = MIRROR_BACKUP + RAW + 'appstore'
 SOURCE_NAME = '不知道起什么名'
 SOURCE_ICON = MIRROR + RAW + 'flag2.png'
 OWNER_QQ = '1505435445'
@@ -428,7 +430,8 @@ def main():
 
     message = (f'共 {len(apps)} 个应用\n'
                f'最近 30 分钟更新 {updated_30min} 个 · 今日更新 {updated_today} 个\n'
-               f'源主 QQ：{OWNER_QQ}')
+               f'源主 QQ：{OWNER_QQ}\n'
+               f'备用地址（主地址失效时使用）：{SOURCE_URL_BACKUP}')
 
     news = [
         {
