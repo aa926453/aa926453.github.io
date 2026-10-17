@@ -39,10 +39,6 @@ MAX_STR = 300  # 超长字段截断，防止索引膨胀
 # ---- AList 网盘（来自 ios.sha0p.top 导航站 + 威锋论坛帖子）----
 # 注：share.bjjii.com 底层天翼云盘直链几分钟过期，无法入源，已排除
 ALIST_DRIVES = [
-    {'site': 'https://wp.sha0p.cn', 'label': 'DaPeng网盘',
-     'roots': ['/IPA分享 - Appstore apps', '/游戏IPA - Game ipa',
-               '/巨魔专区 - TrollStore'],
-     'depth': 3},
     {'site': 'https://pan.113tech.com', 'label': 'iOS巨魔网盘',
      'roots': ['/iOS精选软件', '/巨魔游戏IPA', '/巨魔精选工具',
                '/trollfools开源插件'],
@@ -60,6 +56,17 @@ ALIST_DRIVES = [
      'depth': 3},
     {'site': 'https://pan.iosxn.cn', 'label': 'iosxn网盘',
      'roots': ['/ipa资源', '/巨魔专区', '/微信专区'],
+     'depth': 3},
+    {'site': 'https://pan.iosru.com', 'label': '如烟资源库',
+     'roots': ['/苹果应用合集', '/WeChat iPa', '/巨魔专用(已更新)',
+               '/微信多开 - 实时更新'],
+     'depth': 2},
+    {'site': 'https://pan.586226.xyz', 'label': '顷酉网盘',
+     'roots': ['/巨魔专区', '/插件库', '/最新iOS应用', '/微信专区',
+               '/巨魔注入'],
+     'depth': 3},
+    {'site': 'https://pan.pkq7.cn', 'label': '皮卡丘网盘',
+     'roots': ['/应用', '/资源', '/微信砸壳包'],
      'depth': 3},
 ]
 # 网盘里这些目录与 iOS 应用无关，跳过
