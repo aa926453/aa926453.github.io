@@ -24,26 +24,35 @@ SOURCES = [
     'https://app.dumpapps.com/appstore',
     'https://ipa.312752.cn/appstore',
     'https://qnq.nuosike.cn/appstore',
-    'https://app.iosrxwy.com/appstore',
 ]
 
 UA = 'OmniSign/7.7'
 SOURCE_URL = 'https://aa926453.github.io/appstore.json'
 SOURCE_NAME = '不知道起什么名'
-WORKER_URL = 'https://iosipa.iosipa.workers.dev'
+WORKER_URL = 'https://iosipa-iosapp.vercel.app'
 SOURCE_ICON = 'https://aa926453.github.io/flag2.png'
 OWNER_QQ = '1505435445'
 KEEP_FIELDS = ('name', 'bundleIdentifier', 'version', 'versionDate', 'iconURL',
                'downloadURL', 'size', 'tintColor', 'type')
 MAX_STR = 300  # 超长字段截断，防止索引膨胀
 
+# 方案A：不活跃域名黑名单（30天内零更新），直接过滤这些域名的应用
+INACTIVE_HOSTS = {
+    'pan.mxwlcm.cn', 'pan.pkq7.cn', 'dumppan.iosr.cn', 'pan.113tech.com',
+    'pan.iosi.vip', 'pan.wkios.cn', 'pan.52xv.com', 'pan.wxazf.com',
+    'pan.drophere.info', 'pan.ioszc.com', 'gfm.zgios.cn', 'pan.appzy.cn',
+    'ipawj.nuosike.cn', 'pan.iosrxwy.com', 'pan.iosdz.cn', 'alist.tooios.com',
+    'pan.dzapps.cn', 'wp.iosdzapp.cn', 'pan.xyyh.xyz', 'd41.dwnserver.com',
+    'sign.drnrt8.cn', 'multimedia.qfile.qq.com', 'panapi.0210.net:4399',
+    'pan.quark.cn', 'vfiles.gtimg.cn', 'jianying.kaluo.xyz', 'dl.iosdzapp.cn',
+}
+
+# 方案B：超过此天数未更新的应用直接过滤掉
+MAX_APP_AGE_DAYS = 365
+
 # ---- AList 网盘（来自 ios.sha0p.top 导航站 + 威锋论坛帖子）----
 # 注：share.bjjii.com 底层天翼云盘直链几分钟过期，无法入源，已排除
 ALIST_DRIVES = [
-    {'site': 'https://pan.113tech.com', 'label': 'iOS巨魔网盘',
-     'roots': ['/iOS精选软件', '/巨魔游戏IPA', '/巨魔精选工具',
-               '/trollfools开源插件'],
-     'depth': 3},
     {'site': 'https://pan.ipaxxs.cn', 'label': 'X先生资源',
      'roots': ['/苹果应用 - Appstore apps', '/巨魔商店 - TrollStore',
                '/插件专区 - Plugin Zone'],
@@ -66,9 +75,6 @@ ALIST_DRIVES = [
      'roots': ['/巨魔专区', '/插件库', '/最新iOS应用', '/微信专区',
                '/巨魔注入'],
      'depth': 3},
-    {'site': 'https://pan.pkq7.cn', 'label': '皮卡丘网盘',
-     'roots': ['/应用', '/资源', '/微信砸壳包'],
-     'depth': 3},
     {'site': 'https://pan.iosfls.cn', 'label': 'iOS福利社',
      'roots': ['/iPA', '/TrollStore', '/Dopamine'],
      'depth': 2},
@@ -79,29 +85,8 @@ ALIST_DRIVES = [
     {'site': 'https://pan.v200dd.top', 'label': '小熊网盘',
      'roots': ['/iphone', '/游客分发下载', '/个人存档', '/工具'],
      'depth': 3},
-    {'site': 'https://pan.iosi.vip', 'label': '平凡网盘',
-     'roots': ['/自签', '/砸壳', '/巨魔', '/插件', '/美化'],
-     'depth': 3},
-    {'site': 'https://pan.wxazf.com', 'label': '爱转发网盘',
-     'roots': ['/苹果ios软件'],
-     'depth': 3},
-    {'site': 'https://pan.iosdz.cn', 'label': '速对网盘',
-     'roots': ['/苹果试用版', '/微信8.0.75', '/免费音乐'],
-     'depth': 2},
-    {'site': 'https://alist.tooios.com', 'label': '兔兔网盘',
-     'roots': ['/iPa', '/签名工具', '/微信美化', '/Tbe+'],
-     'depth': 3},
-    {'site': 'https://pan.drophere.info', 'label': '兔子网盘',
-     'roots': ['/原创插件（下载版）', '/免费专区'],
-     'depth': 3},
     {'site': 'http://aoxiang.asia:88', 'label': '翱翔资源',
      'roots': ['/翱翔资源', '/个人云盘'],
-     'depth': 3},
-    {'site': 'https://pan.xyyh.xyz', 'label': '知网云盘',
-     'roots': ['/苹果交流区'],
-     'depth': 3},
-    {'site': 'https://pan.mxwlcm.cn', 'label': '萌仙科技',
-     'roots': ['/aliyun'],
      'depth': 3},
     {'site': 'https://alist.jiejingfan.vip', 'label': '捷径范网盘',
      'roots': ['/自签', '/Trollstore', '/越狱工具', '/签名工具', '/IPCC'],
@@ -140,6 +125,33 @@ def slim(app):
     if desc:
         out['versionDescription'] = desc[:MAX_STR]
     return out
+
+
+def app_age_days(app):
+    """计算应用距今天数，无法解析返回 9999"""
+    vd = str(app.get('versionDate', ''))[:10]
+    if len(vd) == 10 and vd[4] == '-':
+        try:
+            dt = time.strptime(vd, '%Y-%m-%d')
+            return int((time.time() - time.mktime(dt)) / 86400)
+        except Exception:
+            pass
+    return 9999
+
+
+def is_app_valid(app):
+    """方案A+B：过滤不活跃域名 + 超期未更新应用"""
+    url = str(app.get('downloadURL', ''))
+    if not url.startswith('http'):
+        return False
+    # 方案A：不活跃域名黑名单
+    host = urllib.parse.urlparse(url).netloc
+    if host in INACTIVE_HOSTS:
+        return False
+    # 方案B：超过 MAX_APP_AGE_DAYS 未更新
+    if app_age_days(app) > MAX_APP_AGE_DAYS:
+        return False
+    return True
 
 
 def load_prev_keys():
@@ -251,7 +263,7 @@ def main():
                 continue
             if truthy(app.get('isLanZouCloud', 0)):
                 continue
-            if not str(app.get('downloadURL', '')).startswith('http'):
+            if not is_app_valid(app):
                 continue
             key = f"{app.get('name', '')}|{app.get('version', '')}"
             if key in seen:
@@ -295,6 +307,8 @@ def main():
                 pan_apps = cached
             cnt = 0
             for app in pan_apps:
+                if not is_app_valid(app):
+                    continue
                 key = f"{app.get('name', '')}|{app.get('version', '')}"
                 if key in seen:
                     continue
