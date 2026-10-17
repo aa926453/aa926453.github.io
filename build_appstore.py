@@ -53,9 +53,6 @@ INACTIVE_HOSTS = {
     'dumpapp.lanzouw.com', 'qiyou8.lanzouw.com',
 }
 
-# 方案B：超过此天数未更新的应用直接过滤掉
-MAX_APP_AGE_DAYS = 365
-
 # ---- AList 网盘（来自 ios.sha0p.top 导航站 + 威锋论坛帖子）----
 # 注：share.bjjii.com 底层天翼云盘直链几分钟过期，无法入源，已排除
 ALIST_DRIVES = [
@@ -187,29 +184,13 @@ def slim(app):
     return out
 
 
-def app_age_days(app):
-    """计算应用距今天数，无法解析返回 9999"""
-    vd = str(app.get('versionDate', ''))[:10]
-    if len(vd) == 10 and vd[4] == '-':
-        try:
-            dt = time.strptime(vd, '%Y-%m-%d')
-            return int((time.time() - time.mktime(dt)) / 86400)
-        except Exception:
-            pass
-    return 9999
-
-
 def is_app_valid(app):
-    """过滤失效域名 + 超期未更新应用"""
+    """过滤失效域名黑名单（超龄过滤已关闭，保留全部历史应用）"""
     url = str(app.get('downloadURL', ''))
     if not url.startswith('http'):
         return False
-    # 失效域名黑名单（始终过滤）
     host = urllib.parse.urlparse(url).netloc
     if host in INACTIVE_HOSTS:
-        return False
-    # 超过 MAX_APP_AGE_DAYS 未更新
-    if app_age_days(app) > MAX_APP_AGE_DAYS:
         return False
     return True
 
