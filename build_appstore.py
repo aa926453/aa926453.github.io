@@ -36,7 +36,7 @@ KEEP_FIELDS = ('name', 'bundleIdentifier', 'version', 'versionDate', 'iconURL',
                'downloadURL', 'size', 'tintColor', 'type')
 MAX_STR = 300  # 超长字段截断，防止索引膨胀
 
-# ---- AList 网盘（来自 ios.sha0p.top 导航站）----
+# ---- AList 网盘（来自 ios.sha0p.top 导航站 + 威锋论坛帖子）----
 # 注：share.bjjii.com 底层天翼云盘直链几分钟过期，无法入源，已排除
 ALIST_DRIVES = [
     {'site': 'https://wp.sha0p.cn', 'label': 'DaPeng网盘',
@@ -47,11 +47,26 @@ ALIST_DRIVES = [
      'roots': ['/iOS精选软件', '/巨魔游戏IPA', '/巨魔精选工具',
                '/trollfools开源插件'],
      'depth': 3},
+    {'site': 'https://pan.ipaxxs.cn', 'label': 'X先生资源',
+     'roots': ['/苹果应用 - Appstore apps', '/巨魔商店 - TrollStore',
+               '/插件专区 - Plugin Zone'],
+     'depth': 3},
+    {'site': 'https://pan.qlam.cc', 'label': '清烟网盘',
+     'roots': ['/苹果应用 - Appstore apps', '/巨魔商店 - TrollStore',
+               '/插件专区 - Plugin Zone'],
+     'depth': 3},
+    {'site': 'https://pan.iosku.top', 'label': 'iosku网盘',
+     'roots': ['/苹果应用', '/巨魔专用工具', '/可在线安装'],
+     'depth': 3},
+    {'site': 'https://pan.iosxn.cn', 'label': 'iosxn网盘',
+     'roots': ['/ipa资源', '/巨魔专区', '/微信专区'],
+     'depth': 4},
 ]
 # 网盘里这些目录与 iOS 应用无关，跳过
 EXCLUDE_DIR_KW = ('会员', '订阅', '安卓', 'Android', '电脑', 'PC', '壁纸',
                   '书源', '音源', '快捷指令', '微信素材', '青年大学习',
-                  '证书', '教程', 'ROM', '电视', '素材')
+                  '证书', '教程', 'ROM', '电视', '素材', 'vip', 'VIP',
+                  '点歌', '共享ID', '皮肤', '科学上网', '圈x')
 VER_RE = re.compile(r'(\d+(?:\.\d+){1,3})')
 ALIST_MAX_FILES = 800  # 单盘收录上限，防止失控
 
