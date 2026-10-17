@@ -30,9 +30,12 @@ SOURCES = [
 ]
 
 UA = 'OmniSign/7.7'
-SOURCE_URL = 'https://aa926453.github.io/appstore.json'
+# 第三方 GitHub 反代镜像（国内提速）：内容经其转发 raw，源地址对外显示为镜像域名
+MIRROR = 'https://gh-proxy.com/'
+RAW = 'https://raw.githubusercontent.com/aa926453/aa926453.github.io/main/'
+SOURCE_URL = MIRROR + RAW + 'appstore.json'
 SOURCE_NAME = '不知道起什么名'
-SOURCE_ICON = 'https://aa926453.github.io/flag2.png'
+SOURCE_ICON = MIRROR + RAW + 'flag2.png'
 OWNER_QQ = '1505435445'
 KEEP_FIELDS = ('name', 'bundleIdentifier', 'version', 'versionDate', 'iconURL',
                'downloadURL', 'size', 'type')
@@ -433,7 +436,7 @@ def main():
             'identifier': 'io.github.aa926453.aggappstore.notice',
             'caption': f'勿忘国耻，吾辈自强！\n\n源主 QQ：{OWNER_QQ}\n有问题加 QQ 联系',
             'tintColor': '#DE2910',
-            'imageURL': 'https://aa926453.github.io/bg_news.jpg',
+            'imageURL': MIRROR + RAW + 'bg_news.jpg',
             'date': today,
             'notify': False,
         },
