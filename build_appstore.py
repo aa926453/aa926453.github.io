@@ -33,8 +33,11 @@ WORKER_URL = 'https://iosipa-iosapp.vercel.app'
 SOURCE_ICON = 'https://aa926453.github.io/flag2.png'
 OWNER_QQ = '1505435445'
 KEEP_FIELDS = ('name', 'bundleIdentifier', 'version', 'versionDate', 'iconURL',
-               'downloadURL', 'size', 'tintColor', 'type')
-MAX_STR = 300  # 超长字段截断，防止索引膨胀
+               'downloadURL', 'size', 'type')
+MAX_STR = 120  # 超长字段截断，防止索引膨胀
+
+# 是否给下载链接套鉴权代理（激活功能暂停时设为 False，用直链减小体积）
+USE_PROXY = False
 
 # 方案A：不活跃域名黑名单（30天内零更新），直接过滤这些域名的应用
 INACTIVE_HOSTS = {
@@ -121,9 +124,6 @@ def slim(app):
         if isinstance(v, str) and len(v) > MAX_STR:
             v = v[:MAX_STR]
         out[k] = v
-    desc = app.get('versionDescription') or app.get('localizedDescription') or ''
-    if desc:
-        out['versionDescription'] = desc[:MAX_STR]
     return out
 
 
@@ -334,30 +334,18 @@ def main():
 
     apps.sort(key=lambda a: str(a.get('versionDate') or ''), reverse=True)
 
-    # ---- 改写所有下载链接走 Worker 鉴权代理 ----
-    for app in apps:
-        dl = app.get('downloadURL', '')
-        if isinstance(dl, str) and dl.startswith('http'):
-            app['downloadURL'] = f'{WORKER_URL}/dl?url={urllib.parse.quote(dl, safe="")}'
+    # ---- 下载链接：激活开启时套代理，否则直链（减小体积加快刷新）----
+    if USE_PROXY:
+        for app in apps:
+            dl = app.get('downloadURL', '')
+            if isinstance(dl, str) and dl.startswith('http'):
+                app['downloadURL'] = f'{WORKER_URL}/dl?url={urllib.parse.quote(dl, safe="")}'
 
     message = (f'共 {len(apps)} 个应用\n'
                f'最近 30 分钟更新 {updated_30min} 个 · 今日更新 {updated_today} 个\n'
                f'源主 QQ：{OWNER_QQ}')
 
     news = [
-        {
-            'title': '下载需先激活',
-            'identifier': 'io.github.aa926453.activate',
-            'caption': (
-                f'本源所有应用下载需先激活\n'
-                f'👉 激活链接:{WORKER_URL}/\n\n'
-                f'激活后返回全能签即可下载全部应用\n'
-                f'换网络后重新打开激活页可自动续期'
-            ),
-            'tintColor': '#FF8C00',
-            'date': today,
-            'notify': True,
-        },
         {
             'title': '源公告',
             'identifier': 'io.github.aa926453.aggappstore.notice',
