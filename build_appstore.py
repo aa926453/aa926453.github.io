@@ -124,6 +124,10 @@ def slim(app):
         if isinstance(v, str) and len(v) > MAX_STR:
             v = v[:MAX_STR]
         out[k] = v
+    # 应用简介（更新说明），保留但限制长度
+    desc = app.get('versionDescription') or app.get('localizedDescription') or ''
+    if desc:
+        out['versionDescription'] = desc[:MAX_STR]
     return out
 
 
@@ -246,24 +250,26 @@ def alist_apps(drive):
 
 
 def main():
-    ok_sources = []
+    ok_sources = []  # [(url, data), ...]
     with ThreadPoolExecutor(max_workers=len(SOURCES)) as ex:
         futs = {ex.submit(fetch, u): u for u in SOURCES}
-        for fut in futs:
+        for fut, url in futs.items():
             try:
-                ok_sources.append(fut.result())
+                ok_sources.append((url, fut.result()))
             except Exception as e:
                 print(f'  [warn] 源失败: {e}', file=sys.stderr)
 
     apps, seen, per_source = [], set(), []
-    for d in ok_sources:
+    for url, d in ok_sources:
+        # ipa.hxys2.xyz 内容最全，不过滤不活跃域名和超期应用，全部保留
+        bypass_filter = 'hxys2.xyz' in url
         cnt = 0
         for app in d.get('apps', []):
             if truthy(app.get('lock', 0)):
                 continue
             if truthy(app.get('isLanZouCloud', 0)):
                 continue
-            if not is_app_valid(app):
+            if not bypass_filter and not is_app_valid(app):
                 continue
             key = f"{app.get('name', '')}|{app.get('version', '')}"
             if key in seen:
